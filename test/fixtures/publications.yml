@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_author_id: 1
+  second_author_id: 1
+  third_author_id: 1
+  target_journal_id: 1
+  topic: MyText
+  entry_date: 2012-03-22 15:31:54
+  modify_date: 2012-03-22 15:31:54
+  deadline: 2012-03-22
+  active: false
+
+two:
+  first_author_id: 1
+  second_author_id: 1
+  third_author_id: 1
+  target_journal_id: 1
+  topic: MyText
+  entry_date: 2012-03-22 15:31:54
+  modify_date: 2012-03-22 15:31:54
+  deadline: 2012-03-22
+  active: false

@@ -1,0 +1,51 @@
+<h1> Papers in Preparation </h1>
+
+<table class="tic_tac_toe">
+  <th>Topic</th>
+  <th>Authors</th>
+  <th>Journal</th>
+  <th>Status(es)</th>
+  <th>Referee(s)</th>
+  <th>Deadline</th>
+  <% @publications.each do |paper| %>
+    <tr onclick="location.href='<%= edit_publication_path(paper) %>'">
+      <td>
+        <%= paper.topic %>
+      </td>
+      <td>
+        <%= paper.author_list %>
+      </td>
+      <td>
+        <% if paper.target_journal.nil? %>
+          &nbsp;--
+        <% else %>
+          <%= paper.target_journal.journal_abbr %>
+        <% end %>
+      </td>
+      <td>
+        <ul>
+          <% paper.pub_statuses.each do |pub_status| %>
+            <li><%= pub_status.status_string %></li>
+          <% end %>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <% paper.referees.each do |ref| %>
+            <li>
+              <%= ref.ref_name %>
+            </li>
+          <% end %>
+        </ul>
+      </td>
+
+      <td>
+         <% if paper.deadline.nil? %>
+          &nbsp;--
+        <% else %>
+          <%= paper.deadline %>
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
