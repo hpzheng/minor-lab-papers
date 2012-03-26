@@ -23,12 +23,16 @@ class Publication < ActiveRecord::Base
   default_scope :order => 'modify_date DESC'
 
   def author_list
-    if self.second_author
-      return "#{self.first_author.auth_name} and #{self.second_author.auth_name}"
-    elsif self.third_author
+    if self.third_author
       return "#{self.first_author.auth_name}, #{self.second_author.auth_name} and #{self.third_author.auth_name}"
+    elsif self.second_author
+      return "#{self.first_author.auth_name} and #{self.second_author.auth_name}"
     else
       return "#{self.first_author.auth_name}"
     end
+  end
+
+  def add_status(paper)
+    self.pub_statuses.create!(:publication_id => paper.id)
   end
 end

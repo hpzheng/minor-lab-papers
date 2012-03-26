@@ -25,7 +25,7 @@
       <td>
         <ul>
           <% paper.pub_statuses.each do |pub_status| %>
-            <li><%= pub_status.status_string %></li>
+            <li><%= link_to pub_status.status_string, publication_pub_status_jcns_path(paper) %></li>
           <% end %>
         </ul>
       </td>

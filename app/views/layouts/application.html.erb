@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Milapa</title>
+  <title>Minor Lab Papers</title>
   <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <% #stylesheet_link_tag 'application'%>
+  <% #stylesheet_link_tag 'table/2_col'%>
+  <% #stylesheet_link_tag 'table/text_n_colors'%>
   <%= stylesheet_link_tag 'table/tables'%>
+  <% #stylesheet_link_tag 'table/3_col_liquid'%>
+  <% #stylesheet_link_tag 'table/3_col_liquid_faux'%>
+  <% #stylesheet_link_tag 'table/3_col_rounded'%>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="main_wrapper">
+   <div id="content">
+     <div id="content_inner">
+       <%= yield %>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,6 +1,13 @@
 Milapa::Application.routes.draw do
 
-  resources :publications
+  #resources :publications
+  #match 'publications/show_status' => 'publications#show_status'
+  resources :publications do
+    resources :pub_status_jcns
+    #member do
+      #get :show_status
+    #end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
