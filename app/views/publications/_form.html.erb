@@ -1,0 +1,32 @@
+<%= form_for(@publication) do |f| %>
+
+  <div class="field">
+    <%= f.label :topic %><br />
+    <%= f.text_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :first_author %><br />
+    <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name) %>
+  </div>
+  <div class="field">
+    <%= f.label :second_author %><br />
+    <%= collection_select(:publication, :second_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :third_author %><br />
+    <%= collection_select(:publication, :third_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :target_journal %><br />
+    <%= collection_select(:publication, :target_journal_id, Journal.all, :id, :journal_abbr) %>
+  </div>
+  <div class="field">
+    <%= f.label :deadline %><br />
+    <%= f.date_select :deadline, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+<% end %>
+
+
