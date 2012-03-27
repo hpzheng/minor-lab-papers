@@ -4,6 +4,8 @@
 /* style 2 bars_n_stripes is similar to style 1 but colors the table rows */
 /* style 3 tic_tac_toe creates open table cells all around the layout - only fully supported in Firefox, but degrades nicely in others */  
 
+.field {color: red;}
+
 a:link {text-decoration:none;}
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}

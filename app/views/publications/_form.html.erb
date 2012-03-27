@@ -24,8 +24,16 @@
     <%= f.label :deadline %><br />
     <%= f.date_select :deadline, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
   </div>
+  <%= @statuses.each do |s| %>
+    <%= form_for(s) do |g| %>
+      <div class="field">
+        <%= g.label :description %>
+        <%= g.text_field :description %>
+      </div>
+    <% end %>
+  <% end %>
   <div class="actions">
-    <%= f.submit "Update" %>
+    <p><%= f.submit "Update" %></p>
   </div>
 <% end %>
 

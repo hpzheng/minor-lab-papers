@@ -20,7 +20,7 @@ class PublicationsController < ApplicationController
 
   def create
     @publication = Publication.new(params[:publication])
-    if @user.save
+    if @publication.save
       redirect_to @publication, notice: 'User was successfully created.'
     else
       render action: "new"
