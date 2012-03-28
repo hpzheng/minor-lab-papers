@@ -4,20 +4,31 @@
   <title>Minor Lab Papers</title>
   <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <% #stylesheet_link_tag 'application'%>
-  <% #stylesheet_link_tag 'table/2_col'%>
-  <% #stylesheet_link_tag 'table/text_n_colors'%>
   <%= stylesheet_link_tag 'table/tables'%>
+  <%= stylesheet_link_tag 'table/2_col_liquid'%>
+  <% #stylesheet_link_tag 'table/text_n_colors'%>
   <% #stylesheet_link_tag 'table/3_col_liquid'%>
   <% #stylesheet_link_tag 'table/3_col_liquid_faux'%>
   <% #stylesheet_link_tag 'table/3_col_rounded'%>
+  <%= stylesheet_link_tag 'table/form_labels_above'%>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="olive">
   <div id="main_wrapper">
-   <div id="content">
-     <div id="content_inner">
-       <%= yield %>
+    <div id="footer">
+      <div id="footer_inner">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+          <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+        <% end %>
+      </div>
+    </div>
+    <div id="content">
+      <div id="content_inner">
+        <%= yield %>
       </div>
     </div>
   </div>

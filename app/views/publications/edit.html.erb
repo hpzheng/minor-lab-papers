@@ -1,8 +1,8 @@
 <h1> Edit Publication <i><%= @publication.topic %></i> </h1>
 
-<%= render 'form' %>
-
-<p>
 <%= link_to 'Back to All Publications', publications_path %> |
-<%= link_to 'Create New Publication', new_publication_path %>
-</p>
+<%= link_to 'Create New Publication', new_publication_path %><br />
+
+<div class="two_col_form">
+<%= render 'form' %>
+</div>

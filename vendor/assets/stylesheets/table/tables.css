@@ -4,7 +4,7 @@
 /* style 2 bars_n_stripes is similar to style 1 but colors the table rows */
 /* style 3 tic_tac_toe creates open table cells all around the layout - only fully supported in Firefox, but degrades nicely in others */  
 
-.field {color: red;}
+/*.field {color: red;}*/
 
 a:link {text-decoration:none;}
 
@@ -20,6 +20,7 @@ th{background:white;}
 
 ul {border:0;margin:0.1em;padding:0;list-style-type: none;}
 
+/*body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
 body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 
 table.basic_lines {

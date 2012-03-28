@@ -32,7 +32,7 @@ class PubStatusJcnsController < ApplicationController
     @publication = Publication.find(params[:publication_id])
     @pub_status = @publication.pub_statuses.build(params[:pub_status_jcn])
     if @pub_status.save
-      redirect_to @pub_status, notice: 'User was successfully created.'
+      redirect_to @publication, notice: 'User was successfully created.'
     else
       render action: "new"
     end

@@ -13,7 +13,8 @@ class Publication < ActiveRecord::Base
              :class_name => "Journal"
   has_many   :pub_statuses,
              :class_name => "PubStatusJcn"
-  accepts_nested_attributes_for :pub_statuses
+  accepts_nested_attributes_for :pub_statuses,
+                                :allow_destroy => true
   has_many   :statuses,
              :through => :pub_statuses
   has_many   :pub_refs,

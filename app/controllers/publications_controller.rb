@@ -30,6 +30,7 @@ class PublicationsController < ApplicationController
 
   def update
     @publication = Publication.find(params[:id])
+    @pub_statuses = @publication.pub_statuses
     if @publication.update_attributes(params[:publication])
       redirect_to publications_path, notice: 'User was successfully updated.'
     else
