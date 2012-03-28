@@ -6,6 +6,7 @@ class PublicationsController < ApplicationController
 
   def edit
     @publication = Publication.find(params[:id])
+    #@statuses = @publication.pub_statuses
   end
 
   def show_status

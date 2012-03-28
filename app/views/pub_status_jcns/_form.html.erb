@@ -1,0 +1,23 @@
+<%= form_for([@publication,@pub_status]) do |f| %>
+
+  <div class="field">
+    <%= f.label :status_id %><br />
+    <%= collection_select(:pub_status_jcn, :status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :person_responsible %><br />
+    <%= collection_select(:pub_status_jcn, :person_responsible_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :due_date %><br />
+    <%= f.date_select :due_date, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
+  </div>
+  <div class="actions">
+    <p><%= f.submit "Update" %></p>
+  </div>
+<% end %>
+

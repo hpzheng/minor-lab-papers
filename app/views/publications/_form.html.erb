@@ -24,14 +24,18 @@
     <%= f.label :deadline %><br />
     <%= f.date_select :deadline, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
   </div>
-  <%= @statuses.each do |s| %>
-    <%= form_for(s) do |g| %>
-      <div class="field">
-        <%= g.label :description %>
-        <%= g.text_field :description %>
-      </div>
+  <div class="field">
+    <%= f.label :statuses %><br />
+    <% @publication.pub_statuses.each do |s| %>
+      <%= f.fields_for :pub_statuses, s do |g| %>
+        <div class="field">
+          <%= g.label :description %>
+          <%= g.text_field :description %>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+    <%= link_to "Add new status", new_publication_pub_status_jcn_path(@publication) %>
+    </div>
   <div class="actions">
     <p><%= f.submit "Update" %></p>
   </div>
