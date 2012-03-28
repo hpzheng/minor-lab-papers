@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem 'yaml_db'
 
+gem 'devise', '1.1.rc0'
+
 gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
