@@ -182,10 +182,10 @@ ActiveRecord::Schema.define(:version => 20120327192028) do
     t.integer  "third_author_id"
     t.integer  "target_journal_id"
     t.string   "topic",             :limit => 200, :null => false
-    t.datetime "entry_date",                       :null => false
-    t.datetime "modify_date",                      :null => false
+    t.datetime "entry_date"
+    t.datetime "modify_date"
     t.date     "deadline"
-    t.boolean  "active",                           :null => false
+    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
