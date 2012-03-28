@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'yaml_db'
 
-gem 'devise'
+gem 'devise', '2.0'
 
 gem 'rails', '3.1.3'
 
