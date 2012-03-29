@@ -28,17 +28,18 @@
       <%= f.fields_for :pub_statuses, s do |g| %>
         <div class="field">
         <table>
-        <tr>
-        <td>
-          <%= g.label :status_id, "Status ##{key+1}" %>
-        </td>
-        <td>
-          <strong><%= "Delete Status ##{key+1}?" %></strong>
-          <%= g.check_box :_destroy %>
-        </td>
-        <table>
-        <tr>
-        <tr>
+          <tr>
+            <td>
+              <%= g.label :status_id, "Status ##{key+1}" %>
+            </td>
+            <td>
+              <strong><%= "Delete Status ##{key+1}?" %></strong>
+              <%= g.check_box :_destroy %>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="field">
           <%= g.label :select_status %>
           <%= g.collection_select(:status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %><%= g.collection_select(:person_responsible_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
         </div>

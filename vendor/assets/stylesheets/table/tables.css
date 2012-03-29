@@ -5,7 +5,8 @@
 /* style 3 tic_tac_toe creates open table cells all around the layout - only fully supported in Firefox, but degrades nicely in others */  
 
 /*.field {color: red;}*/
-
+.statusr {float:right;}
+.statusl {float:left;}
 a:link {text-decoration:none; color:#bb3333;}
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}
