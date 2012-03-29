@@ -9,6 +9,7 @@
 a:link {text-decoration:none; color:#bb3333;}
 
 tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}
+table {width:100%;}
 
 tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
 /*tbody tr:nth-child(even) td.status:hover, tbody tr.even td.status:hover {background:#FFCC99;}*/
