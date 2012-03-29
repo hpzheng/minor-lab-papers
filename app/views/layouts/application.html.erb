@@ -4,9 +4,9 @@
   <title>Minor Lab Papers</title>
   <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <% #stylesheet_link_tag 'application'%>
-  <%= stylesheet_link_tag 'table/tables'%>
+  <%= stylesheet_link_tag 'table/text_n_colors'%>
   <%= stylesheet_link_tag 'table/2_col_liquid'%>
-  <% #stylesheet_link_tag 'table/text_n_colors'%>
+  <%= stylesheet_link_tag 'table/tables'%>
   <% #stylesheet_link_tag 'table/3_col_liquid'%>
   <% #stylesheet_link_tag 'table/3_col_liquid_faux'%>
   <% #stylesheet_link_tag 'table/3_col_rounded'%>
@@ -14,16 +14,29 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="olive">
+<body >
   <div id="main_wrapper">
     <div id="footer">
       <div id="footer_inner">
         <% if user_signed_in? %>
-          Signed in as <%= current_user.email %>. Not you?
+          Signed in as <%= current_user.email %>. | Not you?
           <%= link_to "Sign out", destroy_user_session_path %>
         <% else %>
           <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
         <% end %>
+      </div>
+    </div>
+    <div id="header">
+      <div id="header_inner">
+        <h1> Minor Lab Papers </h1>
+      </div>
+    </div>
+    <div id="nav">
+      <div id="nav_inner">
+        <ul>
+          <li><%= link_to "View All Publications", publications_path %></li>
+          <li><%= link_to "Add New Publication", new_publication_path unless !user_signed_in? %></li>
+        <ul>
       </div>
     </div>
     <div id="content">

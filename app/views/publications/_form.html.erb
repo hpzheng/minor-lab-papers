@@ -23,15 +23,13 @@
     <%= f.label :paper_deadline %>
     <%= f.date_select :deadline, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
   </div>
-  <div class="formsection">
-    <%= f.label :statuses %>
-    <%= link_to "Add new status", new_publication_pub_status_jcn_path(@publication) %>
-  </div>
     <% @publication.pub_statuses.each_with_index do |s, key| %>
     <div class="formsection">
       <%= f.fields_for :pub_statuses, s do |g| %>
         <div class="field">
-          <%= g.label :status_id, "Status # #{key+1}" %>
+          <%= g.label :status_id, "Status ##{key+1}" %>
+          <strong><%="Delete Status ##{key+1}?" %></strong>
+          <%= g.check_box :_destroy %>
           <%= g.collection_select(:status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %>
         </div>
         <div class="field">
@@ -45,9 +43,6 @@
         <div class="field">
           <%= g.label :due_date %>
           <%= g.date_select :due_date, :include_blank => true, :start_year => 2012, :date_separator => '/' %>
-        </div>
-        <div class="field">
-        Delete: <%= g.check_box :_destroy %>
         </div>
       <% end %>
     </div>

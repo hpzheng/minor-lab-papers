@@ -41,7 +41,7 @@ class PubStatusJcnsController < ApplicationController
   def update
     @publication = Publication.find(params[:id])
     if @publication.update_attributes(params[:publication])
-      redirect_to publications_path, notice: 'User was successfully updated.'
+      redirect_to publication_path(@publication), notice: 'User was successfully updated.'
     else
        render action: "edit"
     end

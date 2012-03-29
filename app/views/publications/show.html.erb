@@ -1,0 +1,42 @@
+<h2> Publication information for <i><%= @publication.topic %></i> </h2>
+<div class="two_col_form">
+<div class="formsection">
+<h3> Topic </h3>
+  <p>
+    <%= @publication.topic %>
+  </p>
+</div>
+<div class="formsection">
+<h3> Author(s) </h3>
+  <p>
+    <%= @publication.author_list %>
+  </p>
+</div>
+<div class="formsection">
+<h3> Target Journal </h3>
+  <p>
+    <%= @publication.target_journal.journal_name %>
+  </p>
+</div>
+<div class="formsection">
+<h3> Deadline? </h3>
+  <% if @publication.deadline.nil? %>
+    No Deadline at this time 
+  <% else %>
+    <%= "#{@publication.deadline}" %>
+  <% end %>
+</div>
+<div class="formsection">
+<h3> Status(es) </h3>
+<ol>
+  <% @publication.pub_statuses.each_with_index do |s, i| %>
+  <li>
+      <%= s.status_string %><%= "--#{s.description}" unless s.description.empty? %>
+  </li>
+  <% end %>
+</ol>
+</div>
+</div>
+
+<%= link_to "Edit this publication", edit_publication_path(@publication) %> |
+<%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %>

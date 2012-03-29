@@ -6,9 +6,9 @@
 
 /*.field {color: red;}*/
 
-a:link {text-decoration:none;}
+a:link {text-decoration:none; color:#bb3333;}
 
-tbody tr:nth-child(even) td, tbody tr.even td {background:#e5ecf9;}
+tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}
 
 tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
 /*tbody tr:nth-child(even) td.status:hover, tbody tr.even td.status:hover {background:#FFCC99;}*/
@@ -16,12 +16,12 @@ tr:hover {background:#FFFF99;}
 /*td.status:hover {background:#FFCC99;}
 li.status:hover {background:#FFCC99;}*/
 /*.status:hover {background:#FFCC99;}*/
-th{background:white;}
+th{background: #ffffe6;}
 
 ul {border:0;margin:0.1em;padding:0;list-style-type: none;}
 
 /*body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
-body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 
 table.basic_lines {
 	width:300px;
@@ -54,7 +54,7 @@ table.bars_n_stripes th { /* labels column */
 	}
 table.bars_n_stripes th[scope="col"] { /* headings row */
 	/* colors top row of cells - IDWIMIE 6 - previous rule applies to IE6 */
-	background-color:#99CCCC;
+	background-color:#BB7070;
 	}
 table.bars_n_stripes td, table.bars_n_stripes th  {
 	padding:3px 3px; 
@@ -65,8 +65,8 @@ table.tic_tac_toe {
 	}
 table.tic_tac_toe td {
 /* create the grid of table cells */
-	border-right: 1px solid #99CCCC; 
-	border-bottom: 1px solid #99CCCC;
+	border-right: 1px solid #BB7070; 
+	border-bottom: 1px solid #BB7070;
 	}
 table.tic_tac_toe tr:last-child td {
 	border-bottom: 0; /* remove the bottom border off the bottom row of tds */
@@ -76,8 +76,8 @@ table.tic_tac_toe td:last-child {
 	}
 table.tic_tac_toe th { 
 /* create the grid of table cells */
-border-right:3px solid #99CCCC;
-	border-bottom: 1px solid #99CCCC;
+border-right:3px solid #BB7070;
+	border-bottom: 1px solid #BB7070;
 		padding-right:.3em;
 	}
 table.tic_tac_toe tr:last-child th { /* removes bottom border off last cell of ths column */
@@ -85,12 +85,12 @@ table.tic_tac_toe tr:last-child th { /* removes bottom border off last cell of t
 	}
 table.tic_tac_toe th[scope="col"] {
 	/* colors top row of cells - IDWIMIE 6 - previous rule applies to IE6 */
-	border-right: 1px solid #99CCCC;
-	border-bottom :3px solid #99CCCC;
+	border-right: 1px solid #BB7070;
+	border-bottom :3px solid #BB7070;
 	}
 table.tic_tac_toe th[scope="col"]:first-child { 
 /* thick right border on first cell of headings row */
-	border-right:3px solid #99CCCC;
+	border-right:3px solid #BB7070;
 	}
 table.tic_tac_toe th[scope="col"]:last-child {
 	border-right:0; /* remove the right border off the right row of ths */
