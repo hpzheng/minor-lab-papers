@@ -1,0 +1,99 @@
+/* a fix for IE6 only - see Star Hack in Stylin' with CSS to see how the comments and * html hide this hack from other browsers \*/
+* html * {
+	zoom:100%; 
+/* triggers IE6 "haslayout" - google 'IE6 haslayout' for details*/
+	}
+/* without the above hack, IE6 does not draw the header until the page is resized */
+/* the problem is triggered by the universal * selector below that resets the margins, but I need to do that, hence the hack */
+* {
+	margin:0;
+	padding:0;
+	}
+body {
+	font: 1em Lucida, Arial, sans-serif; /* 1em = 16pts */
+}
+.float_left {float:left; margin: 0 .3em .3em 0;}      /* apply this class to any image or element with width - text will wrap it to the right */
+.float_right {float:right;  margin: 0 0 .3em .3em;} /* apply this class to any image or element with width  - text will wrap it to the left */
+
+/* DEFAULT TAG STYLES - font sizes, margins, padding, etc. */
+/* NOTE: text colors follow below */
+body {background-color:#FFF;}
+#main_wrapper {background-color:#FFF;}
+#header {background-color:#808073;}
+#nav {background-color:#BFBFAC;}
+#content {background-color:#FFFFE6;}
+#promo {background-color:transparent;}
+#footer {background-color:#D9D9C3;}
+
+#footer p {
+	margin:0;
+	}
+#nav ul, #nav dl, #nav ol {
+		margin:.5em 1em .75em 1em; /* lists without specific classes */
+		}
+#nav li {
+	list-style-type:none;
+	margin-left:0
+	}
+#promo ul, #promo dl, #promo ol {
+		margin:.5em 1em .75em 1em; /* lists without specific classes */
+		}
+#promo li {
+	list-style-type:none;
+	margin-left:0
+	}		
+dt {font-weight:bold;}
+
+code {font-size:1.25em;}
+* html code {font-size:1.1em;} /* default size is smaller in IE */
+	
+cite {
+	font-size:.85em;
+	font-style:italic;
+	}
+blockquote {
+	border-top:2px solid;
+	border-bottom:2px solid;
+	width:50%;
+	margin:1em 0 1em 20%;
+	padding:.3em 1em;
+	}
+blockquote p {
+	margin-bottom:.1em;
+	}
+blockquote p:before { /* IDWIMIE 6 and 7 */
+	content: open-quote;
+	color:#cccc8f;
+}
+blockquote p:after {  /* IDWIMIE 6 and 7 */
+	content: close-quote;
+	color:#366;
+}
+blockquote cite {
+	font-size:.85em;
+	}
+abbr, acronym {
+	border-bottom:1px dashed #000;
+	cursor:default;
+	}
+address {
+	margin:0 1em .75em 1em;
+	}
+img {
+	border:0;
+	}
+
+/* THE ALSETT CLEARING METHOD */
+	.clearfix:after {
+
+ display: block; 
+ height: 0;
+ clear: both;
+ visibility: hidden;
+}
+.clearfix {display: inline-table;}
+/* backslash hack hides from IE mac \*/ LEAVE THIS COMMENT RIGHT HERE! 
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* end backslash hack */ 
+

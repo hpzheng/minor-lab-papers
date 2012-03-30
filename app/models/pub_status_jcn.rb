@@ -9,19 +9,21 @@ class PubStatusJcn < ActiveRecord::Base
              :class_name => "Author"
 
   def status_string
-    status_str = self.status.status.gsub("_", " ")
+    status_str = self.status.status_str
     if self.person_responsible_id and status_str[-2,2] == "by"
       return "#{status_str} #{self.person_responsible.auth_name}"
+    elsif self.person_responsible_id
+      return "#{status_str} (#{self.person_responsible.auth_name})"
     else
       return "#{status_str}"
     end
   end
   
   def descr
-    if self.description
-      return self.description
-    else
+    if self.description.empty?
       return "--"
+    else
+      return self.description
     end
   end
 

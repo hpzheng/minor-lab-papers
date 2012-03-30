@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120322193154) do
+ActiveRecord::Schema.define(:version => 20120330165112) do
 
   create_table "auth_group", :force => true do |t|
     t.string "name", :limit => 80, :null => false
@@ -182,10 +182,10 @@ ActiveRecord::Schema.define(:version => 20120322193154) do
     t.integer  "third_author_id"
     t.integer  "target_journal_id"
     t.string   "topic",             :limit => 200, :null => false
-    t.datetime "entry_date",                       :null => false
-    t.datetime "modify_date",                      :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.date     "deadline"
-    t.boolean  "active",                           :null => false
+    t.boolean  "active"
   end
 
   add_index "papers_publication", ["first_author_id"], :name => "papers_publication_first_author_id"
@@ -209,8 +209,8 @@ ActiveRecord::Schema.define(:version => 20120322193154) do
     t.integer  "person_responsible_id"
     t.string   "description",           :limit => 200
     t.date     "due_date"
-    t.datetime "entry_date",                           :null => false
-    t.datetime "modify_date",                          :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "papers_publication_status_jcn", ["person_responsible_id"], :name => "papers_publication_status_jcn_person_responsible_id"
@@ -230,18 +230,22 @@ ActiveRecord::Schema.define(:version => 20120322193154) do
     t.string  "status",   :limit => 50, :null => false
   end
 
-  create_table "publications", :force => true do |t|
-    t.integer  "first_author_id"
-    t.integer  "second_author_id"
-    t.integer  "third_author_id"
-    t.integer  "target_journal_id"
-    t.text     "topic"
-    t.datetime "entry_date"
-    t.datetime "modify_date"
-    t.date     "deadline"
-    t.boolean  "active"
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

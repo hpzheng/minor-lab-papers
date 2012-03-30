@@ -1,4 +1,4 @@
-<h1> Papers in Preparation </h1>
+<h2> Papers in Preparation </h2>
 
 <table class="tic_tac_toe">
   <th>Topic</th>
@@ -8,7 +8,7 @@
   <th>Referee(s)</th>
   <th>Deadline</th>
   <% @publications.each do |paper| %>
-    <tr onclick="location.href='<%= edit_publication_path(paper) %>'">
+    <tr onclick="location.href='<%= publication_path(paper) %>'">
       <td>
         <%= paper.topic %>
       </td>

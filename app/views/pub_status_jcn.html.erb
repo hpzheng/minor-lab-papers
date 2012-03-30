@@ -1,0 +1,13 @@
+<h1>Add New Status</h1>
+
+<%= form_for(@pub_status) do |f| %>
+  <div class="field">
+    <%= f.label :topic %><br />
+    <%= f.text_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :first_author %><br />
+    <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name) %>
+  </div>
+
+
