@@ -22,8 +22,11 @@ class Publication < ActiveRecord::Base
   has_many   :referees,
              :through => :pub_refs
 
+  default_scope :order => 'updated_at DESC'
 
-  default_scope :order => 'modify_date DESC'
+  accepted_pubs = %(SELECT publication_id FROM papers_publication_status_jcn
+                      WHERE status_id = 11)
+  scope :active_publications, where("id NOT IN (#{accepted_pubs})") 
 
   def author_list
     if self.third_author
@@ -37,5 +40,11 @@ class Publication < ActiveRecord::Base
 
   def add_status(paper)
     self.pub_statuses.create!(:publication_id => paper.id)
+  end
+
+  def self.status_count
+    active_pubs = Publication.all
+    active_pubs = active_pubs.uniq
+    where("id IN (#{active_pubs})")
   end
 end

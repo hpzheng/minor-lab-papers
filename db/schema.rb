@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120328165859) do
+ActiveRecord::Schema.define(:version => 20120330165112) do
 
   create_table "auth_group", :force => true do |t|
     t.string "name", :limit => 80, :null => false
@@ -182,12 +182,10 @@ ActiveRecord::Schema.define(:version => 20120328165859) do
     t.integer  "third_author_id"
     t.integer  "target_journal_id"
     t.string   "topic",             :limit => 200, :null => false
-    t.datetime "entry_date"
-    t.datetime "modify_date"
-    t.date     "deadline"
-    t.boolean  "active"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "deadline"
+    t.boolean  "active"
   end
 
   add_index "papers_publication", ["first_author_id"], :name => "papers_publication_first_author_id"
@@ -211,8 +209,8 @@ ActiveRecord::Schema.define(:version => 20120328165859) do
     t.integer  "person_responsible_id"
     t.string   "description",           :limit => 200
     t.date     "due_date"
-    t.datetime "entry_date",                           :null => false
-    t.datetime "modify_date",                          :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "papers_publication_status_jcn", ["person_responsible_id"], :name => "papers_publication_status_jcn_person_responsible_id"

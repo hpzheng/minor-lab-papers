@@ -33,6 +33,7 @@ class PubStatusJcnsController < ApplicationController
     @publication = Publication.find(params[:publication_id])
     @pub_status = @publication.pub_statuses.build(params[:pub_status_jcn])
     if @pub_status.save
+      @publication.touch
       redirect_to @publication, notice: 'User was successfully created.'
     else
       render action: "new"
@@ -42,6 +43,7 @@ class PubStatusJcnsController < ApplicationController
   def update
     @publication = Publication.find(params[:id])
     if @publication.update_attributes(params[:publication])
+      @publication.touch
       redirect_to publication_path(@publication), notice: 'User was successfully updated.'
     else
        render action: "edit"

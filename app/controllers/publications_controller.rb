@@ -2,7 +2,8 @@ class PublicationsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
 
   def index
-    @publications = Publication.all
+    @publications = Publication.active_publications.all
+    #@publications = Publication.all
   end
 
   def edit
@@ -29,7 +30,7 @@ class PublicationsController < ApplicationController
   def create
     @publication = Publication.new(params[:publication])
     if @publication.save
-      redirect_to edit_publication_path(@publication), notice: 'User was successfully created.'
+      redirect_to publication_path(@publication), notice: 'User was successfully created.'
     else
       render action: "new"
     end

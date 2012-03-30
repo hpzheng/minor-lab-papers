@@ -5,20 +5,20 @@
 /* style 3 tic_tac_toe creates open table cells all around the layout - only fully supported in Firefox, but degrades nicely in others */  
 
 /*.field {color: red;}*/
-.statusr {float:right;}
-.statusl {float:left;}
+.ralign {text-align:right;}
+.lalign {text-align:left;}
 a:link {text-decoration:none; color:#bb3333;}
 
-tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}
+.tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}
 table {width:100%;}
 
-tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
+.tic_tac_toe tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
 /*tbody tr:nth-child(even) td.status:hover, tbody tr.even td.status:hover {background:#FFCC99;}*/
-tr:hover {background:#FFFF99;}
+.tic_tac_toe tr:hover {background:#FFFF99;}
 /*td.status:hover {background:#FFCC99;}
 li.status:hover {background:#FFCC99;}*/
 /*.status:hover {background:#FFCC99;}*/
-th{background: #ffffe6;}
+.tic_tac_toe th{background: #ffffe6;}
 
 ul {border:0;margin:0.1em;padding:0;list-style-type: none;}
 

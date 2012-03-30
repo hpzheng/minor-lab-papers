@@ -12,6 +12,8 @@ class PubStatusJcn < ActiveRecord::Base
     status_str = self.status.status_str
     if self.person_responsible_id and status_str[-2,2] == "by"
       return "#{status_str} #{self.person_responsible.auth_name}"
+    elsif self.person_responsible_id
+      return "#{status_str} (#{self.person_responsible.auth_name})"
     else
       return "#{status_str}"
     end
