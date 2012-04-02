@@ -11,4 +11,7 @@ class Referee < ActiveRecord::Base
     end
   end
 
+  def name
+    return "Dr. #{self.firstname} #{self.lastname}"
+  end
 end

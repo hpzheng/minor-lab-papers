@@ -1,0 +1,14 @@
+<h1> Add Referee for <i><%= @publication.topic %></i> </h1>
+<%= link_to "Back to Publication", edit_publication_path(@publication) %>
+<div class="two_col_form">
+<%= form_for([@publication,@pub_ref]) do |f| %>
+  <div class="formsection">
+    <%= f.label :referee %>
+    <%= collection_select(:pub_ref_jcn, :referee_id, Referee.all, :id, :name, {:include_blank => '--'}) %>
+  </div>
+  <div class="actions">
+    <p><%= f.submit "Update" %></p>
+  </div>
+<% end %>
+</div>
+

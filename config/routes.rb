@@ -1,11 +1,11 @@
 Milapa::Application.routes.draw do
 
   devise_for :users
-
   #resources :publications
   #match 'publications/show_status' => 'publications#show_status'
   resources :publications do
     resources :pub_status_jcns
+    resources :pub_ref_jcns
     #member do
       #get :show_status
     #end
@@ -59,7 +59,7 @@ Milapa::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'publications#index'
+  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

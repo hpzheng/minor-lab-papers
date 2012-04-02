@@ -21,6 +21,8 @@ class Publication < ActiveRecord::Base
              :class_name => "PubRefJcn"
   has_many   :referees,
              :through => :pub_refs
+  accepts_nested_attributes_for :pub_refs,
+                                :allow_destroy => true
 
   default_scope :order => 'updated_at DESC'
 

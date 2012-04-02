@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120330165112) do
+ActiveRecord::Schema.define(:version => 20120402154657) do
 
   create_table "auth_group", :force => true do |t|
     t.string "name", :limit => 80, :null => false
@@ -196,8 +196,8 @@ ActiveRecord::Schema.define(:version => 20120330165112) do
   create_table "papers_publication_referee_jcn", :force => true do |t|
     t.integer  "publication_id", :null => false
     t.integer  "referee_id",     :null => false
-    t.datetime "entry_date",     :null => false
-    t.datetime "modify_date",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "papers_publication_referee_jcn", ["publication_id"], :name => "papers_publication_referee_jcn_publication_id"
