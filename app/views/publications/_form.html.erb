@@ -54,6 +54,29 @@
       <% end %>
     </div>
     <% end %>
+    <% @publication.pub_refs.each_with_index do |s, key| %>
+    <div class="formsection">
+      <%= f.fields_for :pub_refs, s do |g| %>
+        <div class="field">
+        <table>
+          <tr>
+            <td class="lalign">
+              <%= g.label :referee, "Referee ##{key+1}" %>
+            </td>
+            <td class="ralign">
+              <strong><%= "Delete Referee ##{key+1}?" %></strong>
+              <%= g.check_box :_destroy %>
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="field">
+          <%= g.collection_select(:referee_id, Referee.all, :id, :ref_name, {:include_blank => '--'}) %>
+        </div>
+      <% end %>
+    </div>
+    <% end %>
+
   <div class="actions">
     <p><%= f.submit "Update" %></p>
   </div>

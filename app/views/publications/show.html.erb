@@ -1,7 +1,8 @@
 <h2> Publication information for <i><%= @publication.topic %></i> </h2>
 <% unless !user_signed_in? %>
   <%= link_to "Edit this publication", edit_publication_path(@publication) %> |
-  <%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %>
+  <%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %> |
+  <%= link_to "Add a referee to this publication", new_publication_pub_ref_jcn_path(@publication) %>
 <% end %>
 <div class="two_col_form">
   <div class="formsection">
@@ -44,4 +45,19 @@
     </ol>
   <% end %>
   </div>
+  <div class="formsection">
+  <h3> Referee(s) </h3>
+  <% if @publication.referees.count == 0 %>
+    No referees have been added.
+  <% else %>
+    <ol>
+      <% @publication.pub_refs.each_with_index do |s, i| %>
+      <li>
+          <%= s.referee.name %>
+      </li>
+      <% end %>
+    </ol>
+  <% end %>
+  </div>
+
 </div>
