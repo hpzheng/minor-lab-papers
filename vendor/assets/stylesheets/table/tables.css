@@ -6,7 +6,7 @@
 
 /*.field {color: red;}*/
 .ralign {text-align:right;}
-.lalign {text-align:left;}
+.lalign {text-align:left;float:left;font-weight:bold;}
 a:link {text-decoration:none; color:#bb3333;}
 
 .tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even td {background:#ddddcc;}

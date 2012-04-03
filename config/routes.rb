@@ -1,6 +1,11 @@
 Milapa::Application.routes.draw do
 
   devise_for :users
+  
+  resources :authors, :only => [:new, :create]
+  resources :referees, :only => [:new, :create]
+  resources :journals, :only => [:new, :create]
+
   #resources :publications
   #match 'publications/show_status' => 'publications#show_status'
   resources :publications do
