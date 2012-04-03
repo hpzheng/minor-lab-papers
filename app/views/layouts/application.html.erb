@@ -42,10 +42,14 @@
       </div>
       <div id="nav_bar" class="ralign">
         <ul>
+      <% if user_signed_in? %>
           <li><strong>ADD NEW:</strong></li>
-          <li><%= link_to "Author", new_author_path unless !user_signed_in? %></li>
-          <li><%= link_to "Referee", new_referee_path unless !user_signed_in? %></li>
-          <li><%= link_to "Journal", new_journal_path unless !user_signed_in? %></li>
+          <li><%= link_to "Author", new_author_path    %></li>
+          <li><%= link_to "Referee", new_referee_path  %></li>
+          <li><%= link_to "Journal", new_journal_path  %></li>
+      <% else %>
+        <li>&nbsp;</li>
+      <% end %>
         </ul>
       </div>
 
