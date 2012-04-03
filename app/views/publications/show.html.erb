@@ -20,7 +20,7 @@
   <div class="formsection">
   <h3> Target Journal </h3>
     <p>
-      <%= @publication.target_journal.journal_name %>
+      <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
     </p>
   </div>
   <div class="formsection">

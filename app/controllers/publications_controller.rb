@@ -30,9 +30,9 @@ class PublicationsController < ApplicationController
   def create
     @publication = Publication.new(params[:publication])
     if @publication.save
-      redirect_to publication_path(@publication), notice: 'User was successfully created.'
+      redirect_to publication_path(@publication), :notice => 'User was successfully created.'
     else
-      render action: "new"
+      render :action => "new"
     end
   end
 
@@ -40,9 +40,9 @@ class PublicationsController < ApplicationController
     @publication = Publication.find(params[:id])
     @pub_statuses = @publication.pub_statuses
     if @publication.update_attributes(params[:publication])
-      redirect_to publication_path(@publication), notice: 'User was successfully updated.'
+      redirect_to publication_path(@publication), :notice => 'User was successfully updated.'
     else
-       render action: "edit"
+       render :action => "edit"
     end
   end
 

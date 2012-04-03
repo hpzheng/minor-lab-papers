@@ -9,7 +9,7 @@ class Author < ActiveRecord::Base
     if self.lastname.nil? || self.lastname.empty? || self.lastname == " "
       return "#{self.firstname}"
     else
-      return "#{self.firstname.split[0]} #{self.lastname[0]}."
+      return "#{self.firstname.split[0]} #{self.lastname.first}."
     end
   end
 
