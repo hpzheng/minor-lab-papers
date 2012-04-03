@@ -4,6 +4,7 @@
   <title>Minor Lab Papers</title>
   <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <% #stylesheet_link_tag 'application'%>
+  <%= stylesheet_link_tag 'table/nav_bar'%>
   <%= stylesheet_link_tag 'table/text_n_colors'%>
   <%= stylesheet_link_tag 'table/2_col_liquid'%>
   <%= stylesheet_link_tag 'table/tables'%>
@@ -30,14 +31,25 @@
       <div id="header_inner">
         <h1> Minor Lab Papers </h1>
       </div>
+
     </div>
-    <div id="nav">
-      <div id="nav_inner">
+    <div id="header">
+      <div id="nav_bar" class="lalign">
         <ul>
           <li><%= link_to "View All Publications", publications_path %></li>
-          <li><%= link_to "Add New Publication", new_publication_path unless !user_signed_in? %></li>
-        <ul>
+          <li><%= link_to "Add Publication", new_publication_path unless !user_signed_in? %></li>
+        </ul>
       </div>
+      <div id="nav_bar" class="ralign">
+        <ul>
+          <li><strong>ADD NEW:</strong></li>
+          <li><%= link_to "Author", new_author_path unless !user_signed_in? %></li>
+          <li><%= link_to "Referee", new_referee_path unless !user_signed_in? %></li>
+          <li><%= link_to "Journal", new_journal_path unless !user_signed_in? %></li>
+        </ul>
+      </div>
+
+
     </div>
     <div id="content">
       <div id="content_inner">

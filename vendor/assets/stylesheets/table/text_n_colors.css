@@ -17,7 +17,8 @@ body {
 
 /* DEFAULT TAG STYLES - font sizes, margins, padding, etc. */
 /* NOTE: text colors follow below */
-body {background-color:#FFF;}
+/*body {background-color:#FFF;}*/
+body {background-color:#bb3333;}
 #main_wrapper {background-color:#FFF;}
 #header {background-color:#808073;}
 #nav {background-color:#BFBFAC;}
