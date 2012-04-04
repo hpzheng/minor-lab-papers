@@ -44,7 +44,7 @@ class RefereesController < ApplicationController
 
     respond_to do |format|
       if @referee.save
-        format.html { redirect_to @referee, :notice => 'Referee was successfully created.' }
+        format.html { redirect_to publications_path, :notice => 'Referee was successfully created.' }
         format.json { render :json => @referee, :status => :created, :location => @referee }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class RefereesController < ApplicationController
 
     respond_to do |format|
       if @referee.update_attributes(params[:referee])
-        format.html { redirect_to @referee, :notice => 'Referee was successfully updated.' }
+        format.html { redirect_to publications_path, :notice => 'Referee was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render :action => "edit" }
