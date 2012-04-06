@@ -19,6 +19,10 @@ class PubStatusJcn < ActiveRecord::Base
     end
   end
   
+  def status_color
+    self.status.status_clr
+  end
+
   def descr
     if self.description.empty?
       return "--"

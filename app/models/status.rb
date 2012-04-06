@@ -7,4 +7,15 @@ class Status < ActiveRecord::Base
     self.status.gsub("_", " ")
   end
 
+  def status_clr
+    if (self.priority == 0)
+      return "#FFAAAA"
+    elsif (self.priority == 1)
+      return "#FFFFAA"
+    elsif (self.priority == 4)
+      return "#AAFFAA"
+    else
+      return "#FFFFFF"
+    end
+  end
 end

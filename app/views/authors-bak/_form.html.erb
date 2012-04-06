@@ -12,34 +12,26 @@
       </div>
     <% end %>
 
-    <table><tr><td>
     <div class="formsection">
       <%= f.label :firstname %>
       <%= f.text_field :firstname %>
     </div>
-    </td><td>
     <div class="formsection">
       <%= f.label :lastname %>
       <%= f.text_field :lastname %>
     </div>
-    </td><td>
-    <div class="formsection">
-      <%= f.label :phone %>
-      <%= f.text_field :phone, :size => 20  %>
-    </div>
-    </td></tr></table>
-
-    <table><tr><td>
     <div class="formsection">
       <%= f.label :email %>
-      <%= f.text_field :email, :size => 60  %>
+      <%= f.text_field :email %>
     </div>
-    </td><td>
+    <div class="formsection">
+      <%= f.label :phone %>
+      <%= f.text_field :phone %>
+    </div>
     <div class="formsection">
       <%= f.label :skype %>
       <%= f.text_field :skype %>
     </div>
-    </td></tr></table>
 
     <div class="actions">
       <%= f.submit %>
