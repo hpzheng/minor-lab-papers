@@ -28,8 +28,11 @@ class Publication < ActiveRecord::Base
 
   accepted_pubs = %(SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id = 11)
+  waiting_for_w = %(SELECT publication_id FROM papers_publication_status_jcn
+                      WHERE status_id IN (1,9))
   scope :active_publications, where("id NOT IN (#{accepted_pubs})") 
   scope :accepted_publications, where("id IN (#{accepted_pubs})") 
+  scope :waiting_for_wladek, where("id IN (#{waiting_for_w})")
 
   def author_list
     if self.third_author

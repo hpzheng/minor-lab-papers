@@ -9,12 +9,13 @@
 .lalign {text-align:left;float:left;font-weight:bold;}
 a:link {text-decoration:none; color:#bb3333;}
 
+
 /* .tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even tr {background:#ddddcc;} */
 table {width:100%;}
 
-.tic_tac_toe tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
+/*.tic_tac_toe tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
 /* tbody tr:nth-child(even) td.status:hover, tbody tr.even td.status:hover {background:#FFCC99;} */
-.tic_tac_toe tr:hover {background:#FFFF99;}
+/*.tic_tac_toe tr:hover {background:#FFFF99;}*/
 /*td.status:hover {background:#FFCC99;}
 li.status:hover {background:#FFCC99;}*/
 /*.status:hover {background:#FFCC99;}*/
@@ -23,7 +24,8 @@ li.status:hover {background:#FFCC99;}*/
 ul {border:0;margin:0.1em;padding:0;list-style-type: none;}
 
 /*body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
-body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+/*body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
+body {font-size:80%;color:#222;background:#fff;font-family:Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;}
 
 table.basic_lines {
 	width:300px;
@@ -135,3 +137,4 @@ table.tic_tac_toe caption { /* styles for the caption */
 
 /* end sample markup for table CSS above */
 
+h3 + p,ul {margin-left: 3em;}

@@ -7,7 +7,7 @@ Milapa::Application.routes.draw do
   resources :journals, :only => [:new, :create]
 
   #resources :publications
-  #match 'publications/show_status' => 'publications#show_status'
+  match 'publications/urgent_papers' => 'publications#urgent_papers'
   resources :publications do
     resources :pub_status_jcns
     resources :pub_ref_jcns

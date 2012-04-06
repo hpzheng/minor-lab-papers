@@ -4,49 +4,53 @@
   <%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %> |
   <%= link_to "Add a referee to this publication", new_publication_pub_ref_jcn_path(@publication) %>
 <% end %>
-<div class="two_col_form">
-  <div class="formsection">
+  <div class="other">
   <h3> Topic </h3>
     <p>
       <%= @publication.topic %>
-    </p>
+    <p>
   </div>
-  <div class="formsection">
+  <div class="other">
   <h3> Author(s) </h3>
     <p>
       <%= @publication.author_list %>
     </p>
   </div>
-  <div class="formsection">
+  <div class="other">
   <h3> Target Journal </h3>
     <p>
       <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
     </p>
   </div>
-  <div class="formsection">
+  <div class="other">
   <h3> Deadline? </h3>
+    <p>
     <% if @publication.deadline.nil? %>
       No Deadline at this time 
     <% else %>
       <%= "#{@publication.deadline}" %>
     <% end %>
+    </p>
   </div>
-  <div class="formsection">
+  <div class="other">
   <h3> Status(es) </h3>
+  <p>
   <% if @publication.statuses.count == 0 %>
     No statuses at this time.
   <% else %>
-    <ol>
+    <ul>
       <% @publication.pub_statuses.each_with_index do |s, i| %>
       <li>
           <%= s.status_string %><%= "--#{s.description}" unless s.description.empty? %>
       </li>
       <% end %>
-    </ol>
+    </ul>
   <% end %>
+  </p>
   </div>
-  <div class="formsection">
+  <div class="other">
   <h3> Referee(s) </h3>
+  <p>
   <% if @publication.referees.count == 0 %>
     No referees have been added.
   <% else %>
@@ -59,5 +63,5 @@
     </ol>
   <% end %>
   </div>
+  </p>
 
-</div>
