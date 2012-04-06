@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require jquery-ui
 
 $(document).ready(function() {
   $("input[name$='due_date]']").datepicker({ dateFormat: "yy-mm-dd" });
