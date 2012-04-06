@@ -3,8 +3,12 @@ class PublicationsController < ApplicationController
 
   def index
     @publications = Publication.active_publications.all
-    #@publications = Publication.all
   end
+
+  def urgent_papers 
+    @publications = Publication.waiting_for_wladek.all
+  end
+
 
   def edit
     @publication = Publication.find(params[:id])

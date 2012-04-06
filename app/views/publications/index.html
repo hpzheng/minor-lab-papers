@@ -23,7 +23,7 @@
         <% end %>
       </td>
       <td>
-        <table bgcolor="white">
+        <table >
           <% paper.pub_statuses.each do |pub_status| %>
             <tr><td bgcolor="<%= pub_status.status_color %>"><%= link_to pub_status.status_string, publication_pub_status_jcns_path(paper) %></td></tr>
           <% end %>
