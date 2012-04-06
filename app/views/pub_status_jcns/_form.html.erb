@@ -1,20 +1,16 @@
 <%= form_for([@publication,@pub_status]) do |f| %>
-  <table><tr><td>
     <div class="formsection">
+  <table><tr><td>
       <%= f.label :status_id %>
       <%= collection_select(:pub_status_jcn, :status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %>
-    </div>
   </td><td>
-    <div class="formsection">
       <%= f.label :person_responsible %>
       <%= collection_select(:pub_status_jcn, :person_responsible_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
-    </div>
   </td><td>
-    <div class="formsection">
       <%= f.label :due_date %>
-      <%= f.date_select :due_date, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
-    </div>
+      <%= f.text_field :due_date %>
   </td></tr></table>
+    </div>
   <div class="formsection">
     <%= f.label :description %>
     <%= f.text_field :description, :size => 100  %>

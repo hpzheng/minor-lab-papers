@@ -2,6 +2,8 @@ class PubStatusJcn < ActiveRecord::Base
 
   set_primary_key "id"
   set_table_name "papers_publication_status_jcn"
+  
+  attr_accessible :status_id, :due_date, :description, :person_responsible_id
 
   belongs_to :status
   belongs_to :publication

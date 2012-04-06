@@ -7,3 +7,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+  $("input[name$='due_date]']").datepicker({ dateFormat: "yy-mm-dd" });
+  $("input[name$='deadline]']").datepicker({ dateFormat: "yy-mm-dd" });
+});
+
+

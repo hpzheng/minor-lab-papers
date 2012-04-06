@@ -42,6 +42,7 @@
       <div id="nav_bar" class="lalign">
         <ul>
           <li><%= link_to "View All Publications", publications_path %></li>
+          <li><%= link_to "Urgent Publications", publications_urgent_papers_path unless !(current_user.username == "wladek") %></li>
           <li><%= link_to "Add Publication", new_publication_path unless !user_signed_in? %></li>
         </ul>
       </div>

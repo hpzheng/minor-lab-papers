@@ -1,35 +1,29 @@
 <%= form_for(@publication) do |f| %>
-  <table><tr><td>
-    <div class="formsection">
-      <%= f.label :topic %>
-      <%= f.text_field :topic %>
-    </div>
-  </td><td>
-    <div class="formsection">
-      <%= f.label :target_journal %>
-      <%= collection_select(:publication, :target_journal_id, Journal.all, :id, :journal_abbr) %>
-    </div>
-  </td><td>
-    <div class="formsection">
-      <%= f.label :paper_deadline %>
-      <%= f.date_select :deadline, :include_blank => "--", :start_year => 2012, :date_separator => '/' %>
-    </div>
-  </td></tr><tr><td>
-    <div class="formsection">
-      <%= f.label :first_author %>
-      <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name) %>
-    </div>
-  </td><td>
-    <div class="formsection">
-      <%= f.label :second_author %>
-      <%= collection_select(:publication, :second_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
-    </div>
-  </td><td>
-    <div class="formsection">
-      <%= f.label :third_author %>
-      <%= collection_select(:publication, :third_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
-    </div>
-  </tr></table>
+  <div class="formsection">
+    <table><tr><td>
+        <%= f.label :topic %>
+        <%= f.text_field :topic %>
+    </td><td>
+        <%= f.label :target_journal %>
+        <%= collection_select(:publication, :target_journal_id, Journal.all, :id, :journal_abbr) %>
+    </td><td>
+        <%= f.label :paper_deadline %>
+        <%= f.text_field :deadline %>
+    </td></tr></table>
+  </div>
+  <div class="formsection">
+    <table>
+      <tr><td>
+          <%= f.label :first_author %>
+          <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name) %>
+      </td><td>
+          <%= f.label :second_author %>
+          <%= collection_select(:publication, :second_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+      </td><td>
+          <%= f.label :third_author %>
+          <%= collection_select(:publication, :third_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+    </tr></table>
+  </div>
 
     <% @publication.pub_statuses.each_with_index do |s, key| %>
     <div class="formsection">
@@ -55,7 +49,7 @@
         </td><td>
           <div class="field">
             <%= g.label :due_date %>
-            <%= g.date_select :due_date, :include_blank => true, :start_year => 2012, :date_separator => '/' %>
+            <%= g.text_field :due_date %>
           </div>
         </td></tr></table>
         <div class="field">

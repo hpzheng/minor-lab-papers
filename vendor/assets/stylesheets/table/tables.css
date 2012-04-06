@@ -23,7 +23,8 @@ li.status:hover {background:#FFCC99;}*/
 ul {border:0;margin:0.1em;padding:0;list-style-type: none;}
 
 /*body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
-body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+/*body {font-size:80%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}*/
+body {font-size:80%;color:#222;background:#fff;font-family:Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;}
 
 table.basic_lines {
 	width:300px;
