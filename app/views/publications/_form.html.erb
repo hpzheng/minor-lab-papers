@@ -5,7 +5,7 @@
         <%= f.text_field :topic %>
     </td><td>
         <%= f.label :target_journal %>
-        <%= collection_select(:publication, :target_journal_id, Journal.all, :id, :journal_abbr) %>
+        <%= collection_select(:publication, :target_journal_id, Journal.all, :id, :journal_abbr, {:include_blank => '--'}) %>
     </td><td>
         <%= f.label :paper_deadline %>
         <%= f.text_field :deadline %>
@@ -15,7 +15,7 @@
     <table>
       <tr><td>
           <%= f.label :first_author %>
-          <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name) %>
+          <%= collection_select(:publication, :first_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
       </td><td>
           <%= f.label :second_author %>
           <%= collection_select(:publication, :second_author_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
@@ -83,6 +83,6 @@
     <% end %>
 
   <div class="actions">
-    <p><%= f.submit "Update" %></p>
+    <p><%= f.submit "Submit" %></p>
   </div>
 <% end %>

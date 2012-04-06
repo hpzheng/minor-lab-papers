@@ -6,7 +6,11 @@
   <th>Referee(s)</th>
   <th>Deadline</th>
   <% @publications.each do |paper| %>
-    <tr onclick="location.href='<%= edit_publication_path(paper) %>'">
+    <% if user_signed_in? %>
+      <tr onclick="location.href='<%= edit_publication_path(paper) %>'">
+    <% else %>
+      <tr onclick="location.href='<%= publication_path(paper) %>'">
+    <% end %>
       <td>
         <%= paper.topic %>
       </td>

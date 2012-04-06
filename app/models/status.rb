@@ -15,7 +15,8 @@ class Status < ActiveRecord::Base
     elsif (self.priority == 4)
       return "#AAFFAA"
     else
-      return "#FFFFFF"
+      #return "#FFFFFF"
+      return "#ffffe6"
     end
   end
 end

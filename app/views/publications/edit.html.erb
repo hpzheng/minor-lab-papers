@@ -1,7 +1,8 @@
 <h1> Edit Publication <i><%= @publication.topic %></i> </h1>
 
 <%= link_to "Back to Publication", publication_path(@publication) %> |
-<%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %>
+<%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %> |
+<%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %>
 
 <div class="two_col_form">
 <%= render 'form' %>
