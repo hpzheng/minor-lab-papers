@@ -34,6 +34,11 @@ class Publication < ActiveRecord::Base
   scope :accepted_publications, where("id IN (#{accepted_pubs})") 
   scope :waiting_for_wladek, where("id IN (#{waiting_for_w})")
 
+  validates :topic, :presence => true
+  validates :target_journal, :presence => true
+  validates :first_author, :presence => true
+  validates :deadline, :presence => true
+
   def author_list
     if self.third_author
       return "#{self.first_author.auth_name}, #{self.second_author.auth_name} and #{self.third_author.auth_name}"

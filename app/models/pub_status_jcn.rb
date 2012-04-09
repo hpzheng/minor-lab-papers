@@ -10,6 +10,9 @@ class PubStatusJcn < ActiveRecord::Base
   belongs_to :person_responsible,
              :class_name => "Author"
 
+  validates :status_id, :presence => true
+
+
   def status_string
     status_str = self.status.status_str
     if self.person_responsible_id and status_str[-2,2] == "by"

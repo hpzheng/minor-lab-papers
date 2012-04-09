@@ -1,4 +1,17 @@
 <%= form_for([@publication,@pub_status]) do |f| %>
+  <% if @pub_status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pub_status.errors.count, "error") %> 
+          prohibited this status from being saved:</h2>
+      <p>There were problems with the following fields:</p>
+      <ul>
+      <% @pub_status.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
     <div class="formsection">
   <table><tr><td>
       <%= f.label :status_id %>
