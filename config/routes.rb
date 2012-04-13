@@ -1,5 +1,7 @@
 Milapa::Application.routes.draw do
 
+  resources :publication_attachments
+
   devise_for :users
   
   resources :authors, :only => [:new, :create]

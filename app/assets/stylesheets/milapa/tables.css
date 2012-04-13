@@ -137,4 +137,4 @@ table.tic_tac_toe caption { /* styles for the caption */
 
 /* end sample markup for table CSS above */
 
-h3 + p,ul {margin-left: 3em;}
+h3 + p,ul,ol {margin-left: 3em;}
