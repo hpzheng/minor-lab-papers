@@ -7,7 +7,8 @@ class Referee < ActiveRecord::Base
 
   validates :firstname, :presence => true
   validates :lastname, :presence => true
-  validates :email, :presence => true
+  validates :email, :presence => true,
+            :uniqueness => true
   validates :organization, :presence => true
 
 
