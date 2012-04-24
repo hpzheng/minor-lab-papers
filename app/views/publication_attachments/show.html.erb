@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Attachment:</b>
+  <%= @publication_attachment.attachment %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @publication_attachment.version %>
+</p>
+
+<p>
+  <b>Publication:</b>
+  <%= @publication_attachment.publication_id %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @publication_attachment.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_publication_attachment_path(@publication_attachment) %> |
+<%= link_to 'Back', publication_attachments_path %>

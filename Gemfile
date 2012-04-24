@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem "carrierwave"
+
 gem 'yaml_db'
 
 gem 'devise', '2.0'

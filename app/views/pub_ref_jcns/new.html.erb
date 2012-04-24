@@ -4,7 +4,7 @@
 <%= form_for([@publication,@pub_ref]) do |f| %>
   <div class="formsection">
     <%= f.label :referee %>
-    <%= collection_select(:pub_ref_jcn, :referee_id, Referee.all, :id, :name, {:include_blank => '--'}) %>
+    <%= collection_select(:pub_ref_jcn, :referee_id, Referee.all, :id, :ref_name, {:include_blank => '--'}) %>
   </div>
   <div class="actions">
     <p><%= f.submit "Update" %></p>

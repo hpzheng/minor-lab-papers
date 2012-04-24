@@ -66,7 +66,7 @@
         </td></tr></table>
         <div class="field">
           <%= g.label :description %>
-          <%= g.text_area :description, :size => "30x10" %>
+          <%= g.text_field :description, :size => 75 %>
         </div>
       <% end %>
     </div>
@@ -90,6 +90,41 @@
         <div class="field">
           <%= g.collection_select(:referee_id, Referee.all, :id, :ref_name, {:include_blank => '--'}) %>
         </div>
+      <% end %>
+    </div>
+    <% end %>
+
+    <% @publication.attachments.each_with_index do |s, key| %>
+    <div class="formsection">
+      <%= f.fields_for :attachments, s do |g| %>
+        <div class="field">
+        <table>
+          <tr>
+            <td class="lalign">
+              <%= g.label :attachment, "Attachment ##{key+1}" %>
+            </td>
+            <td class="ralign">
+              <strong><%= "Delete attachment ##{key+1}?" %></strong>
+              <%= g.check_box :_destroy %><br />
+            </td>
+          </tr>
+        </table>
+        </div>
+        <div class="field">
+        <div class="lalign">
+          <strong><%= "#{s.file_name}"  %></strong>
+          <%= g.file_field :attachment, :disable => true %>
+        </div>
+        <div class="ralign">
+          <strong>version</strong>
+          <%= g.number_field :version, :min => 0 %>
+        </div>
+        </div>
+        <div class="field">
+          <%= g.label :comment %>
+          <%= g.text_field :comment, :size => 70 %>
+        </div>
+
       <% end %>
     </div>
     <% end %>

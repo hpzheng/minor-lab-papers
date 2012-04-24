@@ -4,7 +4,6 @@
   <title>Minor Lab Papers</title>
   <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
   <% #stylesheet_link_tag 'application'%>
-  <%= stylesheet_link_tag 'milapa/nav_bar'%>
   <%= stylesheet_link_tag 'milapa/text_n_colors'%>
   <%= stylesheet_link_tag 'milapa/2_col_liquid'%>
   <% #stylesheet_link_tag 'table/3_col_liquid'%>
@@ -13,6 +12,7 @@
   <%= stylesheet_link_tag 'milapa/tables'%>
   <%= stylesheet_link_tag 'milapa/form_labels_above'%>
   <%= stylesheet_link_tag "milapa/errors" %>
+  <%= stylesheet_link_tag 'milapa/nav_bar'%>
   <%= stylesheet_link_tag "milapa/jquery-ui-milapa" %>
   <%= javascript_include_tag "jquery-1.7.1.min.js", "jquery-ui-1.8.18.custom.min.js", "application" %>
   <%= csrf_meta_tags %>
@@ -44,6 +44,7 @@
         <ul>
           <li><%= link_to "View All Publications", publications_path %></li>
         <% if user_signed_in? %>
+          <li><%= link_to "View Accepted Publications", publications_accepted_papers_path %></li>
           <li><%= link_to "Urgent Publications", publications_urgent_papers_path unless !(current_user.username == "wladek") %></li>
         <% end %>
           <li><%= link_to "Add Publication", new_publication_path unless !user_signed_in? %></li>

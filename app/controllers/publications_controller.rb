@@ -9,6 +9,9 @@ class PublicationsController < ApplicationController
     @publications = Publication.waiting_for_wladek.all
   end
 
+  def accepted_papers 
+    @publications = Publication.accepted_publications.all
+  end
 
   def edit
     @publication = Publication.find(params[:id])

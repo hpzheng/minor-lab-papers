@@ -7,7 +7,7 @@
 /*.field {color: red;}*/
 .ralign {text-align:right;}
 .lalign {text-align:left;float:left;font-weight:bold;}
-a:link {text-decoration:none; color:#bb3333;}
+a:link, a:visited {text-decoration:none; color:#bb3333;}
 
 
 /* .tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even tr {background:#ddddcc;} */
@@ -137,4 +137,11 @@ table.tic_tac_toe caption { /* styles for the caption */
 
 /* end sample markup for table CSS above */
 
-h3 + p,ul {margin-left: 3em;}
+h3 + p,ul,ol {margin-left: 3em;}
+td {vertical-align: top;}
+#show_table td { padding: 0.5em;}
+#show_table tr { border-bottom: 1px solid gray;}
+#show_table td  ol, ul {padding: 0em; margin-left: 1em;}
+#show_table ul {list-style-type: square;}
+input[type="text"] {border: 1px solid gray;}
+input[type="text"]:focus {border: 1px solid red;}
