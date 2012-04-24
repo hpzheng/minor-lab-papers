@@ -1,4 +1,5 @@
 <table class="tic_tac_toe">
+  <th>&nbsp;</th>
   <th>Topic</th>
   <th>Authors</th>
   <th>Journal</th>
@@ -7,10 +8,16 @@
   <th>Deadline</th>
   <% @publications.each do |paper| %>
     <% if user_signed_in? %>
-      <tr onclick="location.href='<%= edit_publication_path(paper) %>'">
+      <tr onclick="location.href='<%= publication_path(paper) %>'">
     <% else %>
       <tr onclick="location.href='<%= publication_path(paper) %>'">
     <% end %>
+      <td>
+        <% unless paper.attachments.empty? %>
+          <% attch = image_tag("attachment.png", :height => '20', :width => '20') %>
+          <%= link_to attch, publication_publication_attachments_path(paper) %>
+        <% end %>
+      </td>
       <td>
         <%= paper.topic %>
       </td>
@@ -35,7 +42,7 @@
         <ul>
           <% paper.referees.each do |ref| %>
             <li>
-              <%= ref.ref_name %>
+              <%= ref.name %>
             </li>
           <% end %>
         </ul>

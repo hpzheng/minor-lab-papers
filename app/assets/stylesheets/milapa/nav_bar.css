@@ -10,7 +10,7 @@ padding-bottom:6px;
 {
 display:inline;
 }
-#nav_bar a:link,a:visited
+#nav_bar a:link, #nav_bar a:visited
 {
 /*font-weight:bold;*/
 color:black;
@@ -23,7 +23,7 @@ border-top:1px solid black;
 text-decoration:none;
 text-transform:uppercase;
 }
-#nav_bar a:hover,a:active
+#nav_bar a:hover, #nav_bar a:active
 {
 background-color:#bb7070;
 }
