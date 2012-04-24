@@ -49,6 +49,7 @@ class PublicationAttachmentsController < ApplicationController
 
     respond_to do |format|
       if @publication_attachment.save
+        @publication.touch
         format.html { redirect_to @publication_attachment, :notice => 'Publication attachment was successfully created.' }
         format.json { render :json => @publication_attachment, :status => :created, :location => @publication_attachment }
       else
@@ -62,7 +63,6 @@ class PublicationAttachmentsController < ApplicationController
   # PUT /publication_attachments/1.json
   def update
     @publication_attachment = PublicationAttachment.find(params[:id])
-
     respond_to do |format|
       if @publication_attachment.update_attributes(params[:publication_attachment])
         format.html { redirect_to @publication_attachment, :notice => 'Publication attachment was successfully updated.' }
