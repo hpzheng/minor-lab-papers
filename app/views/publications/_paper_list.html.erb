@@ -14,8 +14,8 @@
     <% end %>
       <td>
         <% unless paper.attachments.empty? %>
-          <% attch = image_tag("attachment.png", :height => '20', :width => '20') %>
-          <%= link_to attch, publication_publication_attachments_path(paper) %>
+          <%=  attch = image_tag("attachment.png", :height => '20', :width => '20') %>
+          <% #link_to attch, publication_publication_attachments_path(paper) %>
         <% end %>
       </td>
       <td>

@@ -1,8 +1,9 @@
 <h2> Publication information for <i><%= @publication.topic %></i> </h2>
 <% unless !user_signed_in? %>
   <%= link_to "Edit this publication", edit_publication_path(@publication) %> |
-  <%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %> |
-  <%= link_to "Add a referee to this publication", new_publication_pub_ref_jcn_path(@publication) %>
+  <%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %> |
+  <%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %> |
+  <%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %>
 <% end %>
 <table id="show_table">
   <tr>
