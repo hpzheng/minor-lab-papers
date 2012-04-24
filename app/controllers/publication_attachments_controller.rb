@@ -50,7 +50,7 @@ class PublicationAttachmentsController < ApplicationController
     respond_to do |format|
       if @publication_attachment.save
         @publication.touch
-        format.html { redirect_to @publication_attachment, :notice => 'Publication attachment was successfully created.' }
+        format.html { redirect_to @publication, :notice => 'Publication attachment was successfully created.' }
         format.json { render :json => @publication_attachment, :status => :created, :location => @publication_attachment }
       else
         format.html { render :action => "new" }
