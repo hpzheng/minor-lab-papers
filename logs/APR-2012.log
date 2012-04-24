@@ -1745,3 +1745,881 @@ current_monthAPR-2012firstnameRachellastnameVigourperson_id30days_passed125repor
 current_monthAPR-2012firstnameMatthew D.lastnameZimmermanperson_id32days_passed110report_freq_stronce_a_weeknext_date2012-04-24pastdue_freq2emailmatt@iwonka.med.virginia.educurrent_timeTue, 17 Apr 2012 03:03:01 -0500report_freq7
 
 --Matthew D. Zimmerman does not need a report
+==================== log message for Wed, 18 Apr 2012 03:03:01 -0500 ====================
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameChruszczreport_freq7person_id8current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed104emailmaks@iwonka.med.virginia.edufirstnameMaksymiliancurrent_monthAPR-2012pastdue_freq2
+
+--Maksymilian Chruszcz does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameCymborowskireport_freq7person_id10current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailmarcel@iwonka.med.virginia.edufirstnameMarcincurrent_monthAPR-2012pastdue_freq2
+
+--Marcin Cymborowski does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameFratczakreport_freq7person_id14current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailzbigniew_f@iwonka.med.virginia.edufirstnameZbigniewcurrent_monthAPR-2012pastdue_freq2
+
+--Zbigniew Fratczak does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameGrabowskireport_freq7person_id15current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailmarek@iwonka.med.virginia.edufirstnameMarekcurrent_monthAPR-2012pastdue_freq2
+
+--Marek Grabowski does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameMacLeanreport_freq7person_id18current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailbeth_m@iwonka.med.virginia.edufirstnameElizabethcurrent_monthAPR-2012pastdue_freq2
+
+--Elizabeth MacLean does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameMilaczewskareport_freq7person_id21current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailania_m@iwonka.med.virginia.edufirstnameAniacurrent_monthAPR-2012pastdue_freq2
+
+--Ania Milaczewska does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameOsinskireport_freq7person_id23current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed104emailtomek_o@iwonka.med.virginia.edufirstnameTomaszcurrent_monthAPR-2012pastdue_freq2
+
+--Tomasz Osinski does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnamePetkowskireport_freq7person_id24current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailjanusz@iwonka.med.virginia.edufirstnameJanuszcurrent_monthAPR-2012pastdue_freq2
+
+--Janusz Petkowski does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnamePorebskireport_freq7person_id25current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed104emailprzemek@iwonka.med.virginia.edufirstnamePrzemekcurrent_monthAPR-2012pastdue_freq2
+
+--Przemek Porebski does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameVigourreport_freq7person_id30current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed126emailrachel_v@iwonka.med.virginia.edufirstnameRachelcurrent_monthAPR-2012pastdue_freq2
+
+--Rachel Vigour does not need a report
+
+next_date2012-04-25report_freq_stronce_a_weeklastnameZimmermanreport_freq7person_id32current_timeWed, 18 Apr 2012 03:03:01 -0500days_passed111emailmatt@iwonka.med.virginia.edufirstnameMatthew D.current_monthAPR-2012pastdue_freq2
+
+--Matthew D. Zimmerman does not need a report
+==================== log message for Thu, 19 Apr 2012 03:03:01 -0500 ====================
+
+lastnameChruszczperson_id8next_date2012-04-26days_passed105report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailmaks@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameMaksymilian
+
+--Maksymilian Chruszcz does not need a report
+
+lastnameCymborowskiperson_id10next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailmarcel@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameMarcin
+
+--Marcin Cymborowski does not need a report
+
+lastnameFratczakperson_id14next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailzbigniew_f@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameZbigniew
+
+--Zbigniew Fratczak does not need a report
+
+lastnameGrabowskiperson_id15next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailmarek@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameMarek
+
+--Marek Grabowski does not need a report
+
+lastnameMacLeanperson_id18next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailbeth_m@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameElizabeth
+
+--Elizabeth MacLean does not need a report
+
+lastnameMilaczewskaperson_id21next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailania_m@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameAnia
+
+--Ania Milaczewska does not need a report
+
+lastnameOsinskiperson_id23next_date2012-04-26days_passed105report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailtomek_o@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameTomasz
+
+--Tomasz Osinski does not need a report
+
+lastnamePetkowskiperson_id24next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailjanusz@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameJanusz
+
+--Janusz Petkowski does not need a report
+
+lastnamePorebskiperson_id25next_date2012-04-26days_passed105report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailprzemek@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnamePrzemek
+
+--Przemek Porebski does not need a report
+
+lastnameVigourperson_id30next_date2012-04-26days_passed127report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailrachel_v@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameRachel
+
+--Rachel Vigour does not need a report
+
+lastnameZimmermanperson_id32next_date2012-04-26days_passed112report_freq_stronce_a_weekcurrent_timeThu, 19 Apr 2012 03:03:01 -0500report_freq7emailmatt@iwonka.med.virginia.educurrent_monthAPR-2012pastdue_freq2firstnameMatthew D.
+
+--Matthew D. Zimmerman does not need a report
+==================== log message for Fri, 20 Apr 2012 03:03:01 -0500 ====================
+
+report_freq_stronce_a_weekfirstnameKarolinadays_passed7pastdue_freq2lastnameTkaczuknext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id3current_monthAPR-2012emailkarolina@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Karolina Tkaczuk <karolina@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Tkaczuk,<br>
+<br>
+ Was there any progress on manuscripts recently? We haven't heard from you for an entire month.<br>
+<br>
+  You have four active manuscripts that need your attention, including:<br>
+  - the Universal stress proteins manuscript that is still under preparation,<br>
+  - the APC7623 manuscript that has been submitted and awaits a decision from the editorial office,<br>
+  - the Anthrax proteins manuscript that is still under preparation,<br>
+  - the Ferro manuscript that is still under preparation.<br>
+<br>
+  For Universal stress proteins manuscript, you have been preparing the data for 65 days. You are 55 days past the expected due date for thephylogenetic analysis data. Please finish the data as soon as possible. Or if you will need more time for data preparation, please update the due date accordingly in the database.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to karolina@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameMattdays_passed7pastdue_freq2lastnameDemasnext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id5current_monthAPR-2012emailmatt_d@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Matt Demas <matt_d@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Demas,<br>
+<br>
+ Was there any progress on manuscripts recently? We haven't heard from you for an entire month.<br>
+<br>
+  For metal-benchmark manuscript, you have been preparing the data for 83 days. You are 51 days past the expected due date for theinteractive p-value plots data. Please finish the data as soon as possible. Or if you will need more time for data preparation, please update the due date accordingly in the database.<br>
+<br>
+  For IDP00698 manuscript, you have been preparing the data for 127 days. You are 101 days past the expected due date for the data. Please finish the data as soon as possible. Or if you will need more time for data preparation, please update the due date accordingly in the database.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to matt_d@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameJacekdays_passed7pastdue_freq2lastnameBajornext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id6current_monthAPR-2012emailjacek_b@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Jacek Bajor <jacek_b@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Bajor,<br>
+<br>
+ Was there any progress on manuscripts recently? We haven't heard from you for an entire month.<br>
+<br>
+  You have one active manuscript that will need your attention -- the APC41385.0 manuscript that is waiting for Wladek to submit.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to jacek_b@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameMaksymiliandays_passed106pastdue_freq2lastnameChruszcznext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id8current_monthAPR-2012emailmaks@iwonka.med.virginia.edu
+
+--Maksymilian Chruszcz does not need a report
+
+report_freq_stronce_a_weekfirstnameMarcindays_passed128pastdue_freq2lastnameCymborowskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id10current_monthAPR-2012emailmarcel@iwonka.med.virginia.edu
+
+--Marcin Cymborowski does not need a report
+
+report_freq_stronce_a_weekfirstnameZbigniewdays_passed128pastdue_freq2lastnameFratczaknext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id14current_monthAPR-2012emailzbigniew_f@iwonka.med.virginia.edu
+
+--Zbigniew Fratczak does not need a report
+
+report_freq_stronce_a_weekfirstnameMarekdays_passed128pastdue_freq2lastnameGrabowskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id15current_monthAPR-2012emailmarek@iwonka.med.virginia.edu
+
+--Marek Grabowski does not need a report
+
+report_freq_stronce_a_weekfirstnameJingdays_passed7pastdue_freq2lastnameHounext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id16current_monthAPR-2012emailhoujing@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Jing Hou <houjing@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Hou,<br>
+<br>
+  Thanks for all the quality work during the past week.<br>
+<br>
+  You have two active manuscripts that need your attention, including:<br>
+  - the IDP90557 manuscript that is still under preparation,<br>
+  - the IDP02573 manuscript that has been submitted and awaits a decision from the editorial office.<br>
+<br>
+  You are expected to update the text for IDP90557 manuscript within the next 22 days.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to houjing@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameElizabethdays_passed128pastdue_freq2lastnameMacLeannext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id18current_monthAPR-2012emailbeth_m@iwonka.med.virginia.edu
+
+--Elizabeth MacLean does not need a report
+
+report_freq_stronce_a_weekfirstnameKarolinadays_passed7pastdue_freq2lastnameMajoreknext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id19current_monthAPR-2012emailkarolina_m@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Karolina Majorek <karolina_m@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Majorek,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have one active manuscript that will need your attention -- the Albumins manuscript that has been submitted and awaits a decision from the editorial office.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to karolina_m@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameKatarzynadays_passed7pastdue_freq2lastnameMikolajczaknext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id20current_monthAPR-2012emailkasia_m@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Katarzyna Mikolajczak <kasia_m@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Mikolajczak,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have one active manuscript that will need your attention -- the APC65312.2 manuscript that is waiting for Wladek to submit.<br>
+<br>
+  For Ferro manuscript, you have been preparing the data for 16 days. There are still 11 more days for  data to be prepared.<br>
+<br>
+  For IDP00203 manuscript, you have been preparing the data for 13 days. <b>TODAY</b> is the last day you need to have the bioinformatics data prepared. Please get it done in a timely manner.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to kasia_m@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameAniadays_passed128pastdue_freq2lastnameMilaczewskanext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id21current_monthAPR-2012emailania_m@iwonka.med.virginia.edu
+
+--Ania Milaczewska does not need a report
+
+report_freq_stronce_a_weekfirstnameEwadays_passed7pastdue_freq2lastnameNiedzialkowskanext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id22current_monthAPR-2012emailewa_n@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Ewa Niedzialkowska <ewa_n@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Niedzialkowska,<br>
+<br>
+ Was there any progress on manuscripts recently? We haven't heard from you for an entire month.<br>
+<br>
+  You have one active manuscript that will need your attention -- the IDP04323 manuscript that is waiting for special instruction.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to ewa_n@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameTomaszdays_passed106pastdue_freq2lastnameOsinskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id23current_monthAPR-2012emailtomek_o@iwonka.med.virginia.edu
+
+--Tomasz Osinski does not need a report
+
+report_freq_stronce_a_weekfirstnameJanuszdays_passed128pastdue_freq2lastnamePetkowskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id24current_monthAPR-2012emailjanusz@iwonka.med.virginia.edu
+
+--Janusz Petkowski does not need a report
+
+report_freq_stronce_a_weekfirstnamePrzemekdays_passed106pastdue_freq2lastnamePorebskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id25current_monthAPR-2012emailprzemek@iwonka.med.virginia.edu
+
+--Przemek Porebski does not need a report
+
+report_freq_stronce_a_weekfirstnameRobdays_passed7pastdue_freq2lastnameSolbergnext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id28current_monthAPR-2012emailrob_s@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Rob Solberg <rob_s@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Solberg,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have one active manuscript that will need your attention -- the IDP00203 manuscript that is still under preparation.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to rob_s@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameRacheldays_passed128pastdue_freq2lastnameVigournext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id30current_monthAPR-2012emailrachel_v@iwonka.med.virginia.edu
+
+--Rachel Vigour does not need a report
+
+report_freq_stronce_a_weekfirstnameDavid R.days_passed7pastdue_freq2lastnameCoopernext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id9current_monthAPR-2012emaildcoop@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: David R. Cooper <dcoop@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Cooper,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  For Anthrax proteins manuscript, you have been preparing the data for ten days. You are three days past the expected due date for the data. Please finish the data as soon as possible. Or if you will need more time for data preparation, please update the due date accordingly in the database.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to dcoop@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameMahendra D.days_passed7pastdue_freq2lastnameChordianext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id7current_monthAPR-2012emailmahendra@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Mahendra D. Chordia <mahendra@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Chordia,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You are expected to update the text for SLLP1 manuscript within the next seven days.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to mahendra@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameIgor A.days_passed7pastdue_freq2lastnameShumilinnext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id27current_monthAPR-2012emailigor@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Igor A. Shumilin <igor@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Shumilin,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have one active manuscript that will need your attention -- the "cocktails" manuscript that is waiting for special instruction.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to igor@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameIvan G.days_passed7pastdue_freq2lastnameShabalinnext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id26current_monthAPR-2012emailivan_s@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Ivan G. Shabalin <ivan_s@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Shabalin,<br>
+<br>
+  Thanks for all the quality work during the past week.<br>
+<br>
+  You have one active manuscript that will need your attention -- the IDP90828 manuscript that has been submitted and awaits a decision from the editorial office.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to ivan_s@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameAleksandra A.days_passed7pastdue_freq2lastnameKnapiknext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id17current_monthAPR-2012emailaleksandra@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Aleksandra A. Knapik <aleksandra@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Knapik,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have three active manuscripts that need your attention, including:<br>
+  - the RutD manuscript that has been submitted and awaits a decision from the editorial office,<br>
+  - the RutC manuscript that is waiting for Wladek to submit,<br>
+  - the IDP00698 manuscript that is still under preparation.<br>
+<br>
+  You are expected to update the text for IDP00698 manuscript -101 days ago.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to aleksandra@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameWladekdays_passed7pastdue_freq2lastnameMinornext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id42current_monthAPR-2012emailwladek@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Wladek Minor <wladek@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Minor,<br>
+<br>
+ Was there any progress on manuscripts preparation at all? We haven't heard from you for an entire month.<br>
+<br>
+  In addition, you have several manuscripts that are ready for submission but you haven't submitted them yet<br>
+1. APC41385.0 manuscript prepared by Jacek Bajor for journal <a href="http://journals.iucr.org/f/services/authorservices.html">Acta Cryst. F</a> was ready since 108 days ago but no submission was reported<br>
+2. APC65312.2 manuscript prepared by Katarzyna Mikolajczak for journal <a href="http://journals.iucr.org/f/services/authorservices.html">Acta Cryst. F</a> was ready since 107 days ago but no submission was reported<br>
+3. RutC manuscript prepared by Aleksandra A. Knapik for journal <a href="http://journals.iucr.org/f/services/authorservices.html">Acta Cryst. F</a> was ready since 107 days ago but no submission was reported<br>
+<br>
+  CMM manuscript by Heping Zheng is waiting for you to Send Email to George Sheldrick and Peter Muller<br>
+  CMM manuscript by Heping Zheng is waiting for you to Forward Email for 3lrk re-refinement to Heping<br>
+<br>
+  There are two other manuscripts that are waiting for your input. After you finish submitting all these read-to-submit manuscripts, the manuscript preparation database will also remind you about these other manuscripts that are waiting for your response. Please look into manuscript preparation database for more details: (http://zenobi-vpn/milapa/)<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort resolving all ready-to-go manuscripts in a timely manner,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to wladek@iwonka.med.virginia.edu
+
+report_freq_stronce_a_weekfirstnameMatthew D.days_passed113pastdue_freq2lastnameZimmermannext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id32current_monthAPR-2012emailmatt@iwonka.med.virginia.edu
+
+--Matthew D. Zimmerman does not need a report
+
+report_freq_stronce_a_weekfirstnameMarcindays_passed7pastdue_freq2lastnameDomagalskinext_date2012-04-27current_timeFri, 20 Apr 2012 03:03:01 -0500report_freq7person_id12current_monthAPR-2012emailmarcin_d@iwonka.med.virginia.edu
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Marcin Domagalski <marcin_d@iwonka.med.virginia.edu>
+Date: Fri, 20 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Domagalski,<br>
+<br>
+ Was there any progress on manuscripts recently? We haven't heard from you for an entire month.<br>
+<br>
+  You have one active manuscript that will need your attention -- the IDP01205 manuscript that is still under preparation.<br>
+<br>
+  You are expected to update the text for IDP01205 manuscript -101 days ago.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-04-27. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to marcin_d@iwonka.med.virginia.edu
+==================== log message for Sat, 21 Apr 2012 03:03:01 -0500 ====================
+
+pastdue_freq2next_date2012-04-28emailmaks@iwonka.med.virginia.edufirstnameMaksymilianperson_id8current_monthAPR-2012days_passed107lastnameChruszczreport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Maksymilian Chruszcz does not need a report
+
+pastdue_freq2next_date2012-04-28emailmarcel@iwonka.med.virginia.edufirstnameMarcinperson_id10current_monthAPR-2012days_passed129lastnameCymborowskireport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Marcin Cymborowski does not need a report
+
+pastdue_freq2next_date2012-04-28emailzbigniew_f@iwonka.med.virginia.edufirstnameZbigniewperson_id14current_monthAPR-2012days_passed129lastnameFratczakreport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Zbigniew Fratczak does not need a report
+
+pastdue_freq2next_date2012-04-28emailmarek@iwonka.med.virginia.edufirstnameMarekperson_id15current_monthAPR-2012days_passed129lastnameGrabowskireport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Marek Grabowski does not need a report
+
+pastdue_freq2next_date2012-04-28emailbeth_m@iwonka.med.virginia.edufirstnameElizabethperson_id18current_monthAPR-2012days_passed129lastnameMacLeanreport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Elizabeth MacLean does not need a report
+
+pastdue_freq2next_date2012-04-28emailania_m@iwonka.med.virginia.edufirstnameAniaperson_id21current_monthAPR-2012days_passed129lastnameMilaczewskareport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Ania Milaczewska does not need a report
+
+pastdue_freq2next_date2012-04-28emailtomek_o@iwonka.med.virginia.edufirstnameTomaszperson_id23current_monthAPR-2012days_passed107lastnameOsinskireport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Tomasz Osinski does not need a report
+
+pastdue_freq2next_date2012-04-28emailjanusz@iwonka.med.virginia.edufirstnameJanuszperson_id24current_monthAPR-2012days_passed129lastnamePetkowskireport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Janusz Petkowski does not need a report
+
+pastdue_freq2next_date2012-04-28emailprzemek@iwonka.med.virginia.edufirstnamePrzemekperson_id25current_monthAPR-2012days_passed107lastnamePorebskireport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Przemek Porebski does not need a report
+
+pastdue_freq2next_date2012-04-28emailrachel_v@iwonka.med.virginia.edufirstnameRachelperson_id30current_monthAPR-2012days_passed129lastnameVigourreport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Rachel Vigour does not need a report
+
+pastdue_freq2next_date2012-04-26emaildust@iwonka.med.virginia.edufirstnameHepingperson_id1current_monthAPR-2012days_passed5lastnameZhengreport_freq_stronce_every_five_dayscurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq5
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Heping Zheng <dust@iwonka.med.virginia.edu>
+Date: Sat, 21 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Zheng,<br>
+<br>
+  Was there any progress on manuscripts during the past week? We appreciate if you could spend a little more time to avoid facing exactly the same report next week.<br>
+<br>
+  You have five active manuscripts that need your attention, including:<br>
+  - the glycoprotein manuscript that is still under preparation,<br>
+  - the CMM manuscript that is waiting for Wladek's response,<br>
+  - the SLLP1 manuscript that is still under preparation,<br>
+  - the metal-benchmark manuscript that is still under preparation,<br>
+  - the BVparam in organic compounds manuscript that is still under preparation.<br>
+<br>
+  For glycoprotein manuscript, you have been preparing the data for 19 days. There is only one days left for you to prepare the  data. We hope you can get those data by the due date on 2012-04-22.<br>
+<br>
+  You are also expected to update the text for BVparam in organic compounds manuscript -1 days ago.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once every five days. Next report will be delivered to your Email on 2012-04-26. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to dust@iwonka.med.virginia.edu
+
+pastdue_freq2next_date2012-04-28emailmatt@iwonka.med.virginia.edufirstnameMatthew D.person_id32current_monthAPR-2012days_passed114lastnameZimmermanreport_freq_stronce_a_weekcurrent_timeSat, 21 Apr 2012 03:03:01 -0500report_freq7
+
+--Matthew D. Zimmerman does not need a report
+==================== log message for Sun, 22 Apr 2012 03:03:01 -0500 ====================
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameChruszczdays_passed108report_freq7emailmaks@iwonka.med.virginia.edupastdue_freq2person_id8current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameMaksymilian
+
+--Maksymilian Chruszcz does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameCymborowskidays_passed130report_freq7emailmarcel@iwonka.med.virginia.edupastdue_freq2person_id10current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameMarcin
+
+--Marcin Cymborowski does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameFratczakdays_passed130report_freq7emailzbigniew_f@iwonka.med.virginia.edupastdue_freq2person_id14current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameZbigniew
+
+--Zbigniew Fratczak does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameGrabowskidays_passed130report_freq7emailmarek@iwonka.med.virginia.edupastdue_freq2person_id15current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameMarek
+
+--Marek Grabowski does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameMacLeandays_passed130report_freq7emailbeth_m@iwonka.med.virginia.edupastdue_freq2person_id18current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameElizabeth
+
+--Elizabeth MacLean does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameMilaczewskadays_passed130report_freq7emailania_m@iwonka.med.virginia.edupastdue_freq2person_id21current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameAnia
+
+--Ania Milaczewska does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameOsinskidays_passed108report_freq7emailtomek_o@iwonka.med.virginia.edupastdue_freq2person_id23current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameTomasz
+
+--Tomasz Osinski does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnamePetkowskidays_passed130report_freq7emailjanusz@iwonka.med.virginia.edupastdue_freq2person_id24current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameJanusz
+
+--Janusz Petkowski does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnamePorebskidays_passed108report_freq7emailprzemek@iwonka.med.virginia.edupastdue_freq2person_id25current_timeSun, 22 Apr 2012 03:03:01 -0500firstnamePrzemek
+
+--Przemek Porebski does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameVigourdays_passed130report_freq7emailrachel_v@iwonka.med.virginia.edupastdue_freq2person_id30current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameRachel
+
+--Rachel Vigour does not need a report
+
+current_monthAPR-2012report_freq_stronce_a_weeknext_date2012-04-29lastnameZimmermandays_passed115report_freq7emailmatt@iwonka.med.virginia.edupastdue_freq2person_id32current_timeSun, 22 Apr 2012 03:03:01 -0500firstnameMatthew D.
+
+--Matthew D. Zimmerman does not need a report
+==================== log message for Mon, 23 Apr 2012 03:03:01 -0500 ====================
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id8next_date2012-04-30emailmaks@iwonka.med.virginia.edufirstnameMaksymilianlastnameChruszczreport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed109report_freq7
+
+--Maksymilian Chruszcz does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id10next_date2012-04-30emailmarcel@iwonka.med.virginia.edufirstnameMarcinlastnameCymborowskireport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Marcin Cymborowski does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id14next_date2012-04-30emailzbigniew_f@iwonka.med.virginia.edufirstnameZbigniewlastnameFratczakreport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Zbigniew Fratczak does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id15next_date2012-04-30emailmarek@iwonka.med.virginia.edufirstnameMareklastnameGrabowskireport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Marek Grabowski does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id18next_date2012-04-30emailbeth_m@iwonka.med.virginia.edufirstnameElizabethlastnameMacLeanreport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Elizabeth MacLean does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id21next_date2012-04-30emailania_m@iwonka.med.virginia.edufirstnameAnialastnameMilaczewskareport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Ania Milaczewska does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id23next_date2012-04-30emailtomek_o@iwonka.med.virginia.edufirstnameTomaszlastnameOsinskireport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed109report_freq7
+
+--Tomasz Osinski does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id24next_date2012-04-30emailjanusz@iwonka.med.virginia.edufirstnameJanuszlastnamePetkowskireport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Janusz Petkowski does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id25next_date2012-04-30emailprzemek@iwonka.med.virginia.edufirstnamePrzemeklastnamePorebskireport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed109report_freq7
+
+--Przemek Porebski does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id30next_date2012-04-30emailrachel_v@iwonka.med.virginia.edufirstnameRachellastnameVigourreport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed131report_freq7
+
+--Rachel Vigour does not need a report
+
+current_timeMon, 23 Apr 2012 03:03:01 -0500person_id32next_date2012-04-30emailmatt@iwonka.med.virginia.edufirstnameMatthew D.lastnameZimmermanreport_freq_stronce_a_weekcurrent_monthAPR-2012pastdue_freq2days_passed116report_freq7
+
+--Matthew D. Zimmerman does not need a report
+==================== log message for Tue, 24 Apr 2012 03:03:01 -0500 ====================
+
+pastdue_freq2emailmaks@iwonka.med.virginia.edureport_freq7firstnameMaksymiliannext_date2012-05-01lastnameChruszczcurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed110report_freq_stronce_a_weekperson_id8current_monthAPR-2012
+
+--Maksymilian Chruszcz does not need a report
+
+pastdue_freq2emailmarcel@iwonka.med.virginia.edureport_freq7firstnameMarcinnext_date2012-05-01lastnameCymborowskicurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id10current_monthAPR-2012
+
+--Marcin Cymborowski does not need a report
+
+pastdue_freq2emailzbigniew_f@iwonka.med.virginia.edureport_freq7firstnameZbigniewnext_date2012-05-01lastnameFratczakcurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id14current_monthAPR-2012
+
+--Zbigniew Fratczak does not need a report
+
+pastdue_freq2emailmarek@iwonka.med.virginia.edureport_freq7firstnameMareknext_date2012-05-01lastnameGrabowskicurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id15current_monthAPR-2012
+
+--Marek Grabowski does not need a report
+
+pastdue_freq2emailbeth_m@iwonka.med.virginia.edureport_freq7firstnameElizabethnext_date2012-05-01lastnameMacLeancurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id18current_monthAPR-2012
+
+--Elizabeth MacLean does not need a report
+
+pastdue_freq2emailania_m@iwonka.med.virginia.edureport_freq7firstnameAnianext_date2012-05-01lastnameMilaczewskacurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id21current_monthAPR-2012
+
+--Ania Milaczewska does not need a report
+
+pastdue_freq2emailtomek_o@iwonka.med.virginia.edureport_freq7firstnameTomasznext_date2012-05-01lastnameOsinskicurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed110report_freq_stronce_a_weekperson_id23current_monthAPR-2012
+
+--Tomasz Osinski does not need a report
+
+pastdue_freq2emailjanusz@iwonka.med.virginia.edureport_freq7firstnameJanusznext_date2012-05-01lastnamePetkowskicurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id24current_monthAPR-2012
+
+--Janusz Petkowski does not need a report
+
+pastdue_freq2emailprzemek@iwonka.med.virginia.edureport_freq7firstnamePrzemeknext_date2012-05-01lastnamePorebskicurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed110report_freq_stronce_a_weekperson_id25current_monthAPR-2012
+
+--Przemek Porebski does not need a report
+
+pastdue_freq2emailrachel_v@iwonka.med.virginia.edureport_freq7firstnameRachelnext_date2012-05-01lastnameVigourcurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed132report_freq_stronce_a_weekperson_id30current_monthAPR-2012
+
+--Rachel Vigour does not need a report
+
+pastdue_freq2emailmatt@iwonka.med.virginia.edureport_freq7firstnameMatthew D.next_date2012-05-01lastnameZimmermancurrent_timeTue, 24 Apr 2012 03:03:01 -0500days_passed117report_freq_stronce_a_weekperson_id32current_monthAPR-2012
+From: Manuscript Preparation Database <manuscript-db@iwonka.med.virginia.edu>
+To: Matthew D. Zimmerman <matt@iwonka.med.virginia.edu>
+Date: Tue, 24 Apr 2012 03:03:01 -0500
+Subject: Manuscripts that need your attention for the incoming week (Do not reply)
+MIME-Version: 1.0
+Content-Type: text/html; charset="us-ascii"
+
+
+<html><body>Dear Dr. Zimmerman,<br>
+<br>
+  Thanks for all the quality work during the past week.<br>
+<br>
+  You are expected to update the text for BVparam in organometallic manuscript within the next six days.<br>
+<br>
+  If you find any discrepancies between the present report and your work in progress, please update the manuscript preparation database accordingly. (<a href="http://zenobi-vpn/milapa/">http://zenobi-vpn/milapa/</a>)<br>
+<br>
+  You are currently receiving manuscript progress reports once a week. Next report will be delivered to your Email on 2012-05-01. <br>
+<br>
+appreciate your effort keeping the information in manuscript preparation database up to date,<br>
+best regards,<br>
+Manuscript preparation database<br>
+http://zenobi-vpn/milapa/<br>
+Technical Support Team:<br>
+<a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
+</body>
+</html>
+
+
+--Email was send to matt@iwonka.med.virginia.edu

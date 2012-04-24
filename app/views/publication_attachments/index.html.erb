@@ -19,9 +19,8 @@
     <td><%= publication_attachment.version %></td>
     <td><%= publication_attachment.publication_id %></td>
     <td><%= publication_attachment.comment %></td>
-    <td><%= link_to 'Show', publication_attachment %></td>
     <td><%= link_to 'Edit', edit_publication_attachment_path(publication_attachment) %></td>
-    <td><%= link_to 'Destroy', publication_attachment, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', publication_attachment, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

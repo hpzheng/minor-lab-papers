@@ -1,18 +1,14 @@
+<h2><%= @publication_attachment.file_name %></h2>
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Attachment:</b>
-  <%= @publication_attachment.attachment %>
+  <b>Attachment:</b><%= button_to "Download", "#{@publication_attachment.attachment}", :method => :get %>
 </p>
 
 <p>
   <b>Version:</b>
   <%= @publication_attachment.version %>
-</p>
-
-<p>
-  <b>Publication:</b>
-  <%= @publication_attachment.publication_id %>
 </p>
 
 <p>
