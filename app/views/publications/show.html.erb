@@ -4,53 +4,55 @@
   <%= link_to "Add a status flag to this publication", new_publication_pub_status_jcn_path(@publication) %> |
   <%= link_to "Add a referee to this publication", new_publication_pub_ref_jcn_path(@publication) %>
 <% end %>
-  <div class="other">
-  <h3> Topic </h3>
-    <p>
+<table id="show_table">
+  <tr>
+    <td><strong> Topic</strong> </td>
+    <td>
       <%= @publication.topic %>
-    <p>
-  </div>
-  <div class="other">
-  <h3> Author(s) </h3>
-    <p>
+    <td>
+  </tr>
+  <tr>
+  <td><strong> Author(s)</strong> </td>
+    <td>
       <%= @publication.author_list %>
-    </p>
-  </div>
-  <div class="other">
-  <h3> Target Journal </h3>
-    <p>
+    </td>
+  </tr>
+  <tr>
+  <td><strong> Target Journal</strong> </td>
+    <td>
       <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
-    </p>
-  </div>
-  <div class="other">
-  <h3> Deadline? </h3>
-    <p>
+    </td>
+  </tr>
+  <tr>
+  <td><strong> Deadline?</strong> </td>
+    <td>
     <% if @publication.deadline.nil? %>
       No Deadline at this time 
     <% else %>
       <%= "#{@publication.deadline}" %>
     <% end %>
-    </p>
-  </div>
-  <div class="other">
-  <h3> Status(es) </h3>
-  <p>
+    </td>
+  </tr>
+  <tr>
+  <td><strong> Status(es)</strong> </td>
+  <td>
   <% if @publication.statuses.count == 0 %>
     No statuses at this time.
   <% else %>
     <ul>
       <% @publication.pub_statuses.each_with_index do |s, i| %>
       <li>
-          <%= s.status_string %><%= "--#{s.description}" unless s.description.empty? %>
+          <%= s.status_string %> <i><%= "...to be finished by #{s.due_date}" unless s.due_date.nil? %></i><br/>
+          <%= "--#{s.description}" unless s.description.empty? %>
       </li>
       <% end %>
     </ul>
   <% end %>
-  </p>
-  </div>
-  <div class="other">
-    <h3> Referee(s) </h3>
-    <p>
+  </td>
+  </tr>
+  <tr>
+    <td><strong> Referee(s)</strong> </td>
+    <td>
       <% if @publication.referees.count == 0 %>
         No referees have been added.
       <% else %>
@@ -62,12 +64,11 @@
           <% end %>
         </ol>
       <% end %>
-    </p>
-  </div>
-
-  <div class="other">
-    <h3> Attachment(s) </h3>
-    <p>
+    </td>
+  </tr>
+  <tr>
+    <td><strong> Attachment(s) </strong></td>
+    <td>
       <% if @publication.attachments.count == 0 %>
         No attachments have been added.
       <% else %>
@@ -75,10 +76,10 @@
           <% @publication.attachments.each_with_index do |s, i| %>
             <li> <strong>version</strong>:<%= s.version %><br />
                  <strong>comments</strong>:<%= s.comment %><br />
-                 <%= link_to "Download", "#{s.attachment}" %></li>
+                 <%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
           <% end %>
         </ol>
       <% end %>
-    </p>
-  </div>
-
+    </td>
+  </tr>
+</table>

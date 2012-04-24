@@ -1,4 +1,4 @@
-<%= form_for(@publication_attachment, :html => {:multipart => true}) do |f| %>
+<%= form_for([@publication,@publication_attachment], :html => {:multipart => true}) do |f| %>
   <% if @publication_attachment.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@publication_attachment.errors.count, "error") %> prohibited this publication_attachment from being saved:</h2>
@@ -19,10 +19,7 @@
     <%= f.label :version %><br />
     <%= f.number_field :version %>
   </div>
-  <div class="field">
-    <%= f.label :publication_id %><br />
-    <%= f.number_field :publication_id %>
-  </div>
+
   <div class="field">
     <%= f.label :comment %><br />
     <%= f.text_area :comment %>

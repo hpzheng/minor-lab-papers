@@ -66,7 +66,7 @@
         </td></tr></table>
         <div class="field">
           <%= g.label :description %>
-          <%= g.text_area :description, :size => "30x10" %>
+          <%= g.text_field :description, :size => 75 %>
         </div>
       <% end %>
     </div>
@@ -105,28 +105,29 @@
             </td>
             <td class="ralign">
               <strong><%= "Delete attachment ##{key+1}?" %></strong>
-              <%= g.check_box :_destroy %>
+              <%= g.check_box :_destroy %><br />
             </td>
           </tr>
         </table>
         </div>
         <div class="field">
-          <%= g.label :attachment, "#{s.attachment}"  %><br />
+        <div class="lalign">
+          <strong><%= "#{s.file_name}"  %></strong>
           <%= g.file_field :attachment, :disable => true %>
         </div>
-        <div class="field">
-          <%= g.label :version %><br />
-          <%= g.number_field :version %>
+        <div class="ralign">
+          <strong>version</strong>
+          <%= g.number_field :version, :min => 0 %>
+        </div>
         </div>
         <div class="field">
-          <%= g.label :comment %><br />
-          <%= g.text_area :comment %>
+          <%= g.label :comment %>
+          <%= g.text_field :comment, :size => 70 %>
         </div>
 
       <% end %>
     </div>
     <% end %>
-
 
   <div class="actions">
     <p><%= f.submit "Submit" %></p>

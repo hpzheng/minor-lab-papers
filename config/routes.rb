@@ -10,9 +10,11 @@ Milapa::Application.routes.draw do
 
   #resources :publications
   match 'publications/urgent_papers' => 'publications#urgent_papers'
+  match 'publications/accepted_papers' => 'publications#accepted_papers'
   resources :publications do
     resources :pub_status_jcns
     resources :pub_ref_jcns
+    resources :publication_attachments
     #member do
       #get :show_status
     #end
