@@ -8,14 +8,14 @@
   <th>Deadline</th>
   <% @publications.each do |paper| %>
     <% if user_signed_in? %>
-      <tr onclick="location.href='<%= publication_path(paper) %>'">
+      <tr onclick="location.href='<%= edit_publication_path(paper) %>'" style="cursor:pointer;">
     <% else %>
-      <tr onclick="location.href='<%= publication_path(paper) %>'">
+      <tr onclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
     <% end %>
-      <td>
+      <td style="cursor:default;">
         <% unless paper.attachments.empty? %>
-          <%=  attch = image_tag("attachment.png", :height => '20', :width => '20') %>
-          <% #link_to attch, publication_publication_attachments_path(paper) %>
+          <%  attch = image_tag("attachment.png", :height => '20', :width => '20') %>
+          <%= link_to attch, "#{paper.attachments.last.attachment}" %>
         <% end %>
       </td>
       <td>
@@ -34,7 +34,7 @@
       <td>
         <table >
           <% paper.pub_statuses.each do |pub_status| %>
-            <tr><td bgcolor="<%= pub_status.status_color %>"><%= link_to pub_status.status_string, publication_pub_status_jcns_path(paper) %></td></tr>
+            <tr><td> <span style="color:<%= pub_status.status_color %>"><strong><%= pub_status.status_string %></strong></span></td></tr>
           <% end %>
         </table>
       </td>

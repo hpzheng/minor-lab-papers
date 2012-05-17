@@ -9,13 +9,17 @@ class Status < ActiveRecord::Base
 
   def status_clr
     if (self.priority == 0)
+      return "red"
       return "#FFAAAA"
     elsif (self.priority == 1)
+      return "orange"
       return "#FFFFAA"
     elsif (self.priority == 4)
+      return "green"
       return "#AAFFAA"
     else
       #return "#FFFFFF"
+      return "black"
       return "#ffffe6"
     end
   end
