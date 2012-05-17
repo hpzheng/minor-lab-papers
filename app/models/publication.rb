@@ -41,9 +41,7 @@ class Publication < ActiveRecord::Base
   scope :waiting_for_wladek, where("id IN (#{waiting_for_w})")
 
   validates :topic, :presence => true
-  validates :target_journal, :presence => true
   validates :first_author, :presence => true
-  validates :deadline, :presence => true
 
   def author_list
     if self.third_author
