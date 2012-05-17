@@ -17,7 +17,7 @@
     <td><%= button_to "Download", "#{publication_attachment.attachment}", :method => :get %></td>
     <td><%= publication_attachment.file_name %></td>
     <td><%= publication_attachment.version %></td>
-    <td><%= publication_attachment.publication_id %></td>
+    <td><%= publication_attachment.publication.topic %></td>
     <td><%= publication_attachment.comment %></td>
     <td><%= link_to 'Edit', edit_publication_attachment_path(publication_attachment) %></td>
     <td><%= link_to 'Destroy', publication_attachment, :confirm => 'Are you sure?', :method => :delete %></td>

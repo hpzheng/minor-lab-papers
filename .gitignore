@@ -16,4 +16,7 @@
 *.swp
 database.yml
 public/uploads/*
+<<<<<<< HEAD
 *.dot
+=======
+>>>>>>> 2a1f98277c23cec2de127d229c6fe74f88b1e01b
