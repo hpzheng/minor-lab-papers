@@ -16,3 +16,4 @@
 *.swp
 database.yml
 public/uploads/*
+*.dot
