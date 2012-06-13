@@ -16,6 +16,7 @@ table {width:100%;}
 .tic_tac_toe tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}
  tbody tr:nth-child(even) td.status:hover, tbody tr.even td.status:hover {background:#FFCC99;}
 .tic_tac_toe tr:hover {background:#FFFF99;}
+
 td.status:hover {background:#FFCC99;}
 li.status:hover {background:#FFCC99;}
 .status:hover {background:#FFCC99;}
