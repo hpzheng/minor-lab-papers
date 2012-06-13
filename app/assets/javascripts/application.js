@@ -6,38 +6,29 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.datepicker
 //= require_tree .
-//= require jquery-ui
 
 $(document).ready(function() {
   $("table").tablesorter({
-  headers: { 0: { sorter: false }}});
+    headers: { 0: { sorter: false }}
+  });
   $("#ajax-append").click(function() { 
-  $.get("assets/ajax-content.html", function(html) { 
-  // append the "ajax'd" data to the table body 
-  $("table tbody").append(html); 
-  // let the plugin know that we made a update 
-  $("table").trigger("update"); 
-  // set sorting column and direction, this will sort on the first and third column 
-  var sorting = [[2,1],[0,0]]; 
-  // sort on the first column 
-  $("table").trigger("sorton",[sorting]); 
+    $.get("assets/ajax-content.html", function(html) { 
+      // append the "ajax'd" data to the table body 
+      $("table tbody").append(html); 
+      // let the plugin know that we made a update 
+      $("table").trigger("update"); 
+      // set sorting column and direction, this will sort on the first and third column 
+      var sorting = [[2,1],[0,0]]; 
+      // sort on the first column 
+      $("table").trigger("sorton",[sorting]); 
+    }); 
+    return false; 
   }); 
-  return false; 
-  }); 
+
   $("input[name$='due_date]']").datepicker({ dateFormat: "yy-mm-dd" });
   $("input[name$='deadline]']").datepicker({ dateFormat: "yy-mm-dd" });
-  $(function() {
-    $( "#dialog" ).dialog({
-      autoOpen: false,
-      modal: true
-    });
-
-    $( "div[name$='statusadd']" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
-      return false;
-    });
-  });
 });
 
 
