@@ -27,17 +27,17 @@ $(document).ready(function() {
   }); 
   $("input[name$='due_date]']").datepicker({ dateFormat: "yy-mm-dd" });
   $("input[name$='deadline]']").datepicker({ dateFormat: "yy-mm-dd" });
-//  $(function() {
-//    $( "#dialog" ).dialog({
-//      autoOpen: false,
-//      modal: true
-//    });
-//
-//    $( "div[name$='statusadd']" ).click(function() {
-//      $( "#dialog" ).dialog( "open" );
-//      return false;
-//    });
-//  });
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      modal: true
+    });
+
+    $( "div[name$='statusadd']" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+      return false;
+    });
+  });
 });
 
 
