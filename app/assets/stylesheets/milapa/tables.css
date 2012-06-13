@@ -10,7 +10,7 @@
 a:link, a:visited {text-decoration:none; color:#bb3333;}
 
 
-/* .tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even tr {background:#ddddcc;} */
+.tic_tac_toe tbody tr:nth-child(even) td, tbody tr.even tr {background:#ddddcc;}
 table {width:100%;}
 
 .tic_tac_toe tbody tr:nth-child(even):hover td, tbody tr.even:hover td {background:#FFFF99;}

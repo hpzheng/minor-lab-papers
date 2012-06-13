@@ -1,3 +1,6 @@
+<div id="dialog" title="Basic dialog">
+<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
 <table class="tic_tac_toe">
   <th>&nbsp;</th>
   <th>Topic</th>
@@ -8,9 +11,9 @@
   <th>Deadline</th>
   <% @publications.each do |paper| %>
     <% if user_signed_in? %>
-      <tr onclick="location.href='<%= edit_publication_path(paper) %>'" style="cursor:pointer;">
+      <tr ondblclick="location.href='<%= edit_publication_path(paper) %>'" style="cursor:pointer;">
     <% else %>
-      <tr onclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
+      <tr ondblclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
     <% end %>
       <td style="cursor:default;">
         <% unless paper.attachments.empty? %>
@@ -31,12 +34,14 @@
           <%= paper.target_journal.journal_abbr %>
         <% end %>
       </td>
-      <td>
-        <table >
+      <td style="padding-right:0px;padding-top:0px">
+        <div class="ui-state-default ui-corner-bl" style="float:right;" name="statusadd">
+        <span class="ui-icon ui-icon-circle-plus" style="cursor:crosshair"></span></div>
+        <ul>
           <% paper.pub_statuses.each do |pub_status| %>
-            <tr><td> <span style="color:<%= pub_status.status_color %>"><strong><%= pub_status.status_string %></strong></span></td></tr>
+            <li> <span style="color:<%= pub_status.status_color %>"><%= pub_status.status_string %></span></li>
           <% end %>
-        </table>
+        </ul>
       </td>
       <td>
         <ul>
