@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 gem "carrierwave"
 
+gem "jquery-rails',  '>= 1.0.12'
+
 gem 'yaml_db'
 
 gem 'devise', '2.0'
