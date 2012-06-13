@@ -16,7 +16,9 @@
   <%= stylesheet_link_tag "milapa/jquery-ui-milapa" %>
   <%= stylesheet_link_tag "style.css" %>
   <%= javascript_include_tag "jquery.tablesorter.js" %>
-  <%= javascript_include_tag "jquery-1.7.1.min.js", "jquery-ui-1.8.18.custom.min.js", "application" %>
+  <% #javascript_include_tag "jquery-1.7.1.min.js", "jquery-ui-1.8.18.custom.min.js", "application" %>
+  <% #javascript_include_tag "jquery-ui-1.8.18.custom.min.js", "application" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body >

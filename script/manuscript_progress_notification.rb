@@ -61,6 +61,7 @@ message += <<MESSAGE3
 best regards,<br>
 Manuscript preparation database<br>
 http://zenobi-vpn/milapa/<br>
+http://10.8.1.88/milapa/<br>
 Technical Support Team:<br>
 <a href="mailto:dust@iwonka.med.virginia.edu">Heping Zheng</a>, <a href="mailto:matt_d@iwonka.med.virginia.edu">Matt Demas</a><br>
 </body>
