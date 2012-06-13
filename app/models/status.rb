@@ -12,6 +12,7 @@ class Status < ActiveRecord::Base
       return "red"
       return "#FFAAAA"
     elsif (self.priority == 1)
+      return "blue"
       return "orange"
       return "#FFFFAA"
     elsif (self.priority == 4)

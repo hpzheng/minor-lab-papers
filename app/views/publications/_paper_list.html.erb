@@ -1,4 +1,6 @@
-<table class="tic_tac_toe">
+<table id="paper_table"  class="tablesorter">
+<thead>
+<tr class="subheadingone" style="cursor:default;">
   <th>&nbsp;</th>
   <th>Topic</th>
   <th>Authors</th>
@@ -6,6 +8,9 @@
   <th>Status(es)</th>
   <th>Referee(s)</th>
   <th>Deadline</th>
+</tr>
+</thead>
+<tbody>
   <% @publications.each do |paper| %>
     <% if user_signed_in? %>
       <tr onclick="location.href='<%= edit_publication_path(paper) %>'" style="cursor:pointer;">
@@ -32,11 +37,11 @@
         <% end %>
       </td>
       <td>
-        <table >
+        <ul>
           <% paper.pub_statuses.each do |pub_status| %>
-            <tr><td> <span style="color:<%= pub_status.status_color %>"><strong><%= pub_status.status_string %></strong></span></td></tr>
+            <li> <span style="color:<%= pub_status.status_color %>"><%= pub_status.status_string %></span></li>
           <% end %>
-        </table>
+        </ul>
       </td>
       <td>
         <ul>
@@ -57,4 +62,5 @@
       </td>
     </tr>
   <% end %>
+</tbody>
 </table>
