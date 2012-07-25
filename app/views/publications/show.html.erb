@@ -77,6 +77,7 @@
           <% @publication.attachments.each_with_index do |s, i| %>
             <li> <strong>version</strong>:<%= s.version %><br />
                  <strong>comments</strong>:<%= s.comment %><br />
+                 <%= link_to "Download", "#{s.attachment}"%></li>
                  <%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
           <% end %>
         </ol>
