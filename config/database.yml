@@ -15,7 +15,8 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: milapa_development
+  database: milapa24jul12
+  #database: milapa_development
   #database: paper_prep_queue
   pool: 5
   #username: matt_d

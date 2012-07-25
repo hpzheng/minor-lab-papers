@@ -113,7 +113,12 @@
         <div class="field">
         <div class="lalign">
           <strong><%= "#{s.file_name}"  %></strong>
-          <%= g.file_field :attachment, :disable => true %>
+          <% if s.attachment.blank? %>
+            <%= g.file_field :attachment, :disable => true %>
+           <i> please upload a file </i> 
+          <% else %>
+            <%= g.file_field :attachment, :disable => true %>
+          <% end %>
         </div>
         <div class="ralign">
           <strong>version</strong>
@@ -124,7 +129,6 @@
           <%= g.label :comment %>
           <%= g.text_field :comment, :size => 70 %>
         </div>
-
       <% end %>
     </div>
     <% end %>
