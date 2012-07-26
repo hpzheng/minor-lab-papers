@@ -9,12 +9,13 @@
 <%= render 'form' %>
 </div>
 
+<div style="float:left;width:140px">
 <% @publication.attachments.each_with_index do |s, i| %>
   <ul>
     <li>
       <%= "#{s.file_name}--version: #{s.version}" %><br />
-      <%= link_to "Download attachment?", "#{s.attachment} version: #{s.version}" %>
+      <%= link_to "Download attachment?", "#{s.attachment}" %>
     </li>
   </ul>
 <% end %>
-
+</div>
