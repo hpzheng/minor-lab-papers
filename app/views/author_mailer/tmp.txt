@@ -1,0 +1,10 @@
+    <% if !paper.pub_statuses.empty? %>
+    <% if paper.pub_statuses.count > 1 %>
+    Status:   <%= pub_status.status_string %>
+    <% else %>
+    Statuses:
+    <% paper.pub_statuses.each do |pub_status| %>
+              - <%= pub_status.status_string %>
+    <% end %>
+    <% end %>
+    <% end %>
