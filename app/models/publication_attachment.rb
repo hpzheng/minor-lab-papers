@@ -1,5 +1,7 @@
 class PublicationAttachment < ActiveRecord::Base
 
+  attr_accessible :publication_id, :file, :version, :attachment, :comment
+
   mount_uploader :attachment, AttachmentUploader
 
   belongs_to :publication

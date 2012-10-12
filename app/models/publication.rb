@@ -1,5 +1,8 @@
 class Publication < ActiveRecord::Base
 
+  attr_accessible :topic, :first_author_id, :second_author_id, :third_author_id,
+                  :target_journal_id, :deadline, :pub_statuses_attributes
+
   set_primary_key "id"
   set_table_name "papers_publication"
 
@@ -36,9 +39,12 @@ class Publication < ActiveRecord::Base
                       WHERE status_id = 11)
   waiting_for_w = %(SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id IN (1,9))
-  scope :active_publications, where("id NOT IN (#{accepted_pubs})") 
-  scope :accepted_publications, where("id IN (#{accepted_pubs})") 
-  scope :waiting_for_wladek, where("id IN (#{waiting_for_w})")
+  scope :active_publications, where("id NOT IN (SELECT publication_id FROM papers_publication_status_jcn
+                      WHERE status_id = 11)") 
+  scope :accepted_publications, where("id IN (SELECT publication_id FROM papers_publication_status_jcn
+                      WHERE status_id = 11)") 
+  scope :waiting_for_wladek, where("id IN (SELECT publication_id FROM papers_publication_status_jcn
+                      WHERE status_id IN (1,9))")
 
   validates :topic, :presence => true
   validates :first_author, :presence => true
@@ -60,6 +66,6 @@ class Publication < ActiveRecord::Base
   def self.status_count
     active_pubs = Publication.all
     active_pubs = active_pubs.uniq
-    where("id IN (#{active_pubs})")
+    where("id IN (?)", active_pubs)
   end
 end
