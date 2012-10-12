@@ -1,14 +1,15 @@
+
 <table id="paper_table"  class="tablesorter">
 <thead>
-<tr class="subheadingone" style="cursor:default;">
-  <th>&nbsp;</th>
-  <th>Topic</th>
-  <th>Authors</th>
-  <th>Journal</th>
-  <th>Status(es)</th>
-  <th>Referee(s)</th>
-  <th>Deadline</th>
-</tr>
+  <tr class="subheadingone" style="cursor:default;">
+    <th>&nbsp;</th>
+    <th>Topic</th>
+    <th>Authors</th>
+    <th>Journal</th>
+    <th>Status(es)</th>
+    <th>Referee(s)</th>
+    <th>Deadline</th>
+  </tr>
 </thead>
 <tbody>
   <% @publications.each do |paper| %>
@@ -44,11 +45,15 @@
         </ul>
       </td>
       <td>
+        <a href=<%= new_publication_pub_ref_jcn_url(paper) %>><span class="ui-icon ui-icon-circle-plus" style="float:right;display:inline-block"></span></a>
         <ul>
-          <% paper.referees.each do |ref| %>
-            <li>
-              <%= ref.name %>
-            </li>
+          <% if paper.referees.empty? %>
+          <% else %>
+            <% paper.referees.each do |ref| %>
+              <li>
+                <%= ref.name unless ref.nil?%>
+              </li>
+            <% end %>
           <% end %>
         </ul>
       </td>

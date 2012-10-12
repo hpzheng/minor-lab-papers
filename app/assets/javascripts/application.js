@@ -30,4 +30,17 @@ $(document).ready(function() {
 
   $("input[name$='due_date]']").datepicker({ dateFormat: "yy-mm-dd" });
   $("input[name$='deadline]']").datepicker({ dateFormat: "yy-mm-dd" });
+  $( "#dialog-form" ).dialog({
+      autoOpen: false,
+      height: 400,
+      width: 500,
+      modal: true
+  });
+  $("h1")
+    .click(function() {
+      $("#dialog-form").dialog("open");
+    });
+  $(function() {
+    $( "#selectable" ).selectable();
+  });
 });

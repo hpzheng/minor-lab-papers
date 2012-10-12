@@ -3,6 +3,7 @@ class PublicationsController < ApplicationController
 
   def index
     @publications = Publication.active_publications.all
+    @referees = Referee.all
   end
 
   def urgent_papers 
