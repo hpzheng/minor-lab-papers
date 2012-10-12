@@ -12,7 +12,7 @@ class PubRefJcnsController < ApplicationController
     @pub_ref = @publication.pub_refs.build(params[:pub_ref_jcn])
     if @pub_ref.save
       #@publication.touch
-      redirect_to @publication, :notice => 'User was successfully created.'
+      redirect_to @publication, :notice => 'Referee successfully added.'
     else
       render :action => "new"
     end
