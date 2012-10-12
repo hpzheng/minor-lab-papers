@@ -37,6 +37,7 @@
         <% end %>
       </td>
       <td>
+        <a href=<%= new_publication_pub_status_jcn_url(paper) %> style="float:right;cursor:crosshair"><span class="ui-icon ui-icon-circle-plus"></span></a>
         <ul>
           <% paper.pub_statuses.each do |pub_status| %>
             <li> <span style="color:<%= pub_status.status_color %>"><%= pub_status.status_string %></span></li>
@@ -44,6 +45,7 @@
         </ul>
       </td>
       <td>
+        <a href=<%= new_publication_pub_ref_jcn_url(paper) %> style="float:right;cursor:crosshair"><span class="ui-icon ui-icon-circle-plus"></span></a>
         <ul>
           <% paper.referees.each do |ref| %>
             <li>
