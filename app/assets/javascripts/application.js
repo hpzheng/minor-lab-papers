@@ -12,7 +12,7 @@
 
 $(document).ready(function() {
   $("table").tablesorter({
-    headers: { 0: { sorter: false }}
+    headers: { 0: { sorter: false }, 5: { sorter: false }}
   });
   $("#ajax-append").click(function() { 
     $.get("assets/ajax-content.html", function(html) { 
