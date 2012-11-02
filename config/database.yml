@@ -15,12 +15,12 @@
 development:
   adapter: postgresql
   encoding: unicode
-  #database: milapa24jul12
+  database: milapa02nov12
   #database: milapa_development
-  database: paper_prep_queue
+  #database: paper_prep_queue
   pool: 5
-  username: matt_d
-  #username: milapa
+  #username: matt_d
+  username: milapa
   password: 
 
  # Connect on a TCP socket. Omitted by default since the client uses a
