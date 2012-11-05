@@ -36,6 +36,7 @@ class Author < ActiveRecord::Base
   def papers
     all_papers = first_auth_papers + second_auth_papers + third_auth_papers + contrib_papers
     all_papers.uniq!
+    return all_papers
   end
 
 =begin
