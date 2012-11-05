@@ -32,7 +32,8 @@
         <table>
             <% paper.pub_statuses.each do |pub_status| %>
           <tr>
-              <td> - <%= pub_status.status_string %></td>
+              <td> - <span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}"%></span></td>
+
           </tr>
             <% end %>
         </table>

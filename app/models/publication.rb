@@ -39,7 +39,7 @@ class Publication < ActiveRecord::Base
                       WHERE status_id = 11)
   waiting_for_w = %(SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id IN (1,9))
-  scope :active_publications, where("id NOT IN (SELECT publication_id FROM papers_publication_status_jcn
+  scope :active_publications, where("papers_publication.id NOT IN (SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id = 11)") 
   scope :accepted_publications, where("id IN (SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id = 11)") 
