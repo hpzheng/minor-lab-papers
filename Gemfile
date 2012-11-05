@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'whenever', :require => false
 gem "carrierwave"
 gem 'jquery-rails', '>= 1.0.12'
 gem 'yaml_db'
