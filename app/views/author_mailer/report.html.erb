@@ -32,8 +32,9 @@
         <table>
             <% paper.pub_statuses.each do |pub_status| %>
           <tr>
-              <td> - <span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}"%></span></td>
-
+              <td> 
+              - <span style="color:<%= pub_status.status_color %>"> <%= "#{pub_status.status_string}" %></span>
+              </td>
           </tr>
             <% end %>
         </table>
@@ -54,8 +55,6 @@
   <p>Thank you,</p>
 
   <p> The Minor Lab Paper Database Team</p>
-
-
 <% end %>
 
 

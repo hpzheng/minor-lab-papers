@@ -4,6 +4,7 @@ Here is a snapshot of the papers you are involved with:
 
 <% if !@author.papers.empty? %>
 <% @author.papers.each do |paper| %>
+==============================================================================
 TOPIC:    <%= paper.topic %>
 AUTHORS:  <%= paper.author_list %>
 <% if paper.target_journal.nil? %>
@@ -11,9 +12,12 @@ JOURNAL:  --
 <% else %>
 JOURNAL:  <%= paper.target_journal.journal_abbr %>
 <% end %>
-STATUS:
-<% paper.pub_statuses.each do |pub_status| %>
-          - <%= "#{pub_status.status_string}"%>
+<% paper.pub_statuses.each_with_index do |pub_status, index| %>
+<% if index == 0 %>
+STATUS:   -<%= "#{pub_status.status_string}"%>
+<% else %>
+          -<%= "#{pub_status.status_string}"%>
+<% end %>
 <% end %>
 <% if paper.deadline.nil? %>
 DEADLINE: --

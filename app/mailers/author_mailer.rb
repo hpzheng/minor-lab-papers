@@ -1,5 +1,5 @@
 class AuthorMailer < ActionMailer::Base
-  default :from => "milapa@iwonka.med.virginia.edu"
+  default :from => "matthewwdemas@gmail.com"
 
   def report(author)
     @author = author

@@ -14,11 +14,11 @@ class Author < ActiveRecord::Base
 
   has_many :statuses, :foreign_key => "person_responsible_id",
                                      :class_name => "PubStatusJcn"
-  #has_many :contrib_papers, through: :statuses,
-  #                          #foreign_key: "publication_id",
-  #                          primary_key: "publication_id",
-  #                          class_name: "Publication",
-  #                          source: :publication
+  has_many :contrib_papers, through: :statuses,
+                            #foreign_key: "publication_id",
+                            primary_key: "publication_id",
+                            class_name: "Publication",
+                            source: :publication
   has_many :first_auth_papers, :foreign_key => "first_author_id",
                                :class_name => "Publication"
   has_many :second_auth_papers, :foreign_key => "second_author_id",
@@ -40,10 +40,10 @@ class Author < ActiveRecord::Base
     else
       all_papers = Array.new
     end
-    all_papers += first_auth_papers.active_publications
-    all_papers += second_auth_papers.active_publications
-    all_papers += third_auth_papers.active_publications
-    all_papers += contrib_papers.active_publications
+    all_papers = first_auth_papers.active_publications +
+                 second_auth_papers.active_publications +
+                 third_auth_papers.active_publications +
+                 contrib_papers.active_publications
     all_papers.uniq!
     return all_papers
   end
