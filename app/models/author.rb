@@ -10,6 +10,7 @@ class Author < ActiveRecord::Base
   validates :email, :presence => true
 
   default_scope :order => 'firstname'
+  scope :minor_lab_members, where("email LIKE '%iwonka.med.virginia.edu'") 
 
   has_many :statuses, :foreign_key => "person_responsible_id",
                                      :class_name => "PubStatusJcn"
@@ -53,7 +54,7 @@ class Author < ActiveRecord::Base
 =end
 
   def self.weekly_report
-    @user = Author.all
+    @user = Author.minor_lab_members
     @user.each do |u|
       AuthorMailer.report(u).deliver
     end
