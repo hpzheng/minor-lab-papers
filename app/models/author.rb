@@ -34,7 +34,15 @@ class Author < ActiveRecord::Base
   end
 
   def papers
-    all_papers = first_auth_papers + second_auth_papers + third_auth_papers + contrib_papers
+    if self.email == 'wladek@iwonka.med.virginia.edu'
+      all_papers = Publication.waiting_for_wladek
+    else
+      all_papers = Array.new
+    end
+    all_papers += first_auth_papers.active_publications
+    all_papers += second_auth_papers.active_publications
+    all_papers += third_auth_papers.active_publications
+    all_papers += contrib_papers.active_publications
     all_papers.uniq!
     return all_papers
   end
@@ -44,4 +52,10 @@ class Author < ActiveRecord::Base
  - list of statuses with deadlines
 =end
 
+  def self.weekly_report
+    @user = Author.all
+    @user.each do |u|
+      AuthorMailer.report(u).deliver
+    end
+  end
 end

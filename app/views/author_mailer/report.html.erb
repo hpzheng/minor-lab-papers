@@ -1,0 +1,61 @@
+<p>Dear Dr. <%= @author.lastname %>,</p>
+
+<p> Here is a snapshot of the papers you are involved with:</p>
+
+<% if !@author.papers.empty? %>
+  <table border=1px cellspacing=0px width=600px>
+      <thead>
+      <tr>
+        <th>Topic     </th>
+        <th>Authors   </th>
+        <th>Journal   </th>
+        <th>Status(es)</th>
+        <th>Deadline  </th>
+      </tr>
+      </thead>
+      <% @author.papers.each do |paper| %>
+      <tr>
+          <td>
+            <%= link_to paper.topic, "http://localhost:3000/publications/#{paper.id}/edit" %>
+          </td>
+          <td>
+            <%= paper.author_list %>
+          </td>
+        <td>
+          <% if paper.target_journal.nil? %>
+            &nbsp;--
+          <% else %>
+            <%= paper.target_journal.journal_abbr %>
+          <% end %>
+        </td>
+        <td>
+        <table>
+            <% paper.pub_statuses.each do |pub_status| %>
+          <tr>
+              <td> - <span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}"%></span></td>
+
+          </tr>
+            <% end %>
+        </table>
+        </td>
+        <td>
+           <% if paper.deadline.nil? %>
+            &nbsp;--
+          <% else %>
+            <%= paper.deadline %>
+          <% end %>
+        </td>
+      <% end %>
+  </table>
+  
+  <p> If any of this information is not correct, please update the site. </p>
+  <p>If you are having any comments, concerns or questions, please contact either matt_d@iwonka.med.virginia.edu or dust@iwonka.med.virginia.edu</p>
+
+  <p>Thank you,</p>
+
+  <p> The Minor Lab Paper Database Team</p>
+
+
+<% end %>
+
+

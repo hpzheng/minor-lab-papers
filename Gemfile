@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
-gem "carrierwave"
+gem 'whenever', :require => false
+gem 'mail'
+gem 'carrierwave'
 gem 'jquery-rails', '>= 1.0.12'
 gem 'yaml_db'
 gem 'devise', '2.0'
