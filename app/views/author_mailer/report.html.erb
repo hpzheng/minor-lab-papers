@@ -1,7 +1,6 @@
-<p>Dear Dr. <%= @author.lastname %>,</p>
+<p> <%= @intro %> </p>
 
-<p> Here is a snapshot of the papers you are involved with:</p>
-
+<p> <%= @greeting %> </p>
 <% if !@author.papers.empty? %>
   <table border=1px cellspacing=0px width=600px>
       <thead>
@@ -16,7 +15,7 @@
       <% @author.papers.each do |paper| %>
       <tr>
           <td>
-            <%= link_to paper.topic, "http://localhost:3000/publications/#{paper.id}/edit" %>
+            <%= link_to paper.topic, "http://zenobi-vpn/milapa/publications/#{paper.id}/edit" %>
           </td>
           <td>
             <%= paper.author_list %>
@@ -49,8 +48,8 @@
       <% end %>
   </table>
   
-  <p> If any of this information is not correct, please update the site. </p>
-  <p>If you are having any comments, concerns or questions, please contact either matt_d@iwonka.med.virginia.edu or dust@iwonka.med.virginia.edu</p>
+  <p> <%= @outro1%> </p>
+  <p> <%= @outro2%> </p>
 
   <p>Thank you,</p>
 

@@ -1,6 +1,6 @@
-Dear Dr. <%= @author.lastname %>,
+<%= @intro %> 
 
-Here is a snapshot of the papers you are involved with:
+<%= @greeting %>
 
 <% if !@author.papers.empty? %>
 <% @author.papers.each do |paper| %>
@@ -24,11 +24,12 @@ DEADLINE: --
 <% else %>
 DEADLINE: <%= paper.deadline %>
 <% end %>
-LINK: <%= "http://localhost:3000/publications/#{paper.id}/edit" %>
+LINK: <%= "http://zenobi-vpn/milapa/publications/#{paper.id}/edit" %>
 <% end %>
 
-If any of this information is not correct, please update the site. 
-If you are having any comments, concerns or questions, please contact either matt_d@iwonka.med.virginia.edu or dust@iwonka.med.virginia.edu
+<%= @outro1 %>
+<%= @outro2 %>
+
 
 Thank you,
 
