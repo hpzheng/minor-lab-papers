@@ -1,7 +1,8 @@
 class Publication < ActiveRecord::Base
 
   attr_accessible :topic, :first_author_id, :second_author_id, :third_author_id,
-                  :target_journal_id, :deadline, :pub_statuses_attributes
+                  :target_journal_id, :deadline, :pub_statuses_attributes,
+                  :attachments_attributes
 
   set_primary_key "id"
   set_table_name "papers_publication"
