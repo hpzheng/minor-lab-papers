@@ -36,11 +36,5 @@ $(document).ready(function() {
       width: 500,
       modal: true
   });
-  $("h1")
-    .click(function() {
-      $("#dialog-form").dialog("open");
-    });
-  $(function() {
-    $( "#selectable" ).selectable();
-  });
+
 });

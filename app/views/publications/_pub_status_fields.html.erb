@@ -1,6 +1,4 @@
 <fieldset>
-  <%= f.label :content, "Status" %><br />
-  <%= f.text_area :content %><br />
   <div class="field">
     <%= f.label :select_status %>
     <%= f.collection_select(:status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %><%= f.collection_select(:person_responsible_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
@@ -13,7 +11,7 @@
     <%= f.label :description %>
     <%= f.text_field :description, :size => 75 %>
   </div>
-  <%= f.check_box :_destroy %>
-  <%= f.label :_destroy, "Remove Status" %>
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "remove", "#", :class => 'remove_fields' %>
 </fieldset>
 

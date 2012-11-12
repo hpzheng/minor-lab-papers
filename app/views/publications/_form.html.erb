@@ -37,6 +37,11 @@
     </tr></table>
   </div>
 
+<%= f.fields_for :pub_statuses do |builder| %>
+  <%= render 'pub_status_fields', f: builder %>
+<% end %>
+<%= link_to_add_fields "Add Status", f, :pub_statuses %>
+
     <% @publication.pub_refs.each_with_index do |s, key| %>
     <div class="formsection">
       <%= f.fields_for :pub_refs, s do |g| %>
