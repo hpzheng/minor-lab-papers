@@ -36,5 +36,7 @@ $(document).ready(function() {
       width: 500,
       modal: true
   });
-
+$(function() {
+        $( "#tabs" ).tabs();
+    });
 });

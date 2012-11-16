@@ -6,9 +6,7 @@
 <%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %>
 
 
-<div class="two_col_form">
 <%= render 'form' %>
-</div>
 
 <div style="float:left;width:140px">
 <% @publication.attachments.each_with_index do |s, i| %>
