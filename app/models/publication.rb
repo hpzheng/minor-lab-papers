@@ -2,7 +2,7 @@ class Publication < ActiveRecord::Base
 
   attr_accessible :topic, :first_author_id, :second_author_id, :third_author_id,
                   :target_journal_id, :deadline, :pub_statuses_attributes,
-                  :attachments_attributes
+                  :attachments_attributes, :responsible_person_id, :proofreader_id
 
   set_primary_key "id"
   set_table_name "papers_publication"
@@ -15,6 +15,10 @@ class Publication < ActiveRecord::Base
              :class_name => "Author"
   belongs_to :target_journal,
              :class_name => "Journal"
+  belongs_to :proofreader,
+             :class_name => "Author"
+  belongs_to :responsible_person,
+             :class_name => "Author"
   has_many   :pub_statuses,
              :class_name => "PubStatusJcn"
   accepts_nested_attributes_for :pub_statuses,
