@@ -37,6 +37,23 @@
     </tr></table>
   </div>
 
+  <div class="formsection">
+    <table>
+      <tr>
+      <td class='ralign'>
+      <p><div class="ui-icon ui-icon-help" title='This is the person responsible for keeping this publication up to date'></div>
+      </p>
+      </td>
+      <td>
+          <b><%= f.label :responsible_person %> </b>
+          <%= collection_select(:publication, :responsible_person_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+      </td><td>
+          <%= f.label :proofreader %>
+          <%= collection_select(:publication, :proofreader_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
+      </td></tr></table>
+  </div>
+
+
     <% @publication.pub_statuses.each_with_index do |s, key| %>
     <div class="formsection">
       <%= f.fields_for :pub_statuses, s do |g| %>
