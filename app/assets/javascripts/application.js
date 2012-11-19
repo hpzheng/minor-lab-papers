@@ -8,6 +8,7 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require jquery-tablesorter
+//= require best_in_place
 //= require_tree .
 
 $(document).ready(function() {
