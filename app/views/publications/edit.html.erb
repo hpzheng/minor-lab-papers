@@ -5,6 +5,30 @@
 <%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %> |
 <%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %>
 
+<p>
+  <b>TOPIC</b>
+  <%= best_in_place @publication, :topic %>
+</p>
+<p>
+  <b>JOURN</b>
+  <%= best_in_place @publication, :target_journal_id, type: :select, collection: Journal.journal_list  %>
+</p>
+<p>
+  <b>First Author</b>
+  <%= best_in_place @publication, :first_author_id, type: :select, collection: Author.author_list  %>
+</p>
+<p>
+  <b>Second Author</b>
+  <%= best_in_place @publication, :second_author_id, type: :select, collection: Author.author_list  %>
+</p>
+<p>
+  <b>Third Author</b>
+  <%= best_in_place @publication, :third_author_id, type: :select, collection: Author.author_list  %>
+</p>
+
+
+
+
 
 <%= render 'form' %>
 

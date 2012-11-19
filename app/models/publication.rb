@@ -51,7 +51,8 @@ class Publication < ActiveRecord::Base
   scope :waiting_for_wladek, where("id IN (SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id IN (1,9))")
 
-  validates :topic, :presence => true
+  #validates :topic, :presence => true
+  validates_presence_of :topic
   validates :first_author, :presence => true
 
   def author_list

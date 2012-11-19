@@ -49,7 +49,7 @@ class PublicationsController < ApplicationController
     @publication = Publication.find(params[:id])
     @pub_statuses = @publication.pub_statuses
     @publication.update_attributes(params[:publication])
-    respond_with @user
+    respond_with @publication
     # if @publication.update_attributes(params[:publication])
     #   redirect_to publication_path(@publication), :notice => 'User was successfully updated.'
     # else

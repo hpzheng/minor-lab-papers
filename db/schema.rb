@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120412190031) do
+ActiveRecord::Schema.define(:version => 20121116165841) do
 
   create_table "auth_group", :force => true do |t|
     t.string "name", :limit => 80, :null => false
@@ -176,15 +177,17 @@ ActiveRecord::Schema.define(:version => 20120412190031) do
   add_index "papers_notification", ["report_frequency_id"], :name => "papers_notification_report_frequency_id"
 
   create_table "papers_publication", :force => true do |t|
-    t.integer  "first_author_id",                  :null => false
+    t.integer  "first_author_id",                      :null => false
     t.integer  "second_author_id"
     t.integer  "third_author_id"
     t.integer  "target_journal_id"
-    t.string   "topic",             :limit => 200, :null => false
+    t.string   "topic",                 :limit => 200, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.date     "deadline"
     t.boolean  "active"
+    t.integer  "proofreader_id"
+    t.integer  "responsible_person_id"
   end
 
   add_index "papers_publication", ["first_author_id"], :name => "papers_publication_first_author_id"

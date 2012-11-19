@@ -1,0 +1,8 @@
+class AddResponsiblePersonToPapersPublication < ActiveRecord::Migration
+  def change
+    add_column :papers_publication, :responsible_person, :integer
+    Publication.all.each do |pub|
+      pub.update_attributes! :responsible_person => pub.first_author_id
+    end
+  end
+end
