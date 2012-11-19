@@ -18,6 +18,19 @@
       <%= @publication.author_list %>
     </td>
   </tr>
+  <td><strong> Responsible Person </strong> </td>
+    <td>
+      <p><%= @publication.responsible_person.auth_name %></p>
+      <% if @publication.responsible_person == @publication.first_author %>
+      <p><i>&nbsp; set to the first author by default</i></p>
+      <% end %>
+    </td>
+  </tr>
+  <td><strong> Proofreader </strong> </td>
+    <td>
+      <%= @publication.proofreader.auth_name unless @publication.proofreader.nil? %>
+    </td>
+  </tr>
   <tr>
   <td><strong> Target Journal</strong> </td>
     <td>

@@ -19,7 +19,7 @@ development:
   #database: milapa_development
   #database: paper_prep_queue
   pool: 5
-  ##username: matt_d
+  #username: matt_d
   username: milapa
   password: 
 
