@@ -92,6 +92,8 @@
                  <strong>comments</strong>:<%= s.comment %><br />
                  <%= link_to "Download", "#{s.attachment}"%></li>
                  <%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
+            <li><%= image_tag(s.attachment_url, :class => "img-polaroid", :size => "100px") %>
+            </li>
           <% end %>
         </ol>
       <% end %>

@@ -1,5 +1,5 @@
 
-<table id="paper_table"  class="tablesorter">
+<table id="paper_table"  class="table table-bordered table-hover table-condensed table">
 <thead>
   <tr class="subheadingone" style="cursor:default;">
     <th>&nbsp;</th>
@@ -21,8 +21,7 @@
     <% end %>
       <td style="cursor:default;">
         <% unless paper.attachments.empty? %>
-          <%  attch = image_tag("attachment.png", :height => '20', :width => '20') %>
-          <%= link_to attch, "#{paper.attachments.last.attachment}" %>
+        <%= link_to '<i class="btn btn-large icon-file"> </i>'.html_safe, "#{paper.attachments.last.attachment}" %>
         <% end %>
       </td>
       <td>
@@ -39,7 +38,7 @@
         <% end %>
       </td>
       <td>
-        <a href=<%= new_publication_pub_status_jcn_url(paper) %> style="float:right;cursor:crosshair"><span class="ui-icon ui-icon-circle-plus"></span></a>
+        <%= link_to '<i class="btn btn-mini icon-plus pull-right"> </i>'.html_safe, new_publication_pub_status_jcn_url(paper) %>
         <ul>
           <% paper.pub_statuses.each do |pub_status| %>
             <li> <span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}" %></span></li>
@@ -47,7 +46,7 @@
         </ul>
       </td>
       <td>
-        <a href=<%= new_publication_pub_ref_jcn_url(paper) %> style="float:right;cursor:crosshair"><span class="ui-icon ui-icon-circle-plus"></span></a>
+        <%= link_to '<i class="btn btn-mini icon-plus pull-right"> </i>'.html_safe, new_publication_pub_ref_jcn_url(paper) %>
         <ul>
           <% if paper.referees.empty? %>
           <% else %>

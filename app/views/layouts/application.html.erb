@@ -11,35 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <!-- NAVBAR
-    ================================================== -->
-    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="container navbar-wrapper">
 
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
           <%= link_to "Minor Lab Papers", root_path, class: "brand" %>
-          <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              <% if user_signed_in? %>
-                Signed in as <%= current_user.username %> | Not you?
-                <%= link_to "Sign out", destroy_user_session_path %> 
-                <% unless !(current_user.email == "wladek@iwonka.med.virginia.edu") %>
-                  | <%= link_to "Change Password", edit_user_registration_path %>
-                <% end %>
-              <% else %>
-                <%= link_to "sign in", new_user_session_path %>
-              <% end %>
-            </p>
             <ul class="nav">
-              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -60,18 +44,25 @@
                 </ul>
               </li>
             </ul>
+            <p class="navbar-text pull-right">
+              <% if user_signed_in? %>
+                Signed in as <%= current_user.username %> | Not you?
+                <%= link_to("Sign out", destroy_user_session_path, :class => "navbar-link") %> 
+                <% unless !(current_user.email == "wladek@iwonka.med.virginia.edu") %>
+                  | <%= link_to("Change Password", edit_user_registration_path, :class => "navbar-link") %>
+                <% end %>
+              <% else %>
+                <%= link_to("sign in", new_user_session_path, :class => "navbar-link") %>
+              <% end %>
+            </p>
           </div><!--/.nav-collapse -->
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
+        </div>
+      </div>
+    </div>
 
-    </div><!-- /.container -->
   <div class="container">
     <div class="row">
-      <div class="span9"><%= yield %></div>
-      <div class="span3">
-        <h2>About Us</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+      <div class="span12"><%= yield %></div>
     </div>
   </div>
 </body>

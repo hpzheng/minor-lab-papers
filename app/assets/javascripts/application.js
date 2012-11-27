@@ -14,7 +14,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $("table").tablesorter({
+  $("#paper_table").tablesorter({
     headers: { 0: { sorter: false }, 5: { sorter: false }}
   });
   $("#ajax-append").click(function() { 
