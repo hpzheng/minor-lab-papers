@@ -2,8 +2,8 @@ class Manuscript < ActiveRecord::Base
 
   attr_accessible :publication_id, :title, :version, :attachment, :comment,:manuscript
 
+  default_scope :order => "updated_at DESC"
   default_scope :limit => "1"
-                  
 
   mount_uploader :manuscript, PublicationDocumentUploader
 
