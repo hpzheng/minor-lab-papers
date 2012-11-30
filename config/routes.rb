@@ -1,5 +1,9 @@
 Milapa::Application.routes.draw do
 
+  get "manuscript/new"
+
+  get "manuscript/edit"
+
   resources :publication_attachments
 
   devise_for :users
