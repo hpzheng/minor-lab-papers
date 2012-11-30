@@ -14,7 +14,6 @@ class ManuscriptsController < ApplicationController
   end
 
 
-  end
 
   def edit
     @publication_manuscript = Manuscript.find(params[:id])
