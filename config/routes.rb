@@ -1,5 +1,9 @@
 Milapa::Application.routes.draw do
 
+  get "manuscript/new"
+
+  get "manuscript/edit"
+
   resources :publication_attachments
 
   devise_for :users
@@ -15,6 +19,7 @@ Milapa::Application.routes.draw do
     resources :pub_status_jcns
     resources :pub_ref_jcns
     resources :publication_attachments
+    resources :manuscripts
     #member do
       #get :show_status
     #end
