@@ -19,6 +19,7 @@ Milapa::Application.routes.draw do
     resources :pub_status_jcns
     resources :pub_ref_jcns
     resources :publication_attachments
+    resources :manuscripts
     #member do
       #get :show_status
     #end
