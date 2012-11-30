@@ -99,4 +99,22 @@
       <% end %>
     </td>
   </tr>
+  <tr>
+    <td><strong> Manuscript(s) </strong></td>
+    <td>
+      <% if @publication.manuscripts.count == 0 %>
+        No attachments have been added.
+      <% else %>
+        <ol>
+          <% @publication.manuscripts.each_with_index do |s, i| %>
+            <li> <strong>version</strong>:<%= s.version %><br />
+                 <strong>comments</strong>:<%= s.comment %><br />
+                 <%= link_to "Download", "#{s.manuscript}"%></li>
+                 <%= link_to "Download", "#{s.manuscript}" unless !(user_signed_in?)%></li>
+          <% end %>
+        </ol>
+      <% end %>
+    </td>
+  </tr>
+
 </table>

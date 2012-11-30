@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121116165841) do
+ActiveRecord::Schema.define(:version => 20121130174906) do
 
   create_table "auth_group", :force => true do |t|
     t.string "name", :limit => 80, :null => false
@@ -109,6 +109,16 @@ ActiveRecord::Schema.define(:version => 20121116165841) do
   create_table "django_site", :force => true do |t|
     t.string "domain", :limit => 100, :null => false
     t.string "name",   :limit => 50,  :null => false
+  end
+
+  create_table "manuscripts", :force => true do |t|
+    t.integer  "publication_id"
+    t.string   "title"
+    t.integer  "version"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "manuscript"
   end
 
   create_table "papers_absence", :force => true do |t|

@@ -1,0 +1,30 @@
+<%= form_for([@publication,@publication_manuscript], :html => {:multipart => true}) do |f| %>
+  <% if @publication_manuscript.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publication_manuscript.errors.count, "error") %> prohibited this publication_attachment from being saved:</h2>
+
+      <ul>
+      <% @publication_manuscript.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :manuscript %><br />
+    <%= f.file_field :manuscript %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.number_field :version %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
