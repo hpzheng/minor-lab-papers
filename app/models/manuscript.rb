@@ -1,6 +1,7 @@
 class Manuscript < ActiveRecord::Base
 
-  attr_accessible :publication_id, :title, :version, :attachment, :comment
+  attr_accessible :publication_id, :title, :version, :attachment, :comment,:manuscript
+                  
 
   mount_uploader :manuscript, PublicationDocumentUploader
 
