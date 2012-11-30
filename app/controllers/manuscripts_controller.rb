@@ -21,7 +21,7 @@ class ManuscriptsController < ApplicationController
 
   def create
     @publication = Publication.find(params[:publication_id])
-    @publication_manuscript = @publication.manuscripts.build(params[:publication_manuscript])
+    @publication_manuscript = @publication.manuscripts.build(params[:manuscript])
 
     respond_to do |format|
       if @publication_manuscript.save
