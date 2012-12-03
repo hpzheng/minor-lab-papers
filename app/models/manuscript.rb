@@ -8,6 +8,7 @@ class Manuscript < ActiveRecord::Base
   mount_uploader :manuscript, PublicationDocumentUploader
 
   belongs_to :publication
+  has_one :document_type
 
   validates :publication_id, :presence => true
   validates :version, :presence => true, :numericality => { :only_integer => true, :greater_than_or_equal_to => 0 }
