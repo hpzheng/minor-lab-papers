@@ -1,5 +1,5 @@
 
-<table id="paper_table"  class="table table-bordered table-hover table-condensed table">
+<table id="paper_table"  class="table  table-condensed table-bordered table-hover">
 <thead>
   <tr class="subheadingone" style="cursor:default;">
     <th>&nbsp;</th>
@@ -14,7 +14,7 @@
 <tbody>
   <% @publications.each do |paper| %>
     <% if user_signed_in? %>
-      <tr onclick="location.href='<%= edit_publication_path(paper) %>'" style="cursor:pointer;">
+      <tr onclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
     <% else %>
       <tr onclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
     <% end %>

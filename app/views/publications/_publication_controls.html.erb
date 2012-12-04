@@ -1,0 +1,42 @@
+<% unless !user_signed_in? %>
+  <ul class="nav nav-tabs">
+    <% if params[:action] == 'show' %>
+      <li class="active"><%= link_to "Snapshot", publication_path(@publication) %></li>
+    <% else %>
+      <li><%= link_to "Snapshot", publication_path(@publication) %></li>
+    <% end %>
+    <% if params[:action] == 'edit' %>
+      <li class="active"><%= link_to "Edit", edit_publication_path(@publication) %></li>
+    <% else %>
+      <li><%= link_to "Edit", edit_publication_path(@publication) %></li>
+    <% end %>
+    <li class="dropdown">
+      <a class="dropdown-toggle"
+         data-toggle="dropdown"
+         href="#">
+           Add New
+         <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li><%= link_to "Status", new_publication_pub_status_jcn_path(@publication) %></li>
+        <li><%= link_to "Referee", new_publication_pub_ref_jcn_path(@publication) %></li>
+        <li><%= link_to "Attachment", new_publication_publication_attachment_path(@publication) %></li>
+        <li class='disabled'><a href="#">Manuscript</a>
+        <% link_to "Manuscript", new_publication_manuscript_path(@publication) %>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a class="dropdown-toggle"
+         data-toggle="dropdown"
+         href="#">
+           Tired?
+         <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li>Go to the bar<b class="icon-glass"></b></li>
+      </ul>
+  </ul>
+<% end %>
+
+

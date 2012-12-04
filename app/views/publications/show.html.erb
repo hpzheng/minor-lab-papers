@@ -1,15 +1,7 @@
-<h2> Publication information for <em><%= @publication.topic %></em> </h2>
-<% unless !user_signed_in? %>
-<!--  <div class="navbar">
-    <div class="navbar-inner"> -->
-      <ul class="nav nav-pills">
-        <li><%= link_to "Edit this publication", edit_publication_path(@publication) %></li>
-        <li><%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %></li>
-        <li><%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %></li>
-        <li><%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %></li>
-      </ul>
-<% end %>
+<h2> Snapshot for <em><%= @publication.topic %></em> </h2>
+<%= render 'publication_controls' %>
 <dl class='dl-horizontal'>
+<div class='well well-small'>
     <dt>Topic</dt>
     <dd>
       <%= @publication.topic %>
@@ -44,6 +36,8 @@
       <%= "#{@publication.deadline}" %>
     <% end %>
     </dd>
+</div>
+<div class='well well-small'>
   <dt>Status(es)</dt>
   <dd>
   <% if @publication.statuses.count == 0 %>
@@ -59,6 +53,8 @@
     </ul>
   <% end %>
     </dd>
+</div>
+<div class='well well-small'>
     <dt>Referee(s)</dt>
     <dd>
       <% if @publication.referees.count == 0 %>
@@ -74,6 +70,7 @@
         </ol>
       <% end %>
     </dd>
+</div>
     <dt>Attachment(s)</dt>
     <dd>
       <% if @publication.attachments.count == 0 %>
@@ -85,7 +82,6 @@
                  <strong>comments</strong>:<%= s.comment %><br />
                  <%= link_to "Download", "#{s.attachment}"%></li>
                  <%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
-            <li><%= image_tag(s.attachment_url, :class => "img-polaroid", :size => "100px") %>
             </li>
           <% end %>
         </ol>
