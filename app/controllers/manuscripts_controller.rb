@@ -5,6 +5,12 @@ class ManuscriptsController < ApplicationController
   def new
     @publication = Publication.find(params[:publication_id])
     @publication_manuscript = @publication.manuscripts.build
+    if params[:manuscript_id]
+      @previous_manuscript = Manuscript.find(params[:manuscript_id])
+      @publication_manuscript.version = @previous_manuscript.version.to_i + 1
+      @publication_manuscript.document_type = @previous_manuscript.document_type
+      @publication_manuscript.title = @previous_manuscript.title
+    end
     #@publication_attachment = PublicationAttachment.new
 
     respond_to do |format|
@@ -62,5 +68,11 @@ class ManuscriptsController < ApplicationController
     end
   end
 
+  def add_new_version
+    @prev_manuscript = Manuscript.find(params[:manuscript_id])
+    @publication_manuscript = Manuscript.new
+    @publication_manuscript.version = @prev_manuscript.version++
+    @publication_manuscript.title = @prev_manuscript.title
+  end
 
 end

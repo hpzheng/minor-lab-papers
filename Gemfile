@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'best_in_place'
+gem 'activeadmin'
 gem 'whenever', :require => false
 gem 'mail'
 gem 'carrierwave'

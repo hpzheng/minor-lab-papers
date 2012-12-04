@@ -108,9 +108,10 @@
         <ol>
           <% @publication.manuscripts.each_with_index do |s, i| %>
             <li> <strong>version</strong>:<%= s.version %><br />
-                 <strong>comments</strong>:<%= s.comment %><br />
-                 <%= link_to "Download", "#{s.manuscript}"%></li>
-                 <%= link_to "Download", "#{s.manuscript}" unless !(user_signed_in?)%></li>
+              <strong>comments</strong>:<%= s.comment %><br />
+              <%= link_to "Download", "#{s.manuscript}"%></li>
+              <%= link_to "Download", "#{s.manuscript}" unless !(user_signed_in?)%></li>
+              <%= link_to "Add New Version", new_publication_manuscript_path(@publication, :manuscript_id => s.id) %>
           <% end %>
         </ol>
       <% end %>
