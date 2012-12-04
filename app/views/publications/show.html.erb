@@ -1,75 +1,70 @@
-<h2> Publication information for <i><%= @publication.topic %></i> </h2>
+<h2> Publication information for <em><%= @publication.topic %></em> </h2>
 <% unless !user_signed_in? %>
-  <%= link_to "Edit this publication", edit_publication_path(@publication) %> |
-  <%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %> |
-  <%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %> |
-  <%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %>
+<!--  <div class="navbar">
+    <div class="navbar-inner"> -->
+      <ul class="nav nav-pills">
+        <li><%= link_to "Edit this publication", edit_publication_path(@publication) %></li>
+        <li><%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %></li>
+        <li><%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %></li>
+        <li><%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %></li>
+      </ul>
 <% end %>
-<table id="show_table">
-  <tr>
-    <td><strong> Topic</strong> </td>
-    <td>
+<dl class='dl-horizontal'>
+    <dt>Topic</dt>
+    <dd>
       <%= @publication.topic %>
-    <td>
-  </tr>
-  <tr>
-  <td><strong> Author(s)</strong> </td>
-    <td>
+    </dd>
+  <dt>Author(s)</dt>
+    <dd>
       <%= @publication.author_list %>
-    </td>
-  </tr>
-  <td><strong> Responsible Person </strong> </td>
-    <td>
-      <p><%= @publication.responsible_person.auth_name %></p>
+    </dd>
+  <dt>Responsible Person</dt>
+    <dd>
+      <%= @publication.responsible_person.auth_name %>
+    </dd>
       <% if @publication.responsible_person == @publication.first_author %>
-      <p><i>&nbsp; set to the first author by default</i></p>
+      <dd class='muted'> set to the first author by default</dd>
       <% end %>
-    </td>
-  </tr>
-  <td><strong> Proofreader </strong> </td>
-    <td>
-      <%= @publication.proofreader.auth_name unless @publication.proofreader.nil? %>
-    </td>
-  </tr>
-  <tr>
-  <td><strong> Target Journal</strong> </td>
-    <td>
+  <dt>Proofreader</dt>
+    <% if @publication.proofreader.nil? %>
+      <dd class='muted'>No proofreader has been added.</dd>
+    <% else %>
+      <dd><%= @publication.proofreader.auth_name unless @publication.proofreader.nil? %>
+      </dd>
+    <% end %>
+  <dt>Target Journal</dt>
+    <dd>
       <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
-    </td>
-  </tr>
-  <tr>
-  <td><strong> Deadline?</strong> </td>
-    <td>
+    </dd>
+  <dt>Deadline?</dt>
+    <dd>
     <% if @publication.deadline.nil? %>
       No Deadline at this time 
     <% else %>
       <%= "#{@publication.deadline}" %>
     <% end %>
-    </td>
-  </tr>
-  <tr>
-  <td><strong> Status(es)</strong> </td>
-  <td>
+    </dd>
+  <dt>Status(es)</dt>
+  <dd>
   <% if @publication.statuses.count == 0 %>
-    No statuses at this time.
+    <dd class='muted'>No statuses at this time.</dd>
   <% else %>
     <ul>
       <% @publication.pub_statuses.each_with_index do |s, i| %>
-      <li>
+      <li id='pub_show_status_<%=i%>'>
           <%= s.status_string %> <i><%= "...to be finished by #{s.due_date}" unless s.due_date.nil? %></i><br/>
           <%= "--#{s.description}" unless s.description.empty? %>
       </li>
       <% end %>
     </ul>
   <% end %>
-  </td>
-  </tr>
-  <tr>
-    <td><strong> Referee(s)</strong> </td>
-    <td>
+    </dd>
+    <dt>Referee(s)</dt>
+    <dd>
       <% if @publication.referees.count == 0 %>
-        No referees have been added.
+        <dd class="muted">No referees have been added.</dd>
       <% else %>
+    
         <ol>
           <% @publication.pub_refs.each_with_index do |s, i| %>
           <li>
@@ -78,13 +73,11 @@
           <% end %>
         </ol>
       <% end %>
-    </td>
-  </tr>
-  <tr>
-    <td><strong> Attachment(s) </strong></td>
-    <td>
+    </dd>
+    <dt>Attachment(s)</dt>
+    <dd>
       <% if @publication.attachments.count == 0 %>
-        No attachments have been added.
+        <dd class='muted'>No attachments have been added.</dd>
       <% else %>
         <ol>
           <% @publication.attachments.each_with_index do |s, i| %>
@@ -97,13 +90,13 @@
           <% end %>
         </ol>
       <% end %>
-    </td>
+    </dd>
   </tr>
   <tr>
-    <td><strong> Manuscript(s) </strong></td>
-    <td>
+    <dt>Manuscript(s)</dt>
+    <dd>
       <% if @publication.manuscripts.count == 0 %>
-        No attachments have been added.
+        <dd class='muted'>No manuscripts have been added.</dd>
       <% else %>
         <ol>
           <% @publication.manuscripts.each_with_index do |s, i| %>
@@ -115,7 +108,4 @@
           <% end %>
         </ol>
       <% end %>
-    </td>
-  </tr>
-
-</table>
+    </dd>
