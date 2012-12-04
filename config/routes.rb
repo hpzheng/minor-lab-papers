@@ -7,6 +7,7 @@ Milapa::Application.routes.draw do
   get "manuscript/new"
 
   get "manuscript/edit"
+  get "manuscript/add_new_version"
 
   resources :publication_attachments
 

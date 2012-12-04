@@ -15,11 +15,17 @@
     <%= f.label :manuscript %><br />
     <%= f.file_field :manuscript %>
   </div>
+
+  <div class="field">
+    <%= f.label :document_type %>
+    <%= collection_select(:publication_manuscript, :document_type_id, DocumentType.all, :id, :doc_type, {:include_blank => '--'}) %>
+  </div>
   
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
+
 
   <div class="field">
     <%= f.label :version %><br />
