@@ -1,22 +1,5 @@
-<h1> Edit Publication <i><%= @publication.topic %></i> </h1>
+<h2> Edit <em><%= @publication.topic %></em> </h2>
 
-<%= link_to "Back to Publication", publication_path(@publication) %> |
-<%= link_to "Add New Status", new_publication_pub_status_jcn_path(@publication) %> |
-<%= link_to "Add New Referee", new_publication_pub_ref_jcn_path(@publication) %> |
-<%= link_to "Add New Attachment", new_publication_publication_attachment_path(@publication) %>
-<%= link_to "Add New Manuscript", new_publication_manuscript_path(@publication) %>
+<%= render 'publication_controls' %>
 
-<div class="two_col_form">
 <%= render 'form' %>
-</div>
-
-<div style="float:left;width:140px">
-<% @publication.attachments.each_with_index do |s, i| %>
-  <ul>
-    <li>
-      <%= "#{s.file_name}--version: #{s.version}" %><br />
-      <%= link_to "Download attachment?", "#{s.attachment}" %>
-    </li>
-  </ul>
-<% end %>
-</div>

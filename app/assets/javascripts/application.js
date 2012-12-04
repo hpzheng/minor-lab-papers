@@ -6,12 +6,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require jquery.ui.all
 //= require jquery-tablesorter
+//= require jquery.purr
+//= require best_in_place
 //= require_tree .
 
 $(document).ready(function() {
-  $("table").tablesorter({
+  $("#paper_table").tablesorter({
     headers: { 0: { sorter: false }, 5: { sorter: false }}
   });
   $("#ajax-append").click(function() { 
@@ -36,11 +39,7 @@ $(document).ready(function() {
       width: 500,
       modal: true
   });
-  $("h1")
-    .click(function() {
-      $("#dialog-form").dialog("open");
+$(function() {
+        $( "#tabs" ).tabs();
     });
-  $(function() {
-    $( "#selectable" ).selectable();
-  });
 });

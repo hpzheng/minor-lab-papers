@@ -1,77 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Minor Lab Papers</title>
-  <% #stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-  <% #stylesheet_link_tag 'application'%>
-  <%= stylesheet_link_tag 'milapa/text_n_colors'%>
-  <%= stylesheet_link_tag 'milapa/2_col_liquid'%>
-  <% #stylesheet_link_tag 'table/3_col_liquid'%>
-  <% #stylesheet_link_tag 'table/3_col_liquid_faux'%>
-  <% #stylesheet_link_tag 'table/3_col_rounded'%>
-  <%= stylesheet_link_tag 'milapa/tables'%>
-  <%= stylesheet_link_tag 'milapa/form_labels_above'%>
-  <%= stylesheet_link_tag "milapa/errors" %>
-  <%= stylesheet_link_tag 'milapa/nav_bar'%>
-  <%= stylesheet_link_tag "style.css" %>
-  <%= stylesheet_link_tag "milapa/jquery-ui-milapa" %>
+  <title>Minor Lab Papers (MiLaPa)</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body >
-  <div id="main_wrapper">
-    <div id="footer">
-      <div id="footer_inner">
-        <% if user_signed_in? %>
-          Signed in as <%= current_user.email %>. | Not you?
-          <%= link_to "Sign out", destroy_user_session_path %> 
-          <% unless !(current_user.email == "wladek@iwonka.med.virginia.edu") %>
-            | <%= link_to "Change Password", edit_user_registration_path %>
-          <% end %>
-        <% else %>
-          <%= link_to "sign in", new_user_session_path %>
-        <% end %>
-      </div>
-    </div>
-    <div id="header">
-      <div id="header_inner">
-        <% logo = image_tag("logo.png", :alt => "Minor Lab Papers") %>
-        <%= link_to logo, root_path %>
-      </div>
-
-    </div>
-    <div id="header">
-      <div id="nav_bar" class="lalign">
-        <ul>
-          <li><%= link_to "View All Publications", publications_path %></li>
-        <% if user_signed_in? %>
-          <li><%= link_to "View Accepted Publications", publications_accepted_papers_path %></li>
-          <li><%= link_to "Urgent Publications", publications_urgent_papers_path unless !(current_user.username == "wladek") %></li>
-        <% end %>
-          <li><%= link_to "Add Publication", new_publication_path unless !user_signed_in? %></li>
-        </ul>
-      </div>
-      <div id="nav_bar" class="ralign">
-        <ul>
-      <% if user_signed_in? %>
-          <li><strong>CREATE NEW:</strong></li>
-          <li><%= link_to "Author", new_author_path    %></li>
-          <li><%= link_to "Referee", new_referee_path  %></li>
-          <li><%= link_to "Journal", new_journal_path  %></li>
-      <% else %>
-        <li>&nbsp;</li>
-      <% end %>
-        </ul>
-      </div>
+<body>
 
 
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <%= link_to "Minor Lab Papers", root_path, class: "brand" %>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">View</li>
+                  <li><%= link_to "All Publications", publications_path %></li>
+                  <% if user_signed_in? %>
+                    <li><%= link_to "Accepted Publications", publications_accepted_papers_path %></li>
+                    <li><%= link_to "Urgent Publications", publications_urgent_papers_path unless !(current_user.username == "wladek") %></li>
+                  <% end %>
+                  <% if user_signed_in? %>
+                      <li class="divider"></li>
+                      <li class="nav-header">Create New</li>
+                      <li><%= link_to "Publication", new_publication_path %></li>
+                      <li><%= link_to "Author", new_author_path    %></li>
+                      <li><%= link_to "Referee", new_referee_path  %></li>
+                      <li><%= link_to "Journal", new_journal_path  %></li>
+                  <% end %>
+                </ul>
+              </li>
+            </ul>
+            <p class="navbar-text pull-right">
+              <% if user_signed_in? %>
+                Signed in as <%= current_user.username %> | Not you?
+                <%= link_to("Sign out", destroy_user_session_path, :class => "navbar-link") %> 
+                <% unless !(current_user.email == "wladek@iwonka.med.virginia.edu") %>
+                  | <%= link_to("Change Password", edit_user_registration_path, :class => "navbar-link") %>
+                <% end %>
+              <% else %>
+                <%= link_to("sign in", new_user_session_path, :class => "navbar-link") %>
+              <% end %>
+            </p>
+          </div><!--/.nav-collapse -->
+        </div>
+       </div>
     </div>
-    <div id="content">
-      <div id="content_inner">
-        <%= yield %>
-        <%= debug(params) if Rails.env.development? %>
-      </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span10 offset1"><%= yield %></div>
     </div>
   </div>
 </body>
+<%= debug(params) if Rails.env.development? %>
 </html>
