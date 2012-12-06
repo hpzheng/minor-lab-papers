@@ -1,11 +1,23 @@
 <h2> Snapshot for <em><%= @publication.topic %></em> </h2>
 <%= render 'publication_controls' %>
 <dl class='dl-horizontal'>
-<div class='well well-small'>
-    <dt>Topic</dt>
+  <dt>Topic</dt>
     <dd>
       <%= @publication.topic %>
     </dd>
+  <dt>Target Journal</dt>
+    <dd>
+      <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
+    </dd>
+  <dt>Deadline?</dt>
+    <dd>
+    <% if @publication.deadline.nil? %>
+      No Deadline at this time 
+    <% else %>
+      <%= "#{@publication.deadline}" %>
+    <% end %>
+    </dd>
+
   <dt>Author(s)</dt>
     <dd>
       <%= @publication.author_list %>
@@ -24,38 +36,24 @@
       <dd><%= @publication.proofreader.auth_name unless @publication.proofreader.nil? %>
       </dd>
     <% end %>
-  <dt>Target Journal</dt>
+  <hr class="bs-docs-separator">
+  <dt>Status(es)</dt>
     <dd>
-      <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
-    </dd>
-  <dt>Deadline?</dt>
-    <dd>
-    <% if @publication.deadline.nil? %>
-      No Deadline at this time 
+    <% if @publication.statuses.count == 0 %>
+      <dd class='muted'>No statuses at this time.</dd>
     <% else %>
-      <%= "#{@publication.deadline}" %>
+      <ul>
+        <% @publication.pub_statuses.each_with_index do |s, i| %>
+        <li id='pub_show_status_<%=i%>'>
+            <%= s.status_string %> <i><%= "...to be finished by #{s.due_date}" unless s.due_date.nil? %></i><br/>
+            <%= "--#{s.description}" unless s.description.empty? %>
+        </li>
+        <% end %>
+      </ul>
     <% end %>
     </dd>
-</div>
-<div class='well well-small'>
-  <dt>Status(es)</dt>
-  <dd>
-  <% if @publication.statuses.count == 0 %>
-    <dd class='muted'>No statuses at this time.</dd>
-  <% else %>
-    <ul>
-      <% @publication.pub_statuses.each_with_index do |s, i| %>
-      <li id='pub_show_status_<%=i%>'>
-          <%= s.status_string %> <i><%= "...to be finished by #{s.due_date}" unless s.due_date.nil? %></i><br/>
-          <%= "--#{s.description}" unless s.description.empty? %>
-      </li>
-      <% end %>
-    </ul>
-  <% end %>
-    </dd>
-</div>
-<div class='well well-small'>
-    <dt>Referee(s)</dt>
+  <hr class="bs-docs-separator">
+  <dt>Referee(s)</dt>
     <dd>
       <% if @publication.referees.count == 0 %>
         <dd class="muted">No referees have been added.</dd>
@@ -70,8 +68,8 @@
         </ol>
       <% end %>
     </dd>
-</div>
-    <dt>Attachment(s)</dt>
+  <hr class="bs-docs-separator">
+  <dt>Attachment(s)</dt>
     <dd>
       <% if @publication.attachments.count == 0 %>
         <dd class='muted'>No attachments have been added.</dd>
@@ -89,7 +87,8 @@
     </dd>
   </tr>
   <tr>
-    <dt>Manuscript(s)</dt>
+  <hr class="bs-docs-separator">
+  <dt>Manuscript(s)</dt>
     <dd>
       <% if @publication.manuscripts.count == 0 %>
         <dd class='muted'>No manuscripts have been added.</dd>
