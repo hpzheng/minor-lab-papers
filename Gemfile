@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'simple_form'
 gem 'best_in_place'
 gem 'activeadmin'
 gem 'whenever', :require => false
