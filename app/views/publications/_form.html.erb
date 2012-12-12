@@ -1,16 +1,19 @@
-<%= form_for(@publication) do |f| %>
-  <% if @publication.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@publication.errors.count, "error") %> 
-          prohibited this publication from being saved:</h2>
+<%= form_for(@publication, :class => 'form-horizontal') do |f| %>
+  
+  <% if @publication.errors.any? %><!--begin submit errors-->
+    <div class="alert alert-error">
+    <button type="button" class="close" data-dismiss="alert">x</button>
+      <p><strong><%= pluralize(@publication.errors.count, "error") %>
+          prohibited this publication from being saved:</p></strong>
       <p>There were problems with the following fields:</p>
       <ul>
       <% @publication.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
-    </div>
+    </div><!--end submit errors-->
   <% end %>
+  
   <div class="formsection">
     <table><tr><td>
         <%= f.label :topic %>
@@ -23,6 +26,7 @@
         <%= f.text_field :deadline %>
     </td></tr></table>
   </div>
+
   <div class="formsection">
     <table>
       <tr><td>
@@ -53,64 +57,33 @@
       </td></tr></table>
   </div>
 
+  <div class="actions">
+    <p><%= f.submit "Save" %></p>
+  </div>
+<% end %>
 
-    <% @publication.pub_statuses.each_with_index do |s, key| %>
-    <div class="formsection">
-      <%= f.fields_for :pub_statuses, s do |g| %>
-        <div class="field">
-        <table>
-          <tr>
-            <td class="lalign">
-              <%= g.label :status_id, "Status ##{key+1}" %>
-            </td>
-            <td class="ralign">
-              <strong><%= "Delete Status ##{key+1}?" %></strong>
-              <%= g.check_box :_destroy %>
-            </td>
-          </tr>
-        </table>
-        </div>
-        <table><tr><td>
-          <div class="field">
-            <%= g.label :select_status %>
-            <%= g.collection_select(:status_id, Status.all, :id, :status_str, {:include_blank => '--'}) %><%= g.collection_select(:person_responsible_id, Author.all, :id, :auth_name, {:include_blank => '--'}) %>
-          </div>
-        </td><td>
-          <div class="field">
-            <%= g.label :due_date %>
-            <%= g.text_field :due_date %>
-          </div>
-        </td></tr></table>
-        <div class="field">
-          <%= g.label :description %>
-          <%= g.text_field :description, :size => 75 %>
-        </div>
-      <% end %>
-    </div>
-    <% end %>
-    <% @publication.pub_refs.each_with_index do |s, key| %>
-    <div class="formsection">
-      <%= f.fields_for :pub_refs, s do |g| %>
-        <div class="field">
-        <table>
-          <tr>
-            <td class="lalign">
-              <%= g.label :referee, "Referee ##{key+1}" %>
-            </td>
-            <td class="ralign">
-              <strong><%= "Delete Referee ##{key+1}?" %></strong>
-              <%= g.check_box :_destroy %>
-            </td>
-          </tr>
-        </table>
-        </div>
-        <div class="field">
-          <%= g.collection_select(:referee_id, Referee.all, :id, :ref_name, {:include_blank => '--'}) %>
-        </div>
-      <% end %>
-    </div>
-    <% end %>
 
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Status(es)</a></li>
+        <li><a href="#tabs-2">Attachment(s)</a></li>
+        <li><a href="#tabs-3">Referee(s)</a></li>
+    </ul>
+    <div id="tabs-1">
+    <p>
+<%= form_for(@publication) do |f| %>
+<%= f.fields_for :pub_statuses do |builder| %>
+  <%= render 'pub_status_fields', f: builder %>
+<% end %>
+<%= link_to_add_fields "Add Status", f, :pub_statuses %>
+  <div class="actions">
+    <a href="#" id="status_save" class='btn disabled'>SAVE</a>
+  </div>
+<% end %>
+</p>
+    </div>
+    <div id="tabs-2">
+<%= form_for(@publication) do |f| %>
     <% @publication.attachments.each_with_index do |s, key| %>
     <div class="formsection">
       <%= f.fields_for :attachments, s do |g| %>
@@ -149,8 +122,44 @@
       <% end %>
     </div>
     <% end %>
-
   <div class="actions">
-    <p><%= f.submit "Submit" %></p>
+    <p><%= f.submit "Save" %></p>
   </div>
 <% end %>
+
+    </div>
+    <div id="tabs-3">
+
+<%= form_for(@publication) do |f| %>
+    <% @publication.pub_refs.each_with_index do |s, key| %>
+    <div class="formsection">
+      <%= f.fields_for :pub_refs, s do |g| %>
+        <div class="field">
+        <table>
+          <tr>
+            <td class="lalign">
+              <%= g.label :referee, "Referee ##{key+1}" %>
+            </td>
+            <td class="ralign">
+              <strong><%= "Delete Referee ##{key+1}?" %></strong>
+              <%= g.check_box :_destroy %>
+            </td>
+          </tr>
+        </table>
+        </div>
+
+
+        <div class="field">
+          <%= g.collection_select(:referee_id, Referee.all, :id, :ref_name, {:include_blank => '--'}) %>
+        </div>
+      <% end %>
+    </div>
+    <% end %>
+  <div class="actions">
+    <p><%= f.submit "Save" %></p>
+  </div>
+<% end %>
+
+    </div>
+</div>
+

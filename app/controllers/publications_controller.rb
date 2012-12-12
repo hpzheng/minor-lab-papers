@@ -1,5 +1,6 @@
 class PublicationsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
+  respond_to :html, :json
 
   def index
     @publications = Publication.active_publications.all
@@ -38,7 +39,7 @@ class PublicationsController < ApplicationController
   def create
     @publication = Publication.new(params[:publication])
     if @publication.save
-      redirect_to publication_path(@publication), :notice => 'User was successfully created.'
+      redirect_to publication_path(@publication), :notice => 'Publication was successfully created.'
     else
       render :action => "new"
     end
@@ -47,11 +48,13 @@ class PublicationsController < ApplicationController
   def update
     @publication = Publication.find(params[:id])
     @pub_statuses = @publication.pub_statuses
-    if @publication.update_attributes(params[:publication])
-      redirect_to publication_path(@publication), :notice => 'User was successfully updated.'
-    else
-       render :action => "edit"
-    end
+    flash[:notice] = "Publication was updated successfully!" if @publication.update_attributes(params[:publication])
+    respond_with @publication
+    # if @publication.update_attributes(params[:publication])
+    #   redirect_to publication_path(@publication), :notice => 'User was successfully updated.'
+    # else
+    #    render :action => "edit"
+    # end
   end
 
 #  # DELETE /users/1

@@ -26,6 +26,14 @@ class Author < ActiveRecord::Base
   has_many :third_auth_papers, :foreign_key => "third_author_id",
                                :class_name => "Publication"
 
+  def self.author_list
+    #Author.select("id, auth_name").map {|x| [x.id, x.auth_name]}
+    auth_list = Author.all.map {|x| [x.id, x.auth_name]}
+    auth_list.reverse!
+    auth_list << [nil, '--']
+    auth_list.reverse!
+  end
+
   def auth_name
     if self.lastname.nil? || self.lastname.empty? || self.lastname == " "
       return "#{self.firstname}"

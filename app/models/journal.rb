@@ -9,5 +9,10 @@ class Journal < ActiveRecord::Base
   validates :journal_abbr, :presence => true
   validates :url, :presence => true
 
+  def self.journal_list
+    Journal.select("id, journal_abbr").map {|x| [x.id, x.journal_abbr]}
+  end
+
+
 
 end

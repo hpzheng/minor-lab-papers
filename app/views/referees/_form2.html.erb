@@ -1,0 +1,14 @@
+<%= simple_form_for @referee  do |f| %>
+  <fieldset>
+      <%= f.input :firstname %>
+      <%= f.input :lastname %>
+      <%= f.input :email %>
+      <%= f.input :department %>
+      <%= f.input :organization %>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', publications_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>
+

@@ -1,273 +1,500 @@
 
 ---
-auth_permission:
+papers_publication:
   columns:
   - id
-  - name
-  - content_type_id
-  - codename
+  - first_author_id
+  - second_author_id
+  - third_author_id
+  - target_journal_id
+  - topic
+  - created_at
+  - updated_at
+  - deadline
+  - active
+  - proofreader_id
+  - responsible_person_id
   records: 
   - - '1'
-    - Can add permission
     - '1'
-    - add_permission
-  - - '2'
-    - Can change permission
+    - '2'
+    - '3'
     - '1'
-    - change_permission
-  - - '3'
-    - Can delete permission
+    - PGKs- IDP90717 and IDP04624
+    - '2011-12-13 18:49:31.424404'
+    - '2012-11-16 17:07:45.709711'
+    - 
+    - true
+    - 
     - '1'
-    - delete_permission
   - - '4'
-    - Can add group
+    - '28'
+    - '5'
+    - '20'
     - '2'
-    - add_group
+    - IDP00203
+    - '2011-12-13 21:46:26.958962'
+    - '2012-11-16 17:07:45.689701'
+    - 
+    - true
+    - 
+    - '28'
   - - '5'
-    - Can change group
-    - '2'
-    - change_group
+    - '17'
+    - 
+    - 
+    - '3'
+    - RutD
+    - '2011-12-13 21:47:58.362184'
+    - '2012-11-16 17:07:45.701851'
+    - '2012-05-11'
+    - true
+    - 
+    - '17'
   - - '6'
-    - Can delete group
+    - '16'
+    - 
+    - 
     - '2'
-    - delete_group
+    - IDP02573
+    - '2011-12-13 21:48:17.699878'
+    - '2012-11-16 17:07:45.700731'
+    - '2012-05-12'
+    - true
+    - 
+    - '16'
   - - '7'
-    - Can add user
-    - '3'
-    - add_user
+    - '26'
+    - '25'
+    - 
+    - '2'
+    - IDP90828
+    - '2011-12-13 21:49:36.629079'
+    - '2012-11-16 17:07:45.694273'
+    - '2012-07-07'
+    - true
+    - 
+    - '26'
   - - '8'
-    - Can change user
     - '3'
-    - change_user
+    - '8'
+    - 
+    - '10'
+    - Anthrax proteins
+    - '2011-12-13 21:50:24.967607'
+    - '2012-11-26 17:12:33.065114'
+    - '2012-05-17'
+    - true
+    - 
+    - '3'
   - - '9'
-    - Can delete user
-    - '3'
-    - delete_user
+    - '33'
+    - 
+    - 
+    - 
+    - Alexander Rashin's Paper
+    - '2011-12-13 21:51:13.743163'
+    - '2012-11-16 17:07:45.698526'
+    - 
+    - true
+    - 
+    - '33'
   - - '10'
-    - Can add message
-    - '4'
-    - add_message
+    - '3'
+    - '2'
+    - 
+    - '2'
+    - APC7623
+    - '2011-12-13 21:52:27.920258'
+    - '2012-11-16 17:07:45.68233'
+    - '2012-06-06'
+    - true
+    - 
+    - '3'
   - - '11'
-    - Can change message
-    - '4'
-    - change_message
+    - '34'
+    - 
+    - 
+    - 
+    - Olga's Paper
+    - '2011-12-13 21:53:03.702513'
+    - '2012-11-16 17:07:45.712085'
+    - 
+    - true
+    - 
+    - '34'
   - - '12'
-    - Can delete message
-    - '4'
-    - delete_message
+    - '35'
+    - '15'
+    - '3'
+    - '1'
+    - modeling
+    - '2011-12-13 21:54:38.488913'
+    - '2012-11-16 17:07:45.687395'
+    - 
+    - true
+    - 
+    - '35'
   - - '13'
-    - Can add content type
-    - '5'
-    - add_contenttype
+    - '35'
+    - '36'
+    - 
+    - 
+    - Small Molecules (Hepes, ...)
+    - '2011-12-13 21:55:36.143241'
+    - '2012-11-16 17:07:45.714291'
+    - 
+    - true
+    - 
+    - '35'
   - - '14'
-    - Can change content type
-    - '5'
-    - change_contenttype
+    - '1'
+    - '7'
+    - '9'
+    - '6'
+    - CMM
+    - '2011-12-13 21:57:53.997934'
+    - '2012-11-16 17:07:45.699532'
+    - '2012-05-31'
+    - true
+    - 
+    - '1'
   - - '15'
-    - Can delete content type
-    - '5'
-    - delete_contenttype
+    - '25'
+    - 
+    - 
+    - '7'
+    - Dethiobiotin
+    - '2011-12-13 22:00:25.350688'
+    - '2012-11-16 17:07:45.706741'
+    - 
+    - true
+    - 
+    - '25'
   - - '16'
-    - Can add session
-    - '6'
-    - add_session
+    - '37'
+    - '3'
+    - 
+    - '1'
+    - APC40079
+    - '2011-12-13 22:01:05.767317'
+    - '2012-11-16 17:07:45.708701'
+    - '2011-12-21'
+    - true
+    - 
+    - '37'
   - - '17'
-    - Can change session
     - '6'
-    - change_session
+    - '3'
+    - '40'
+    - '2'
+    - APC41385.0 - THI5/NMT1
+    - '2011-12-13 22:03:52.818562'
+    - '2012-11-16 17:07:45.680446'
+    - 
+    - true
+    - 
+    - '6'
   - - '18'
-    - Can delete session
-    - '6'
-    - delete_session
+    - '38'
+    - '25'
+    - 
+    - '14'
+    - IDP00044
+    - '2011-12-13 22:04:47.533086'
+    - '2012-11-16 17:07:45.679331'
+    - 
+    - true
+    - 
+    - '38'
   - - '19'
-    - Can add site
-    - '7'
-    - add_site
+    - '20'
+    - '14'
+    - 
+    - '2'
+    - APC65312.2 - CBS pair
+    - '2011-12-13 22:06:10.148093'
+    - '2012-11-16 17:07:45.68877'
+    - '2012-05-17'
+    - true
+    - 
+    - '20'
   - - '20'
-    - Can change site
-    - '7'
-    - change_site
+    - '12'
+    - '3'
+    - 
+    - '2'
+    - IDP01205 - DhbC
+    - '2011-12-13 22:06:50.459224'
+    - '2012-11-16 17:07:45.683263'
+    - '2012-09-06'
+    - true
+    - 
+    - '12'
   - - '21'
-    - Can delete site
-    - '7'
-    - delete_site
+    - '8'
+    - 
+    - 
+    - '8'
+    - Alt a 1
+    - '2011-12-13 22:09:22.383945'
+    - '2012-11-16 17:07:45.705766'
+    - 
+    - true
+    - 
+    - '8'
   - - '22'
-    - Can add author
-    - '8'
-    - add_author
+    - '19'
+    - '25'
+    - 
+    - '9'
+    - Albumins
+    - '2011-12-13 22:10:53.439955'
+    - '2012-11-16 17:07:45.697677'
+    - 
+    - true
+    - 
+    - '19'
   - - '23'
-    - Can change author
-    - '8'
-    - change_author
+    - '27'
+    - 
+    - 
+    - '24'
+    - ! '"cocktails"'
+    - '2011-12-13 22:11:42.531519'
+    - '2012-11-16 17:07:45.702857'
+    - 
+    - true
+    - 
+    - '27'
   - - '24'
-    - Can delete author
+    - '3'
+    - '27'
     - '8'
-    - delete_author
+    - '26'
+    - Universal stress proteins
+    - '2011-12-13 22:12:21.549907'
+    - '2012-11-16 17:07:45.688077'
+    - '2012-07-31'
+    - true
+    - 
+    - '3'
   - - '25'
-    - Can add journal
-    - '9'
-    - add_journal
+    - '22'
+    - '25'
+    - 
+    - '2'
+    - IDP04323
+    - '2011-12-13 22:13:00.776527'
+    - '2012-11-16 17:07:45.713196'
+    - 
+    - true
+    - 
+    - '22'
   - - '26'
-    - Can change journal
-    - '9'
-    - change_journal
+    - '17'
+    - '24'
+    - 
+    - '2'
+    - RutC
+    - '2011-12-13 22:13:19.101521'
+    - '2012-11-16 17:07:45.683968'
+    - 
+    - true
+    - 
+    - '17'
   - - '27'
-    - Can delete journal
-    - '9'
-    - delete_journal
+    - '17'
+    - '41'
+    - '24'
+    - '3'
+    - IDP00698 (3FTT)
+    - '2011-12-13 22:15:00.185282'
+    - '2012-11-16 17:07:45.685345'
+    - 
+    - true
+    - 
+    - '17'
   - - '28'
-    - Can add status
-    - '10'
-    - add_status
+    - '8'
+    - 
+    - 
+    - '11'
+    - Der f 1 /Der p 1
+    - '2011-12-13 22:15:56.948555'
+    - '2012-11-16 17:07:45.707716'
+    - 
+    - true
+    - 
+    - '8'
   - - '29'
-    - Can change status
-    - '10'
-    - change_status
-  - - '30'
-    - Can delete status
-    - '10'
-    - delete_status
-  - - '31'
-    - Can add publication
-    - '11'
-    - add_publication
-  - - '32'
-    - Can change publication
-    - '11'
-    - change_publication
-  - - '33'
-    - Can delete publication
-    - '11'
-    - delete_publication
-  - - '34'
-    - Can add publication_status_jcn
+    - '22'
+    - 
+    - 
     - '12'
-    - add_publication_status_jcn
+    - Survivin
+    - '2011-12-13 22:17:18.805601'
+    - '2012-11-16 17:07:45.704798'
+    - 
+    - true
+    - 
+    - '22'
   - - '35'
-    - Can change publication_status_jcn
-    - '12'
-    - change_publication_status_jcn
+    - '1'
+    - '3'
+    - '27'
+    - '13'
+    - glycoprotein
+    - '2011-12-15 03:16:58.277957'
+    - '2012-11-16 17:07:45.703829'
+    - 
+    - true
+    - 
+    - '1'
   - - '36'
-    - Can delete publication_status_jcn
-    - '12'
-    - delete_publication_status_jcn
+    - '3'
+    - '20'
+    - '8'
+    - '15'
+    - Ferro
+    - '2011-12-20 21:01:38.600437'
+    - '2012-11-16 17:07:45.690731'
+    - 
+    - true
+    - 
+    - '3'
   - - '37'
-    - Can add log entry
-    - '13'
-    - add_logentry
-  - - '38'
-    - Can change log entry
-    - '13'
-    - change_logentry
+    - '1'
+    - '5'
+    - '26'
+    - '3'
+    - metal-benchmark
+    - '2011-12-16 05:00:00'
+    - '2012-11-16 17:07:45.710892'
+    - 
+    - true
+    - 
+    - '1'
   - - '39'
-    - Can delete log entry
-    - '13'
-    - delete_logentry
-  - - '40'
-    - Can add attachment
-    - '14'
-    - add_attachment
-  - - '41'
-    - Can change attachment
-    - '14'
-    - change_attachment
-  - - '42'
-    - Can delete attachment
-    - '14'
-    - delete_attachment
+    - '1'
+    - '27'
+    - '7'
+    - '16'
+    - SLLP1
+    - '2011-12-01 05:00:00'
+    - '2012-11-16 17:07:45.691704'
+    - '2012-08-09'
+    - true
+    - 
+    - '1'
   - - '43'
-    - Can add frequency
-    - '15'
-    - add_frequency
+    - '16'
+    - '8'
+    - '1'
+    - '4'
+    - IDP90557
+    - '2012-02-07 21:12:25.271094'
+    - '2012-11-16 17:07:45.696828'
+    - '2012-08-30'
+    - true
+    - 
+    - '16'
   - - '44'
-    - Can change frequency
-    - '15'
-    - change_frequency
+    - '1'
+    - '16'
+    - 
+    - '17'
+    - BVparam in organometallic
+    - '2012-04-04 16:15:52.253445'
+    - '2012-11-16 17:07:45.695964'
+    - 
+    - false
+    - 
+    - '1'
   - - '45'
-    - Can delete frequency
-    - '15'
-    - delete_frequency
+    - '1'
+    - '26'
+    - '20'
+    - '25'
+    - Mg-Nucleic Acid
+    - '2012-04-30 19:05:58.05704'
+    - '2012-11-16 17:07:45.693438'
+    - 
+    - false
+    - 
+    - '1'
+  - - '46'
+    - '1'
+    - 
+    - 
+    - '13'
+    - CMW (prev aquacheker)
+    - '2012-04-30 19:08:42.385118'
+    - '2012-11-16 17:07:45.692652'
+    - 
+    - false
+    - 
+    - '1'
+  - - '47'
+    - '32'
+    - 
+    - 
+    - 
+    - LabDB
+    - '2012-06-13 16:03:36.571498'
+    - '2012-11-16 17:07:45.695123'
+    - 
+    - false
+    - 
+    - '32'
   - - '49'
-    - Can add notification
     - '17'
-    - add_notification
+    - '3'
+    - 
+    - '27'
+    - LysR
+    - '2012-08-31 15:44:47.039'
+    - '2012-11-16 17:07:45.686712'
+    - 
+    - false
+    - 
+    - '17'
   - - '50'
-    - Can change notification
-    - '17'
-    - change_notification
+    - '44'
+    - '24'
+    - '3'
+    - 
+    - TM1030
+    - '2012-09-13 20:46:20.392918'
+    - '2012-11-16 17:07:45.684665'
+    - 
+    - false
+    - 
+    - '44'
   - - '51'
-    - Can delete notification
     - '17'
-    - delete_notification
+    - '24'
+    - '3'
+    - '13'
+    - RutR
+    - '2012-09-13 20:49:01.27732'
+    - '2012-11-16 17:07:45.686036'
+    - 
+    - false
+    - 
+    - '17'
   - - '52'
-    - Can add contact_type
-    - '18'
-    - add_contact_type
-  - - '53'
-    - Can change contact_type
-    - '18'
-    - change_contact_type
-  - - '54'
-    - Can delete contact_type
-    - '18'
-    - delete_contact_type
-  - - '55'
-    - Can add absence_type
-    - '19'
-    - add_absence_type
-  - - '56'
-    - Can change absence_type
-    - '19'
-    - change_absence_type
-  - - '57'
-    - Can delete absence_type
-    - '19'
-    - delete_absence_type
-  - - '58'
-    - Can add absence
-    - '20'
-    - add_absence
-  - - '59'
-    - Can change absence
-    - '20'
-    - change_absence
-  - - '60'
-    - Can delete absence
-    - '20'
-    - delete_absence
-  - - '61'
-    - Can add referee
+    - '40'
+    - 
+    - 
+    - '8'
+    - test topic
+    - '2012-10-08 14:44:57.663182'
+    - '2012-12-04 20:29:05.936116'
+    - '2012-10-08'
+    - false
     - '21'
-    - add_referee
-  - - '62'
-    - Can change referee
-    - '21'
-    - change_referee
-  - - '63'
-    - Can delete referee
-    - '21'
-    - delete_referee
-  - - '64'
-    - Can add publication_referee_jcn
-    - '22'
-    - add_publication_referee_jcn
-  - - '65'
-    - Can change publication_referee_jcn
-    - '22'
-    - change_publication_referee_jcn
-  - - '66'
-    - Can delete publication_referee_jcn
-    - '22'
-    - delete_publication_referee_jcn
-
----
-auth_group:
-  columns:
-  - id
-  - name
-  records: 
-  - - '1'
-    - minor
+    - '17'
 
 ---
 django_session:
@@ -767,6 +994,287 @@ django_site:
     - example.com
 
 ---
+publication_attachments:
+  columns:
+  - id
+  - attachment
+  - version
+  - publication_id
+  - comment
+  - created_at
+  - updated_at
+  records: 
+  - - '6'
+    - structure-note_Solberg-Demas_v6_mwd.doc
+    - '6'
+    - '4'
+    - ''
+    - '2012-04-24 16:34:54.080022'
+    - '2012-04-24 16:34:54.080022'
+  - - '8'
+    - structure-note_Solberg-Demas_v6_mwd_ref.doc
+    - '7'
+    - '4'
+    - with references updated
+    - '2012-04-25 15:57:13.027852'
+    - '2012-04-25 15:57:13.027852'
+  - - '10'
+    - Figure1.tif
+    - '2'
+    - '19'
+    - Figure 1
+    - '2012-07-20 14:39:15.261849'
+    - '2012-07-20 14:39:15.261849'
+  - - '11'
+    - Figure2.tif
+    - '2'
+    - '19'
+    - Figure 2
+    - '2012-07-20 14:39:56.947132'
+    - '2012-07-20 14:39:56.947132'
+  - - '12'
+    - Figure3.tif
+    - '2'
+    - '19'
+    - Figure 3
+    - '2012-07-20 14:40:35.631819'
+    - '2012-07-20 14:40:35.631819'
+  - - '13'
+    - Figure4.tif
+    - '2'
+    - '19'
+    - Figure 4
+    - '2012-07-20 14:40:59.462652'
+    - '2012-07-20 14:40:59.462652'
+  - - '14'
+    - Figure5.tif
+    - '2'
+    - '19'
+    - Figure 5
+    - '2012-07-20 14:41:15.074332'
+    - '2012-07-20 14:41:15.074332'
+  - - '16'
+    - Solberg.Demas.Minor.NAGK.crystal.structure.Yersinia.pestis.plague.ActaCrysF.2011.RS-MD-KM_24-July-2012_v10.doc
+    - '10'
+    - '4'
+    - Solberg.Demas.Minor.NAGK.crystal.structure.Yersinia.pestis.plague.ActaCrysF.2011.RS-MD-KM_24-July-2012_v10.doc
+    - '2012-07-24 20:08:02.878581'
+    - '2012-07-26 14:50:35.291735'
+  - - '17'
+    - figure-1.tif
+    - '10'
+    - '4'
+    - figure1
+    - '2012-07-24 20:08:37.827927'
+    - '2012-07-24 20:08:37.827927'
+  - - '18'
+    - figure-2.tif
+    - '10'
+    - '4'
+    - figure2
+    - '2012-07-24 20:08:54.806568'
+    - '2012-07-26 14:50:35.285425'
+  - - '19'
+    - figure-3.tif
+    - '10'
+    - '4'
+    - figure3
+    - '2012-07-24 20:09:08.177318'
+    - '2012-07-24 20:09:08.177318'
+  - - '20'
+    - figure-4.tif
+    - '10'
+    - '4'
+    - figure4
+    - '2012-07-24 20:09:25.303876'
+    - '2012-07-24 20:09:25.303876'
+  - - '21'
+    - figure-5.tif
+    - '10'
+    - '4'
+    - figure5
+    - '2012-07-24 20:09:38.079933'
+    - '2012-07-24 20:09:38.079933'
+  - - '22'
+    - figure-6.tif
+    - '10'
+    - '4'
+    - figure6
+    - '2012-07-24 20:09:48.197084'
+    - '2012-07-24 20:09:48.197084'
+  - - '23'
+    - figure-7.tif
+    - '10'
+    - '4'
+    - figure7
+    - '2012-07-24 20:10:18.345327'
+    - '2012-07-24 20:10:18.345327'
+  - - '27'
+    - Mikolajczak.Fratczak.Minor.3kxr.CBS.mg.transporter.crystal.ActaCrysF.2011.docx
+    - '2'
+    - '19'
+    - Mikolajczak.Fratczak.Minor.3kxr.CBS.mg.transporter.crystal.ActaCrysF.2011.docx
+    - '2012-07-26 15:04:09.445597'
+    - '2012-07-26 15:04:09.445597'
+  - - '28'
+    - Figure5_dimers_final.tiff
+    - '5'
+    - '24'
+    - ''
+    - '2012-07-26 15:11:23.049091'
+    - '2012-07-26 15:11:23.049091'
+  - - '29'
+    - test.txt
+    - '1'
+    - '48'
+    - test
+    - '2012-07-26 15:43:39.005128'
+    - '2012-07-26 15:43:39.005128'
+  - - '30'
+    - Figure1_USP_domains_distribution_final.tiff
+    - '5'
+    - '24'
+    - Figure1
+    - '2012-07-26 22:03:53.84703'
+    - '2012-07-26 22:03:53.84703'
+  - - '31'
+    - Figure3_scheme_USP.tiff
+    - '5'
+    - '24'
+    - Figure3
+    - '2012-07-26 22:04:30.896145'
+    - '2012-07-26 22:04:30.896145'
+  - - '32'
+    - 3FTT-v6.doc
+    - '6'
+    - '27'
+    - ! 'This is a final version to be checked and approved by Dr. Minor. It was proofread
+      and accepted by other leading authors (Dr. Haibin Luo and Matt Demas). For your
+      convininence figures are implemented in the document. Once accepted by Dr. Minor
+      it can be submitted to Proteins. '
+    - '2012-09-26 17:01:45.64142'
+    - '2012-09-26 17:03:21.889258'
+  - - '34'
+    - tt5033_source_rev1_dc.docx
+    - '101'
+    - '26'
+    - For Wladek before resubmission
+    - '2012-10-04 17:54:29.43754'
+    - '2012-10-04 17:54:29.43754'
+  - - '35'
+    - rutc_response_to_reviewers.doc
+    - '102'
+    - '26'
+    - Response to reviewers
+    - '2012-10-04 17:56:40.546081'
+    - '2012-10-04 17:56:40.546081'
+  - - '36'
+    - Figure1ABC-b.tif
+    - '103'
+    - '26'
+    - Fig 1
+    - '2012-10-04 17:57:48.540248'
+    - '2012-10-04 17:57:48.540248'
+  - - '37'
+    - Figure2ABCDEF-f.tif
+    - '104'
+    - '26'
+    - Figure 2
+    - '2012-10-04 18:50:11.336503'
+    - '2012-10-04 18:50:11.336503'
+  - - '38'
+    - Figure3.eps
+    - '105'
+    - '26'
+    - Figure 3
+    - '2012-10-04 18:51:38.91437'
+    - '2012-10-04 18:51:38.91437'
+  - - '39'
+    - 3QSL_v5_prefinal.doc
+    - '5'
+    - '17'
+    - ''
+    - '2012-10-04 19:04:28.930052'
+    - '2012-10-04 19:04:28.930052'
+  - - '40'
+    - Figure1_cartoon.png
+    - '1'
+    - '17'
+    - Figure1
+    - '2012-10-04 19:05:28.675735'
+    - '2012-10-04 19:05:28.675735'
+  - - '41'
+    - Figure2_MSA.tiff
+    - '2'
+    - '17'
+    - Figure2
+    - '2012-10-04 19:05:47.079998'
+    - '2012-10-04 19:05:47.079998'
+  - - '42'
+    - Figure3_super_ABpanels.tiff
+    - '3'
+    - '17'
+    - Figure3
+    - '2012-10-04 19:06:09.893511'
+    - '2012-10-04 19:06:09.893511'
+  - - '43'
+    - Figure5_tree_.tiff
+    - '5'
+    - '17'
+    - Figure5
+    - '2012-10-04 19:06:33.209276'
+    - '2012-10-04 19:06:33.209276'
+  - - '44'
+    - Figure4_center.tiff
+    - '4'
+    - '17'
+    - Figure4
+    - '2012-10-04 20:42:24.712249'
+    - '2012-10-04 20:42:24.712249'
+  - - '45'
+    - Table1_3QSL_new_table_corrected.tiff
+    - '6'
+    - '17'
+    - Table2
+    - '2012-10-04 20:43:28.294271'
+    - '2012-10-04 20:43:28.294271'
+  - - '46'
+    - Table2_Dali_Fatcat.tiff
+    - '7'
+    - '17'
+    - Table2
+    - '2012-10-04 20:43:43.757337'
+    - '2012-10-04 20:43:43.757337'
+  - - '47'
+    - TM1030_IntJournalBiolMacromol_v7_prefinal.doc
+    - '7'
+    - '50'
+    - ''
+    - '2012-10-04 20:51:34.584855'
+    - '2012-10-04 20:51:34.584855'
+  - - '48'
+    - 3os6_KLT_MJD_Mar2012_v5.docx
+    - '1'
+    - '20'
+    - final version (edited by David and Rachel)
+    - '2012-10-08 17:44:44.178232'
+    - '2012-10-08 17:52:13.527313'
+  - - '49'
+    - 3CNI_ActaCrysF_2.doc
+    - '1'
+    - '10'
+    - ! 'manuscript '
+    - '2012-10-11 16:42:40.054897'
+    - '2012-10-11 16:42:40.054897'
+  - - '51'
+    - 3udu.png
+    - '1'
+    - '52'
+    - ''
+    - '2012-11-16 16:18:27.622873'
+    - '2012-11-19 15:41:19.804792'
+
+---
 papers_absence_type:
   columns:
   - id
@@ -801,570 +1309,6 @@ papers_contact_type:
     - phone
   - - '3'
     - skype
-
----
-papers_frequency:
-  columns:
-  - id
-  - description
-  - days
-  records: 
-  - - '1'
-    - everyday
-    - '1'
-  - - '2'
-    - every_other_day
-    - '2'
-  - - '3'
-    - once_every_three_days
-    - '3'
-  - - '4'
-    - once_every_five_days
-    - '5'
-  - - '5'
-    - once_a_week
-    - '7'
-  - - '6'
-    - bi-weekly
-    - '14'
-  - - '7'
-    - monthly
-    - '30'
-  - - '8'
-    - once_every_two_months
-    - '60'
-  - - '9'
-    - once_every_three_months
-    - '90'
-  - - '10'
-    - never
-    - '3650'
-  - - '11'
-    - twice_a_day
-    - '1'
-  - - '12'
-    - several_times_a_day
-    - '1'
-  - - '13'
-    - within_the_next_hour
-    - '1'
-  - - '14'
-    - immediately
-    - '1'
-
----
-papers_notification:
-  columns:
-  - id
-  - person_id
-  - notification
-  - begin_date
-  - report_frequency_id
-  - pastdue_frequency_id
-  records: 
-  - - '1'
-    - '1'
-    - true
-    - '2012-02-08'
-    - '4'
-    - '2'
-  - - '2'
-    - '42'
-    - true
-    - '2012-02-09'
-    - '5'
-    - '2'
-  - - '3'
-    - '3'
-    - true
-    - '2012-02-16'
-    - '5'
-    - '2'
-  - - '4'
-    - '32'
-    - true
-    - '2011-12-29'
-    - '5'
-    - '2'
-  - - '5'
-    - '30'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '6'
-    - '28'
-    - true
-    - '2012-02-16'
-    - '5'
-    - '2'
-  - - '7'
-    - '27'
-    - true
-    - '2012-02-16'
-    - '5'
-    - '2'
-  - - '8'
-    - '26'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '9'
-    - '25'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '10'
-    - '24'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '11'
-    - '23'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '12'
-    - '22'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '13'
-    - '21'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '14'
-    - '20'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '15'
-    - '19'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '16'
-    - '18'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '17'
-    - '17'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '18'
-    - '16'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '19'
-    - '15'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '20'
-    - '14'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '21'
-    - '12'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '22'
-    - '5'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '23'
-    - '10'
-    - true
-    - '2011-12-14'
-    - '5'
-    - '2'
-  - - '24'
-    - '8'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '25'
-    - '7'
-    - true
-    - '2012-01-26'
-    - '5'
-    - '2'
-  - - '26'
-    - '9'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '27'
-    - '6'
-    - true
-    - '2012-01-05'
-    - '5'
-    - '2'
-  - - '28'
-    - '16'
-    - true
-    - '2012-02-07'
-    - '5'
-    - '2'
-
----
-papers_publication:
-  columns:
-  - id
-  - first_author_id
-  - second_author_id
-  - third_author_id
-  - target_journal_id
-  - topic
-  - entry_date
-  - modify_date
-  - deadline
-  - active
-  records: 
-  - - '1'
-    - '1'
-    - '2'
-    - '3'
-    - '1'
-    - PGKs- IDP90717 and IDP04624
-    - '2011-12-13 18:49:31.424404+00'
-    - '2011-12-16 15:20:10.485086+00'
-    - 
-    - true
-  - - '4'
-    - '28'
-    - '5'
-    - 
-    - '2'
-    - IDP00203
-    - '2011-12-13 21:46:26.958962+00'
-    - '2012-02-02 19:39:50.996178+00'
-    - 
-    - true
-  - - '5'
-    - '17'
-    - 
-    - 
-    - '3'
-    - RutD
-    - '2011-12-13 21:47:58.362184+00'
-    - '2012-01-20 18:58:49.643736+00'
-    - 
-    - true
-  - - '6'
-    - '16'
-    - 
-    - 
-    - '2'
-    - IDP02573
-    - '2011-12-13 21:48:17.699878+00'
-    - '2012-01-04 21:12:15.008589+00'
-    - 
-    - true
-  - - '7'
-    - '26'
-    - '25'
-    - 
-    - '2'
-    - IDP90828
-    - '2011-12-13 21:49:36.629079+00'
-    - '2012-02-13 17:14:07.172189+00'
-    - 
-    - true
-  - - '8'
-    - '3'
-    - '9'
-    - 
-    - '10'
-    - Anthrax proteins
-    - '2011-12-13 21:50:24.967607+00'
-    - '2011-12-15 15:32:44.178687+00'
-    - 
-    - true
-  - - '9'
-    - '33'
-    - 
-    - 
-    - 
-    - Alexander Rashin's Paper
-    - '2011-12-13 21:51:13.743163+00'
-    - '2011-12-14 15:16:28.861184+00'
-    - 
-    - true
-  - - '10'
-    - '3'
-    - '2'
-    - 
-    - '4'
-    - APC7623
-    - '2011-12-13 21:52:27.920258+00'
-    - '2011-12-14 14:43:54.983261+00'
-    - 
-    - true
-  - - '11'
-    - '34'
-    - 
-    - 
-    - 
-    - Olga's Paper
-    - '2011-12-13 21:53:03.702513+00'
-    - '2011-12-14 14:43:54.983261+00'
-    - 
-    - true
-  - - '12'
-    - '35'
-    - '15'
-    - 
-    - '5'
-    - modelling
-    - '2011-12-13 21:54:38.488913+00'
-    - '2011-12-14 14:43:54.983261+00'
-    - 
-    - true
-  - - '13'
-    - '35'
-    - '36'
-    - 
-    - 
-    - Small Molecules (Hepes, ...)
-    - '2011-12-13 21:55:36.143241+00'
-    - '2011-12-13 21:55:36.143297+00'
-    - 
-    - true
-  - - '14'
-    - '1'
-    - '7'
-    - '9'
-    - '6'
-    - CMM
-    - '2011-12-13 21:57:53.997934+00'
-    - '2012-02-17 21:48:02.972069+00'
-    - 
-    - true
-  - - '15'
-    - '25'
-    - 
-    - 
-    - '7'
-    - Dethiobiotin
-    - '2011-12-13 22:00:25.350688+00'
-    - '2012-02-02 20:21:28.104185+00'
-    - 
-    - true
-  - - '16'
-    - '37'
-    - '3'
-    - 
-    - '1'
-    - APC40079
-    - '2011-12-13 22:01:05.767317+00'
-    - '2012-01-04 21:12:44.695007+00'
-    - '2011-12-21'
-    - true
-  - - '17'
-    - '6'
-    - '3'
-    - 
-    - '2'
-    - APC41385.0
-    - '2011-12-13 22:03:52.818562+00'
-    - '2012-01-03 20:43:48.809702+00'
-    - 
-    - true
-  - - '18'
-    - '38'
-    - '25'
-    - 
-    - '1'
-    - IDP00044
-    - '2011-12-13 22:04:47.533086+00'
-    - '2011-12-13 22:04:47.533141+00'
-    - 
-    - true
-  - - '19'
-    - '20'
-    - '14'
-    - 
-    - '2'
-    - APC65312.2
-    - '2011-12-13 22:06:10.148093+00'
-    - '2012-01-04 21:11:55.274476+00'
-    - 
-    - true
-  - - '20'
-    - '12'
-    - '3'
-    - 
-    - '2'
-    - IDP01205
-    - '2011-12-13 22:06:50.459224+00'
-    - '2011-12-13 22:06:50.45928+00'
-    - 
-    - true
-  - - '21'
-    - '8'
-    - 
-    - 
-    - '8'
-    - Alt a 1
-    - '2011-12-13 22:09:22.383945+00'
-    - '2012-02-15 17:20:00.26115+00'
-    - 
-    - true
-  - - '22'
-    - '19'
-    - '25'
-    - 
-    - '9'
-    - Albumins
-    - '2011-12-13 22:10:53.439955+00'
-    - '2012-02-01 18:20:39.706061+00'
-    - 
-    - true
-  - - '23'
-    - '27'
-    - 
-    - 
-    - '6'
-    - ! '"cocktails"'
-    - '2011-12-13 22:11:42.531519+00'
-    - '2011-12-13 22:11:42.531575+00'
-    - 
-    - true
-  - - '24'
-    - '3'
-    - '27'
-    - 
-    - '14'
-    - Universal stress proteins
-    - '2011-12-13 22:12:21.549907+00'
-    - '2012-02-15 20:33:13.613356+00'
-    - 
-    - true
-  - - '25'
-    - '22'
-    - '25'
-    - 
-    - '2'
-    - IDP04323
-    - '2011-12-13 22:13:00.776527+00'
-    - '2011-12-13 22:13:00.776584+00'
-    - 
-    - true
-  - - '26'
-    - '17'
-    - 
-    - 
-    - '2'
-    - RutC
-    - '2011-12-13 22:13:19.101521+00'
-    - '2012-01-04 21:12:33.719194+00'
-    - 
-    - true
-  - - '27'
-    - '17'
-    - 
-    - 
-    - '10'
-    - IDP00698
-    - '2011-12-13 22:15:00.185282+00'
-    - '2011-12-15 03:27:09.29061+00'
-    - 
-    - true
-  - - '28'
-    - '8'
-    - 
-    - 
-    - '11'
-    - Der f 1 /Der p 1
-    - '2011-12-13 22:15:56.948555+00'
-    - '2012-01-11 22:05:28.860169+00'
-    - 
-    - true
-  - - '29'
-    - '22'
-    - 
-    - 
-    - '12'
-    - Survivin
-    - '2011-12-13 22:17:18.805601+00'
-    - '2012-02-15 17:23:21.719082+00'
-    - 
-    - true
-  - - '35'
-    - '1'
-    - '3'
-    - 
-    - '13'
-    - glycoprotein
-    - '2011-12-15 03:16:58.277957+00'
-    - '2012-02-15 20:28:10.844637+00'
-    - 
-    - true
-  - - '36'
-    - '3'
-    - '8'
-    - 
-    - '15'
-    - Ferro
-    - '2011-12-20 21:01:38.600437+00'
-    - '2011-12-20 21:01:38.600497+00'
-    - 
-    - true
-  - - '37'
-    - '1'
-    - '5'
-    - '26'
-    - '3'
-    - metal-benchmark
-    - '2011-12-16 05:00:00+00'
-    - '2011-12-16 05:00:00+00'
-    - 
-    - true
-  - - '39'
-    - '1'
-    - '27'
-    - '7'
-    - 
-    - SLLP1
-    - '2011-12-01 05:00:00+00'
-    - '2011-12-01 05:00:00+00'
-    - 
-    - true
-  - - '43'
-    - '16'
-    - '8'
-    - '1'
-    - 
-    - IDP90557
-    - '2012-02-07 21:12:25.271094+00'
-    - '2012-02-07 21:12:25.271159+00'
-    - 
-    - true
 
 ---
 django_content_type:
@@ -1458,6 +1402,2025 @@ django_content_type:
     - publication_referee_jcn
     - papers
     - publication_referee_jcn
+
+---
+papers_referee:
+  columns:
+  - id
+  - firstname
+  - lastname
+  - email
+  - department
+  - organization
+  records: 
+  - - '1'
+    - Steve
+    - Almo
+    - almo@aecom.yu.edu
+    - Department of Biochemistry, Department of Physiology & Biophysics
+    - Albert Einstein College of Medicine
+  - - '2'
+    - Gaya
+    - Amarasinghe
+    - amarasin@iastate.edu
+    - Dept. of Biochemistry, Biophysics & Molecular Biology
+    - Iowa State University
+  - - '3'
+    - Wayne
+    - Anderson
+    - wf-anderson@northwestern.edu
+    - Dept of Molecular Pharmacology and Biological Chemistry
+    - Northwestern University
+  - - '4'
+    - Heimo
+    - Breiteneder
+    - Heimo.Breiteneder@meduniwien.ac.at
+    - Department of Pathophysiology and Allergy Research, Center for Pathophysiology,
+      Infectiology & Immun
+    - ! 'Medical University of Vienna '
+  - - '5'
+    - Tomasz
+    - Cierpicki
+    - tamaszc@med.umich.edu
+    - Department of Pathology
+    - University of Michigan Health Science System
+  - - '6'
+    - Mirek
+    - Cygler
+    - mirek@bri.nrc.ca
+    - ''
+    - National Research Council, Canada
+  - - '7'
+    - Jolanta
+    - Grembecka
+    - jolantag@umich.edu
+    - Department of Pathology
+    - University of Michigan Health Science System
+  - - '8'
+    - Pawel
+    - Grochulski
+    - Pawel.Grochulski@lightsource.ca
+    - College of Pharmacy and Nutrition
+    - Canadian Macromolecular Crystallography Facility and Canadian Light Source
+  - - '9'
+    - Jack
+    - Johnson
+    - jackj@scripps.edu
+    - Department of Molecular Biology
+    - Scripps Research Institute
+  - - '10'
+    - Adam
+    - Godzik
+    - adam@burnham.org
+    - Bioinformatics and System Biology
+    - Burncham Institute
+  - - '11'
+    - Lukasz
+    - Lebioda
+    - lebioda@psc.sc.edu
+    - Department of Chemistry and Biochemistry
+    - University of South Carolina
+  - - '12'
+    - Arun
+    - Malhotra
+    - malhotra@miami.edu
+    - Department of Biochemistry & Molecular Biology
+    - University of Miami School of Medicine
+  - - '13'
+    - Mischa
+    - Machius
+    - machius@med.unc.edu
+    - Center for Structural Biology
+    - University of North Carolina
+  - - '14'
+    - Jim
+    - Spencer
+    - Jim.Spencer@bristol.ac.uk
+    - School of Cellular & Molecular Medicine
+    - University of Bristol
+  - - '15'
+    - Thomas
+    - Terwilliger
+    - terwilliger@lanl.gov
+    - ''
+    - Los Alamos National Laboratory
+  - - '16'
+    - Diana
+    - Tomchick
+    - diana.tomchick@utsouthwestern.edu
+    - Department of Biochemistry
+    - Southwestern Medical Center in Dallas
+  - - '17'
+    - Brian
+    - Sutton
+    - brian.sutton@kcl.ac.uk
+    - Randall Division of Cell and Molecular Biophysics
+    - King's College London
+  - - '18'
+    - Wayne
+    - Thomas
+    - wayne@ichr.uwa.edu.au
+    - The Telethon Institute for Child Health Research
+    - University of Western Australia
+  - - '19'
+    - Dusan
+    - Turk
+    - Dusan.Turk@ijs.si
+    - Department of Biochemistry and Molecular and Structural Biology
+    - Jozef Stefan Institute, Slovenia
+  - - '20'
+    - Catherine H.
+    - Schein
+    - chschein@utmb.ed
+    - Department of Biochemistry and Molecular Biology
+    - University of Texas Medical Branch
+  - - '21'
+    - Kare
+    - Meno
+    - kme@dk.alk-abello.com
+    - ''
+    - ALK-Abello, Denmark
+  - - '22'
+    - Raymond
+    - Hui
+    - structuralparasitology@gmail.com
+    - Structural Parasitology
+    - University of Toronto
+
+---
+papers_frequency:
+  columns:
+  - id
+  - description
+  - days
+  records: 
+  - - '1'
+    - everyday
+    - '1'
+  - - '2'
+    - every_other_day
+    - '2'
+  - - '3'
+    - once_every_three_days
+    - '3'
+  - - '4'
+    - once_every_five_days
+    - '5'
+  - - '5'
+    - once_a_week
+    - '7'
+  - - '6'
+    - bi-weekly
+    - '14'
+  - - '7'
+    - monthly
+    - '30'
+  - - '8'
+    - once_every_two_months
+    - '60'
+  - - '9'
+    - once_every_three_months
+    - '90'
+  - - '10'
+    - never
+    - '3650'
+  - - '11'
+    - twice_a_day
+    - '1'
+  - - '12'
+    - several_times_a_day
+    - '1'
+  - - '13'
+    - within_the_next_hour
+    - '1'
+  - - '14'
+    - immediately
+    - '1'
+
+---
+papers_author:
+  columns:
+  - id
+  - firstname
+  - lastname
+  - email
+  - phone
+  - skype
+  records: 
+  - - '1'
+    - Heping
+    - Zheng
+    - dust@iwonka.med.virginia.edu
+    - 434-242-7850
+    - ''
+  - - '2'
+    - Ekaterina
+    - Filippova
+    - katya@structure.northwestern.edu
+    - 
+    - 
+  - - '3'
+    - Karolina
+    - Tkaczuk
+    - karolina@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '5'
+    - Matt
+    - Demas
+    - matt_d@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '6'
+    - Jacek
+    - Bajor
+    - jacek_b@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '7'
+    - Mahendra D.
+    - Chordia
+    - mahendra@iwonka.med.virginia.edu
+    - ''
+    - ''
+  - - '8'
+    - Maksymilian
+    - Chruszcz
+    - maks@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '9'
+    - David R.
+    - Cooper
+    - dcoop@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '10'
+    - Marcin
+    - Cymborowski
+    - marcel@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '12'
+    - Marcin
+    - Domagalski
+    - marcin_d@iwonka.med.virginia.edu
+    - 434-227-1144
+    - ''
+  - - '13'
+    - Jose
+    - Font
+    - font@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '14'
+    - Zbigniew
+    - Fratczak
+    - zbigniew_f@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '15'
+    - Marek
+    - Grabowski
+    - marek@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '16'
+    - Jing
+    - Hou
+    - houjing@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '17'
+    - Aleksandra A.
+    - Knapik
+    - aleksandra@iwonka.med.virginia.edu
+    - ''
+    - ''
+  - - '18'
+    - Elizabeth
+    - MacLean
+    - beth_m@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '19'
+    - Karolina
+    - Majorek
+    - karolina_m@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '20'
+    - Katarzyna
+    - Mikolajczak
+    - kasia_m@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '21'
+    - Ania
+    - Milaczewska
+    - ania_m@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '22'
+    - Ewa
+    - Niedzialkowska
+    - ewa_n@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '23'
+    - Tomasz
+    - Osinski
+    - tomek_o@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '24'
+    - Janusz
+    - Petkowski
+    - janusz@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '25'
+    - Przemek
+    - Porebski
+    - przemek@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '26'
+    - Ivan G.
+    - Shabalin
+    - ivan_s@iwonka.med.virginia.edu
+    - ''
+    - ''
+  - - '27'
+    - Igor A.
+    - Shumilin
+    - igor@iwonka.med.virginia.edu
+    - ''
+    - ''
+  - - '28'
+    - Rob
+    - Solberg
+    - rob_s@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '30'
+    - Rachel
+    - Vigour
+    - rachel_v@iwonka.med.virginia.edu
+    - 
+    - 
+  - - '32'
+    - Matthew D.
+    - Zimmerman
+    - matt@iwonka.med.virginia.edu
+    - 434-243-0033
+    - ''
+  - - '33'
+    - Alexander
+    - Rashin
+    - ! ' '
+    - 
+    - 
+  - - '34'
+    - Olga
+    - Kirillova
+    - ! ' '
+    - 
+    - 
+  - - '35'
+    - Dominik
+    - Gront
+    - ! ' '
+    - 
+    - 
+  - - '36'
+    - Pawel
+    - Sledz
+    - ! ' '
+    - 
+    - 
+  - - '37'
+    - Anna
+    - Goral
+    - ! ' '
+    - 
+    - 
+  - - '38'
+    - Majka
+    - ! ' '
+    - ! ' '
+    - 
+    - 
+  - - '39'
+    - Martin
+    - Chapman
+    - ! ' '
+    - 
+    - 
+  - - '40'
+    - Anna G.
+    - Chruszcz
+    - anna@hkl-xray.com
+    - 434-979-6382
+    - ''
+  - - '41'
+    - Haibin
+    - Luo
+    - hbluo2005@yahoo.com.cn
+    - 
+    - 
+  - - '42'
+    - Wladek
+    - Minor
+    - wladek@iwonka.med.virginia.edu
+    - 434-825-1813
+    - ''
+  - - '43'
+    - Arabinda
+    - Mandal
+    - am7v@virginia.edu
+    - ''
+    - ''
+  - - '44'
+    - ! 'Kasia '
+    - Koclega
+    - kasia@iwonka.med.vvirginia.edu
+    - ''
+    - ''
+
+---
+papers_status:
+  columns:
+  - id
+  - priority
+  - status
+  records: 
+  - - '1'
+    - '1'
+    - waiting_for_wladek
+  - - '2'
+    - '2'
+    - data_being_prepared_by
+  - - '3'
+    - '2'
+    - text_being_updated_by
+  - - '4'
+    - '2'
+    - text_being_proofread_by
+  - - '5'
+    - '3'
+    - see_description
+  - - '6'
+    - '4'
+    - major_revision
+  - - '7'
+    - '4'
+    - minor_revision
+  - - '8'
+    - '4'
+    - waiting_for_review
+  - - '9'
+    - '0'
+    - waiting_for_wladek_to_submit
+  - - '10'
+    - '4'
+    - re-submitted_after_revisions
+  - - '11'
+    - '5'
+    - accepted
+
+---
+papers_attachment:
+  columns:
+  - id
+  - publication_id
+  - file
+  - author_id
+  - version
+  - entry_date
+  records: 
+  - - '2'
+    - '4'
+    - attachment/structure-note_Solberg-Demas_v6_mwd.doc
+    - '5'
+    - '6'
+    - '2012-02-02 19:38:37.894003+00'
+  - - '3'
+    - '14'
+    - attachment/CMM-version-54.doc
+    - '9'
+    - 
+    - '2012-02-17 21:48:03.090664+00'
+
+---
+papers_notification:
+  columns:
+  - id
+  - person_id
+  - notification
+  - begin_date
+  - report_frequency_id
+  - pastdue_frequency_id
+  records: 
+  - - '1'
+    - '1'
+    - true
+    - '2012-08-09'
+    - '4'
+    - '2'
+  - - '2'
+    - '42'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '3'
+    - '3'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '4'
+    - '32'
+    - true
+    - '2012-08-08'
+    - '5'
+    - '2'
+  - - '5'
+    - '30'
+    - true
+    - '2012-08-13'
+    - '5'
+    - '2'
+  - - '6'
+    - '28'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '7'
+    - '27'
+    - true
+    - '2012-08-03'
+    - '5'
+    - '2'
+  - - '8'
+    - '26'
+    - true
+    - '2012-07-13'
+    - '5'
+    - '2'
+  - - '9'
+    - '25'
+    - true
+    - '2012-01-05'
+    - '5'
+    - '2'
+  - - '10'
+    - '24'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '11'
+    - '23'
+    - true
+    - '2012-01-05'
+    - '5'
+    - '2'
+  - - '12'
+    - '22'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '13'
+    - '21'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '14'
+    - '20'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '15'
+    - '19'
+    - true
+    - '2012-05-11'
+    - '5'
+    - '2'
+  - - '16'
+    - '18'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '17'
+    - '17'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '18'
+    - '16'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '19'
+    - '15'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '20'
+    - '14'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '21'
+    - '12'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '22'
+    - '5'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '23'
+    - '10'
+    - true
+    - '2011-12-14'
+    - '5'
+    - '2'
+  - - '24'
+    - '8'
+    - true
+    - '2012-01-05'
+    - '5'
+    - '2'
+  - - '25'
+    - '7'
+    - true
+    - '2012-04-27'
+    - '5'
+    - '2'
+  - - '26'
+    - '9'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+  - - '27'
+    - '6'
+    - true
+    - '2012-08-10'
+    - '5'
+    - '2'
+
+---
+papers_journal:
+  columns:
+  - id
+  - journal_name
+  - journal_abbr
+  - url
+  records: 
+  - - '1'
+    - Journal of Structural and Functional Genomics
+    - JSFG
+    - http://www.editorialmanager.com/jsfg/default.asp
+  - - '2'
+    - ! 'Acta Crystallographica Section F: Structural Biology and Crystallization
+      Communications'
+    - Acta Cryst. F
+    - http://journals.iucr.org/f/services/authorservices.html
+  - - '3'
+    - ! 'Proteins: Structure, Function, and Bioinformatics'
+    - Proteins
+    - http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0134/homepage/ForAuthors.html
+  - - '4'
+    - Journal of Structural Biology
+    - JSB
+    - http://www.elsevier.com/wps/find/journaldescription.cws_home/622900/authorinstructions
+  - - '5'
+    - Public Library of Science
+    - PLoS
+    - http://www.plos.org/publications/journals/
+  - - '6'
+    - Nature Methods
+    - Nat. Methods
+    - http://www.nature.com/nmeth/authors/index.html
+  - - '7'
+    - Federation of European Biochemical Societies Journal
+    - FEBS J
+    - http://onlinelibrary.wiley.com/journal/10.1111/%28ISSN%291742-4658/homepage/febs_author_guidelines.htm
+  - - '8'
+    - The Journal of Immunology
+    - J. Immunol.
+    - http://www.jimmunol.org/site/misc/authorinstructions.xhtml
+  - - '9'
+    - Molecular Immunology
+    - Mol. Immunol.
+    - http://www.elsevier.com/wps/find/journaldescription.cws_home/253/authorinstructions
+  - - '10'
+    - Protein Science
+    - Protein Sci.
+    - http://www.proteinscience.org/view/0/authorInformation.html
+  - - '11'
+    - Journal of Biological Chemistry
+    - JBC
+    - http://www.jbc.org/site/misc/itoa.xhtml
+  - - '12'
+    - Molecular Biology of the Cell
+    - Mol. Biol. Cell
+    - http://www.molbiolcell.org/site/misc/ifora.xhtml
+  - - '13'
+    - ! 'Acta Crystallographica Section D: Biological Crystallography'
+    - Acta Cryst. D
+    - http://submission.iucr.org/submit/d
+  - - '14'
+    - Journal of Molecular Biology
+    - JMB
+    - http://www.journals.elsevier.com/journal-of-molecular-biology/
+  - - '15'
+    - Biometals Journal
+    - Biomet
+    - http://www.springer.com/life+sciences/biochemistry+%26+biophysics/journal/10534
+  - - '16'
+    - Biology of Reproduction
+    - BOR
+    - http://www.biolreprod.org/
+  - - '17'
+    - ! 'Acta Crystallographica Section B: Structural Science'
+    - Acta Cryst. B
+    - http://journals.iucr.org/b/
+  - - '18'
+    - Journal of Functional and Integrative Genomics
+    - JFIG
+    - http://www.springer.com/life+sciences/cell+biology/journal/10142
+  - - '24'
+    - Structure
+    - Structure
+    - http://www.cell.com/structure/
+  - - '25'
+    - Nucleic Acid Research
+    - NAR
+    - http://nar.oxfordjournals.org/
+  - - '26'
+    - Evolutionary Applications
+    - Evol.App.
+    - http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1752-4571
+  - - '27'
+    - Journal of Molecular Structure
+    - JMS
+    - http://www.journals.elsevier.com/journal-of-molecular-structure/
+
+---
+papers_publication_referee_jcn:
+  columns:
+  - id
+  - publication_id
+  - referee_id
+  - created_at
+  - updated_at
+  records: 
+  - - '13'
+    - '5'
+    - '16'
+    - '2012-01-20 18:58:49.656378'
+    - '2012-01-20 18:58:49.656438'
+  - - '14'
+    - '5'
+    - '11'
+    - '2012-01-20 18:58:49.658892'
+    - '2012-01-20 18:58:49.658949'
+  - - '15'
+    - '5'
+    - '12'
+    - '2012-01-20 18:58:49.660531'
+    - '2012-01-20 18:58:49.660587'
+
+---
+papers_publication_status_jcn:
+  columns:
+  - id
+  - publication_id
+  - status_id
+  - person_responsible_id
+  - description
+  - due_date
+  - created_at
+  - updated_at
+  records: 
+  - - '2'
+    - '8'
+    - '3'
+    - '3'
+    - ''
+    - '2012-10-31'
+    - '2011-12-13 21:50:24.97492'
+    - '2012-10-11 18:48:53.280757'
+  - - '4'
+    - '10'
+    - '1'
+    - 
+    - e-mail from Thu April12, 2012
+    - '2012-04-06'
+    - '2011-12-13 21:52:27.92754'
+    - '2012-07-20 14:30:52.197455'
+  - - '5'
+    - '11'
+    - '8'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 21:53:03.70984'
+    - '2012-01-20 18:52:33.290778'
+  - - '6'
+    - '12'
+    - '11'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 21:54:38.496231'
+    - '2012-08-07 19:34:51.951982'
+  - - '7'
+    - '15'
+    - '11'
+    - '25'
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 22:00:25.358007'
+    - '2012-02-02 20:21:28.119974'
+  - - '8'
+    - '20'
+    - '1'
+    - 
+    - ''
+    - '2012-08-24'
+    - '2011-12-13 22:06:50.466521'
+    - '2012-11-01 19:03:31.651225'
+  - - '9'
+    - '21'
+    - '11'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 22:09:22.391297'
+    - '2012-04-05 16:04:28.205443'
+  - - '13'
+    - '23'
+    - '11'
+    - '27'
+    - The status was given as RED, but no deadline was given
+    - '2012-08-08'
+    - '2011-12-13 22:11:42.53879'
+    - '2012-08-08 20:05:51.399555'
+  - - '14'
+    - '25'
+    - '5'
+    - 
+    - needs more work
+    - '2012-04-06'
+    - '2011-12-13 22:13:00.783802'
+    - '2011-12-13 22:13:00.783802'
+  - - '15'
+    - '28'
+    - '11'
+    - '8'
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 22:15:56.955852'
+    - '2012-01-11 22:05:28.870834'
+  - - '16'
+    - '16'
+    - '11'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2011-12-14 04:28:12.597874'
+    - '2012-01-20 18:50:57.361059'
+  - - '17'
+    - '29'
+    - '11'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2011-12-13 22:17:18.812891'
+    - '2012-02-15 17:23:21.735996'
+  - - '19'
+    - '6'
+    - '11'
+    - '16'
+    - latest version has been sent to Wladek on Jan 16, 2012
+    - '2012-05-12'
+    - '2011-12-13 21:48:17.707167'
+    - '2012-04-23 08:19:38.152651'
+  - - '20'
+    - '14'
+    - '1'
+    - 
+    - Send Email to George Sheldrick and Peter Muller;Forward Email for 3lrk re-refinement
+      to Heping
+    - '2012-04-27'
+    - '2011-12-13 21:57:54.00525'
+    - '2012-07-26 17:51:54.380677'
+  - - '22'
+    - '27'
+    - '9'
+    - 
+    - ! 'This is a "3ftt project" rewritten by Janusz Petkowski ready for final proofread
+      by Dr. Minor before submission. '
+    - '2012-10-05'
+    - '2011-12-14 21:57:19.135634'
+    - '2012-10-23 18:54:06.527689'
+  - - '25'
+    - '5'
+    - '11'
+    - '17'
+    - ''
+    - '2012-05-11'
+    - '2011-12-13 21:47:58.369834'
+    - '2012-05-16 18:29:53.000265'
+  - - '26'
+    - '26'
+    - '10'
+    - 
+    - Reviewers' suggetions were implemented in the manuscript and the paper is ready
+      to be resubmitted by Dr. Minor
+    - '2012-10-01'
+    - '2011-12-14 21:48:48.25506'
+    - '2012-10-05 14:24:34.516618'
+  - - '27'
+    - '24'
+    - '8'
+    - 
+    - ''
+    - '2012-12-29'
+    - '2011-12-13 22:12:21.557272'
+    - '2012-11-01 19:10:21.465191'
+  - - '28'
+    - '18'
+    - '11'
+    - 
+    - ITC
+    - '2012-01-10'
+    - '2011-12-13 22:04:47.540397'
+    - '2012-11-01 19:14:43.620251'
+  - - '29'
+    - '1'
+    - '11'
+    - 
+    - J Struct Funct Genomics. 2012 Mar;13(1):15-26. Epub 2012 Mar 10.
+    - '2012-04-06'
+    - '2011-12-14 04:27:41.123417'
+    - '2012-04-02 19:53:06.417834'
+  - - '32'
+    - '35'
+    - '2'
+    - '1'
+    - ''
+    - '2012-04-22'
+    - '2011-12-20 19:42:47.508944'
+    - '2012-04-02 19:56:51.02241'
+  - - '33'
+    - '7'
+    - '11'
+    - '26'
+    - ''
+    - '2012-06-12'
+    - '2011-12-13 21:49:36.636473'
+    - '2012-07-13 12:29:12.180962'
+  - - '36'
+    - '36'
+    - '2'
+    - '20'
+    - ''
+    - '2012-09-12'
+    - '2011-12-20 21:01:38.610761'
+    - '2012-08-17 13:59:12.315726'
+  - - '37'
+    - '37'
+    - '2'
+    - '1'
+    - waiting for heping to finish MgRNA manuscript first
+    - '2012-06-30'
+    - '2011-12-22 23:13:07.96775'
+    - '2012-05-31 12:32:01.33841'
+  - - '38'
+    - '39'
+    - '3'
+    - '43'
+    - Text is done from Heping side, waiting for John Herr lab
+    - '2012-07-31'
+    - '2011-12-22 23:54:35.539935'
+    - '2012-07-16 02:50:15.717413'
+  - - '40'
+    - '17'
+    - '1'
+    - 
+    - ''
+    - '2012-04-06'
+    - '2012-01-03 20:41:27.612625'
+    - '2012-11-01 19:03:55.68836'
+  - - '48'
+    - '44'
+    - '9'
+    - 
+    - ''
+    - 
+    - '2012-04-04 16:18:27.190072'
+    - '2012-11-02 21:03:00.943615'
+  - - '50'
+    - '45'
+    - '3'
+    - '27'
+    - ''
+    - '2012-12-31'
+    - '2012-04-30 19:06:34.250028'
+    - '2012-09-17 14:53:56.095023'
+  - - '52'
+    - '46'
+    - '2'
+    - '1'
+    - set up new web server interface on CSGID cakephp
+    - '2012-07-31'
+    - '2012-04-30 19:11:55.090876'
+    - '2012-07-16 02:46:37.697488'
+  - - '54'
+    - '22'
+    - '11'
+    - 
+    - ''
+    - 
+    - '2012-05-16 16:36:51.041547'
+    - '2012-05-16 16:36:51.041547'
+  - - '59'
+    - '43'
+    - '2'
+    - '16'
+    - ''
+    - '2012-08-15'
+    - '2012-05-25 15:47:31.648417'
+    - '2012-07-20 15:39:49.358279'
+  - - '60'
+    - '47'
+    - '2'
+    - '32'
+    - ''
+    - 
+    - '2012-06-13 16:03:55.509883'
+    - '2012-06-13 16:03:55.509883'
+  - - '64'
+    - '45'
+    - '3'
+    - '1'
+    - ''
+    - '2012-12-31'
+    - '2012-07-16 02:45:49.991138'
+    - '2012-09-17 14:53:56.111765'
+  - - '67'
+    - '4'
+    - '5'
+    - 
+    - ''
+    - 
+    - '2012-07-26 14:51:34.052615'
+    - '2012-11-05 20:28:19.61476'
+  - - '68'
+    - '19'
+    - '9'
+    - 
+    - ''
+    - 
+    - '2012-07-26 15:04:19.168934'
+    - '2012-07-26 21:59:07.803332'
+  - - '69'
+    - '49'
+    - '3'
+    - '17'
+    - ''
+    - 
+    - '2012-08-31 15:46:23.948785'
+    - '2012-08-31 15:46:23.948785'
+  - - '70'
+    - '50'
+    - '5'
+    - '24'
+    - we are waiting for PDB ids before we can submit the paper
+    - 
+    - '2012-09-13 20:47:12.80152'
+    - '2012-10-11 18:51:02.755042'
+  - - '71'
+    - '51'
+    - '3'
+    - '17'
+    - ''
+    - 
+    - '2012-09-13 20:49:33.270235'
+    - '2012-09-26 15:37:07.490857'
+  - - '74'
+    - '52'
+    - '2'
+    - '13'
+    - test
+    - '2012-11-13'
+    - '2012-11-02 17:49:56.063962'
+    - '2012-11-26 17:10:55.478539'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  - username
+  records: 
+  - - '1'
+    - karolina@iwonka.med.virginia.edu
+    - $2a$10$wvbpaR.NFsaGoTE.sG/saOPiYbcraRFRZ5vKFjayx1AEGxOP7.0Tm
+    - 
+    - 
+    - 
+    - '1'
+    - '2012-04-02 19:50:20.792996'
+    - '2012-04-02 19:50:20.792996'
+    - 10.8.1.27
+    - 10.8.1.27
+    - '2012-04-02 19:50:20.655112'
+    - '2012-04-02 19:50:20.794182'
+    - 
+  - - '2'
+    - rob_s@iwonka.med.virginia.edu
+    - $2a$10$q4Asg/0sqw0iqsoSRTWIS.24tEuewh6wwWl/ZcEqmvObPWHCekAfS
+    - 
+    - 
+    - 
+    - '1'
+    - '2012-04-02 19:50:58.625216'
+    - '2012-04-02 19:50:58.625216'
+    - 10.8.1.31
+    - 10.8.1.31
+    - '2012-04-02 19:50:58.57325'
+    - '2012-04-02 19:50:58.626326'
+    - 
+  - - '3'
+    - minorlab@iwonka.med.virginia.edu
+    - $2a$10$NlwPE50B4M8etoOpi4gBHe7ObthF2lypjx3tnKa9XNCRQc2g3cqU2
+    - 
+    - 
+    - 
+    - '102'
+    - '2012-12-05 00:41:08.625261'
+    - '2012-12-04 20:18:25.093472'
+    - 10.8.1.50
+    - 127.0.0.1
+    - '2012-04-03 14:36:21.095194'
+    - '2012-12-05 00:44:27.232292'
+    - user
+  - - '4'
+    - matt_d@iwonka.med.virginia.edu
+    - $2a$10$LCfwhvRvJ.vskiFlMu85E.9vLQAG2AOVDpT3zuNC1XT2Gl1S6LAwK
+    - 
+    - 
+    - 
+    - '1'
+    - '2012-04-03 14:47:35.549476'
+    - '2012-04-03 14:47:35.549476'
+    - 10.8.1.4
+    - 10.8.1.4
+    - '2012-04-03 14:47:35.524468'
+    - '2012-04-03 14:47:35.550576'
+    - 
+  - - '5'
+    - wladek@iwonka.med.virginia.edu
+    - $2a$10$BGEdoasFKtpqhxkW0LCW2.NXQywsuMUj52vYitpaS.BuJUWqBeW22
+    - 
+    - 
+    - 
+    - '3'
+    - '2012-04-04 13:48:44.775848'
+    - '2012-04-04 13:48:07.108592'
+    - 10.8.1.4
+    - 10.8.1.4
+    - '2012-04-03 20:45:18.924161'
+    - '2012-04-04 13:48:44.777164'
+    - wladek
+
+---
+auth_group_permissions:
+  columns:
+  - id
+  - group_id
+  - permission_id
+  records: 
+  - - '1'
+    - '1'
+    - '32'
+  - - '2'
+    - '1'
+    - '34'
+  - - '3'
+    - '1'
+    - '35'
+  - - '4'
+    - '1'
+    - '36'
+  - - '5'
+    - '1'
+    - '22'
+  - - '6'
+    - '1'
+    - '23'
+  - - '7'
+    - '1'
+    - '25'
+  - - '8'
+    - '1'
+    - '26'
+  - - '9'
+    - '1'
+    - '28'
+  - - '10'
+    - '1'
+    - '31'
+
+---
+auth_user:
+  columns:
+  - id
+  - username
+  - first_name
+  - last_name
+  - email
+  - password
+  - is_staff
+  - is_active
+  - is_superuser
+  - last_login
+  - date_joined
+  records: 
+  - - '1'
+    - matt_d
+    - Matt
+    - Demas
+    - matt_d@iwonka.med.virginia.edu
+    - sha1$d1712$9891e9399b50dc736623df8cfc91c2e090953fd6
+    - true
+    - true
+    - true
+    - '2012-01-23 21:20:31.675229+00'
+    - '2011-12-12 19:47:03+00'
+  - - '2'
+    - heping
+    - Heping
+    - Zheng
+    - dust@iwonka.med.virginia.edu
+    - sha1$d6567$67d779dcebb463c68c9292488a2d26933b6c4e5e
+    - true
+    - true
+    - true
+    - '2011-12-21 22:58:49.886706+00'
+    - '2011-12-13 01:12:06+00'
+  - - '3'
+    - wladek
+    - Wladek
+    - Minor
+    - wladek@iwonka.med.virginia.edu
+    - sha1$411c6$73b6188e4cd75b53c46b4948b73f146ee623ddeb
+    - true
+    - true
+    - true
+    - '2012-01-20 19:43:07.23413+00'
+    - '2011-12-13 01:14:50+00'
+  - - '4'
+    - user
+    - ''
+    - ''
+    - ''
+    - sha1$a133c$0b3088966bfa84fe63822920e11f524631f7fa59
+    - true
+    - true
+    - false
+    - '2012-02-17 21:47:12.630419+00'
+    - '2011-12-14 15:42:36+00'
+
+---
+document_types:
+  columns:
+  - id
+  - doc_type
+  - comment
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - manuscript_draft
+    - This is the latest draft version of the manuscript.
+    - '2012-12-03 20:23:45.110163'
+    - '2012-12-03 20:23:45.110163'
+  - - '2'
+    - manuscript_clean
+    - This is the latest version of the manuscript with all changes accepted.
+    - '2012-12-03 20:26:48.911'
+    - '2012-12-03 20:26:48.911'
+  - - '3'
+    - cover_letter
+    - This is the cover letter for manuscript submission.
+    - '2012-12-03 20:27:17.349733'
+    - '2012-12-03 20:27:17.349733'
+
+---
+auth_user_user_permissions:
+  columns:
+  - id
+  - user_id
+  - permission_id
+  records: 
+  - - '1'
+    - '2'
+    - '1'
+  - - '2'
+    - '2'
+    - '2'
+  - - '3'
+    - '2'
+    - '3'
+  - - '4'
+    - '2'
+    - '4'
+  - - '5'
+    - '2'
+    - '5'
+  - - '6'
+    - '2'
+    - '6'
+  - - '7'
+    - '2'
+    - '7'
+  - - '8'
+    - '2'
+    - '8'
+  - - '9'
+    - '2'
+    - '9'
+  - - '10'
+    - '2'
+    - '10'
+  - - '11'
+    - '2'
+    - '11'
+  - - '12'
+    - '2'
+    - '12'
+  - - '13'
+    - '2'
+    - '13'
+  - - '14'
+    - '2'
+    - '14'
+  - - '15'
+    - '2'
+    - '15'
+  - - '16'
+    - '2'
+    - '16'
+  - - '17'
+    - '2'
+    - '17'
+  - - '18'
+    - '2'
+    - '18'
+  - - '19'
+    - '2'
+    - '19'
+  - - '20'
+    - '2'
+    - '20'
+  - - '21'
+    - '2'
+    - '21'
+  - - '22'
+    - '2'
+    - '22'
+  - - '23'
+    - '2'
+    - '23'
+  - - '24'
+    - '2'
+    - '24'
+  - - '25'
+    - '2'
+    - '25'
+  - - '26'
+    - '2'
+    - '26'
+  - - '27'
+    - '2'
+    - '27'
+  - - '28'
+    - '2'
+    - '28'
+  - - '29'
+    - '2'
+    - '29'
+  - - '30'
+    - '2'
+    - '30'
+  - - '31'
+    - '2'
+    - '31'
+  - - '32'
+    - '2'
+    - '32'
+  - - '33'
+    - '2'
+    - '33'
+  - - '34'
+    - '2'
+    - '34'
+  - - '35'
+    - '2'
+    - '35'
+  - - '36'
+    - '2'
+    - '36'
+  - - '37'
+    - '2'
+    - '37'
+  - - '38'
+    - '2'
+    - '38'
+  - - '39'
+    - '2'
+    - '39'
+  - - '40'
+    - '1'
+    - '1'
+  - - '41'
+    - '1'
+    - '2'
+  - - '42'
+    - '1'
+    - '3'
+  - - '43'
+    - '1'
+    - '4'
+  - - '44'
+    - '1'
+    - '5'
+  - - '45'
+    - '1'
+    - '6'
+  - - '46'
+    - '1'
+    - '7'
+  - - '47'
+    - '1'
+    - '8'
+  - - '48'
+    - '1'
+    - '9'
+  - - '49'
+    - '1'
+    - '10'
+  - - '50'
+    - '1'
+    - '11'
+  - - '51'
+    - '1'
+    - '12'
+  - - '52'
+    - '1'
+    - '13'
+  - - '53'
+    - '1'
+    - '14'
+  - - '54'
+    - '1'
+    - '15'
+  - - '55'
+    - '1'
+    - '16'
+  - - '56'
+    - '1'
+    - '17'
+  - - '57'
+    - '1'
+    - '18'
+  - - '58'
+    - '1'
+    - '19'
+  - - '59'
+    - '1'
+    - '20'
+  - - '60'
+    - '1'
+    - '21'
+  - - '61'
+    - '1'
+    - '22'
+  - - '62'
+    - '1'
+    - '23'
+  - - '63'
+    - '1'
+    - '24'
+  - - '64'
+    - '1'
+    - '25'
+  - - '65'
+    - '1'
+    - '26'
+  - - '66'
+    - '1'
+    - '27'
+  - - '67'
+    - '1'
+    - '28'
+  - - '68'
+    - '1'
+    - '29'
+  - - '69'
+    - '1'
+    - '30'
+  - - '70'
+    - '1'
+    - '31'
+  - - '71'
+    - '1'
+    - '32'
+  - - '72'
+    - '1'
+    - '33'
+  - - '73'
+    - '1'
+    - '34'
+  - - '74'
+    - '1'
+    - '35'
+  - - '75'
+    - '1'
+    - '36'
+  - - '76'
+    - '1'
+    - '37'
+  - - '77'
+    - '1'
+    - '38'
+  - - '78'
+    - '1'
+    - '39'
+  - - '79'
+    - '3'
+    - '1'
+  - - '80'
+    - '3'
+    - '2'
+  - - '81'
+    - '3'
+    - '3'
+  - - '82'
+    - '3'
+    - '4'
+  - - '83'
+    - '3'
+    - '5'
+  - - '84'
+    - '3'
+    - '6'
+  - - '85'
+    - '3'
+    - '7'
+  - - '86'
+    - '3'
+    - '8'
+  - - '87'
+    - '3'
+    - '9'
+  - - '88'
+    - '3'
+    - '10'
+  - - '89'
+    - '3'
+    - '11'
+  - - '90'
+    - '3'
+    - '12'
+  - - '91'
+    - '3'
+    - '13'
+  - - '92'
+    - '3'
+    - '14'
+  - - '93'
+    - '3'
+    - '15'
+  - - '94'
+    - '3'
+    - '16'
+  - - '95'
+    - '3'
+    - '17'
+  - - '96'
+    - '3'
+    - '18'
+  - - '97'
+    - '3'
+    - '19'
+  - - '98'
+    - '3'
+    - '20'
+  - - '99'
+    - '3'
+    - '21'
+  - - '100'
+    - '3'
+    - '22'
+  - - '101'
+    - '3'
+    - '23'
+  - - '102'
+    - '3'
+    - '24'
+  - - '103'
+    - '3'
+    - '25'
+  - - '104'
+    - '3'
+    - '26'
+  - - '105'
+    - '3'
+    - '27'
+  - - '106'
+    - '3'
+    - '28'
+  - - '107'
+    - '3'
+    - '29'
+  - - '108'
+    - '3'
+    - '30'
+  - - '109'
+    - '3'
+    - '31'
+  - - '110'
+    - '3'
+    - '32'
+  - - '111'
+    - '3'
+    - '33'
+  - - '112'
+    - '3'
+    - '34'
+  - - '113'
+    - '3'
+    - '35'
+  - - '114'
+    - '3'
+    - '36'
+  - - '115'
+    - '3'
+    - '37'
+  - - '116'
+    - '3'
+    - '38'
+  - - '117'
+    - '3'
+    - '39'
+  - - '162'
+    - '4'
+    - '32'
+  - - '163'
+    - '4'
+    - '34'
+  - - '164'
+    - '4'
+    - '35'
+  - - '165'
+    - '4'
+    - '36'
+  - - '166'
+    - '4'
+    - '40'
+  - - '167'
+    - '4'
+    - '41'
+  - - '168'
+    - '4'
+    - '42'
+  - - '169'
+    - '4'
+    - '26'
+  - - '170'
+    - '4'
+    - '49'
+  - - '171'
+    - '4'
+    - '50'
+  - - '172'
+    - '4'
+    - '22'
+  - - '173'
+    - '4'
+    - '23'
+  - - '174'
+    - '4'
+    - '25'
+  - - '175'
+    - '4'
+    - '58'
+  - - '176'
+    - '4'
+    - '59'
+  - - '177'
+    - '4'
+    - '28'
+  - - '178'
+    - '4'
+    - '29'
+  - - '179'
+    - '4'
+    - '31'
+
+---
+auth_permission:
+  columns:
+  - id
+  - name
+  - content_type_id
+  - codename
+  records: 
+  - - '1'
+    - Can add permission
+    - '1'
+    - add_permission
+  - - '2'
+    - Can change permission
+    - '1'
+    - change_permission
+  - - '3'
+    - Can delete permission
+    - '1'
+    - delete_permission
+  - - '4'
+    - Can add group
+    - '2'
+    - add_group
+  - - '5'
+    - Can change group
+    - '2'
+    - change_group
+  - - '6'
+    - Can delete group
+    - '2'
+    - delete_group
+  - - '7'
+    - Can add user
+    - '3'
+    - add_user
+  - - '8'
+    - Can change user
+    - '3'
+    - change_user
+  - - '9'
+    - Can delete user
+    - '3'
+    - delete_user
+  - - '10'
+    - Can add message
+    - '4'
+    - add_message
+  - - '11'
+    - Can change message
+    - '4'
+    - change_message
+  - - '12'
+    - Can delete message
+    - '4'
+    - delete_message
+  - - '13'
+    - Can add content type
+    - '5'
+    - add_contenttype
+  - - '14'
+    - Can change content type
+    - '5'
+    - change_contenttype
+  - - '15'
+    - Can delete content type
+    - '5'
+    - delete_contenttype
+  - - '16'
+    - Can add session
+    - '6'
+    - add_session
+  - - '17'
+    - Can change session
+    - '6'
+    - change_session
+  - - '18'
+    - Can delete session
+    - '6'
+    - delete_session
+  - - '19'
+    - Can add site
+    - '7'
+    - add_site
+  - - '20'
+    - Can change site
+    - '7'
+    - change_site
+  - - '21'
+    - Can delete site
+    - '7'
+    - delete_site
+  - - '22'
+    - Can add author
+    - '8'
+    - add_author
+  - - '23'
+    - Can change author
+    - '8'
+    - change_author
+  - - '24'
+    - Can delete author
+    - '8'
+    - delete_author
+  - - '25'
+    - Can add journal
+    - '9'
+    - add_journal
+  - - '26'
+    - Can change journal
+    - '9'
+    - change_journal
+  - - '27'
+    - Can delete journal
+    - '9'
+    - delete_journal
+  - - '28'
+    - Can add status
+    - '10'
+    - add_status
+  - - '29'
+    - Can change status
+    - '10'
+    - change_status
+  - - '30'
+    - Can delete status
+    - '10'
+    - delete_status
+  - - '31'
+    - Can add publication
+    - '11'
+    - add_publication
+  - - '32'
+    - Can change publication
+    - '11'
+    - change_publication
+  - - '33'
+    - Can delete publication
+    - '11'
+    - delete_publication
+  - - '34'
+    - Can add publication_status_jcn
+    - '12'
+    - add_publication_status_jcn
+  - - '35'
+    - Can change publication_status_jcn
+    - '12'
+    - change_publication_status_jcn
+  - - '36'
+    - Can delete publication_status_jcn
+    - '12'
+    - delete_publication_status_jcn
+  - - '37'
+    - Can add log entry
+    - '13'
+    - add_logentry
+  - - '38'
+    - Can change log entry
+    - '13'
+    - change_logentry
+  - - '39'
+    - Can delete log entry
+    - '13'
+    - delete_logentry
+  - - '40'
+    - Can add attachment
+    - '14'
+    - add_attachment
+  - - '41'
+    - Can change attachment
+    - '14'
+    - change_attachment
+  - - '42'
+    - Can delete attachment
+    - '14'
+    - delete_attachment
+  - - '43'
+    - Can add frequency
+    - '15'
+    - add_frequency
+  - - '44'
+    - Can change frequency
+    - '15'
+    - change_frequency
+  - - '45'
+    - Can delete frequency
+    - '15'
+    - delete_frequency
+  - - '49'
+    - Can add notification
+    - '17'
+    - add_notification
+  - - '50'
+    - Can change notification
+    - '17'
+    - change_notification
+  - - '51'
+    - Can delete notification
+    - '17'
+    - delete_notification
+  - - '52'
+    - Can add contact_type
+    - '18'
+    - add_contact_type
+  - - '53'
+    - Can change contact_type
+    - '18'
+    - change_contact_type
+  - - '54'
+    - Can delete contact_type
+    - '18'
+    - delete_contact_type
+  - - '55'
+    - Can add absence_type
+    - '19'
+    - add_absence_type
+  - - '56'
+    - Can change absence_type
+    - '19'
+    - change_absence_type
+  - - '57'
+    - Can delete absence_type
+    - '19'
+    - delete_absence_type
+  - - '58'
+    - Can add absence
+    - '20'
+    - add_absence
+  - - '59'
+    - Can change absence
+    - '20'
+    - change_absence
+  - - '60'
+    - Can delete absence
+    - '20'
+    - delete_absence
+  - - '61'
+    - Can add referee
+    - '21'
+    - add_referee
+  - - '62'
+    - Can change referee
+    - '21'
+    - change_referee
+  - - '63'
+    - Can delete referee
+    - '21'
+    - delete_referee
+  - - '64'
+    - Can add publication_referee_jcn
+    - '22'
+    - add_publication_referee_jcn
+  - - '65'
+    - Can change publication_referee_jcn
+    - '22'
+    - change_publication_referee_jcn
+  - - '66'
+    - Can delete publication_referee_jcn
+    - '22'
+    - delete_publication_referee_jcn
 
 ---
 django_admin_log:
@@ -3614,515 +5577,13 @@ django_admin_log:
     - Added attachment "attachment object".
 
 ---
-auth_group_permissions:
+auth_group:
   columns:
   - id
-  - group_id
-  - permission_id
+  - name
   records: 
   - - '1'
-    - '1'
-    - '32'
-  - - '2'
-    - '1'
-    - '34'
-  - - '3'
-    - '1'
-    - '35'
-  - - '4'
-    - '1'
-    - '36'
-  - - '5'
-    - '1'
-    - '22'
-  - - '6'
-    - '1'
-    - '23'
-  - - '7'
-    - '1'
-    - '25'
-  - - '8'
-    - '1'
-    - '26'
-  - - '9'
-    - '1'
-    - '28'
-  - - '10'
-    - '1'
-    - '31'
-
----
-auth_user:
-  columns:
-  - id
-  - username
-  - first_name
-  - last_name
-  - email
-  - password
-  - is_staff
-  - is_active
-  - is_superuser
-  - last_login
-  - date_joined
-  records: 
-  - - '1'
-    - matt_d
-    - Matt
-    - Demas
-    - matt_d@iwonka.med.virginia.edu
-    - sha1$d1712$9891e9399b50dc736623df8cfc91c2e090953fd6
-    - true
-    - true
-    - true
-    - '2012-01-23 21:20:31.675229+00'
-    - '2011-12-12 19:47:03+00'
-  - - '2'
-    - heping
-    - Heping
-    - Zheng
-    - dust@iwonka.med.virginia.edu
-    - sha1$d6567$67d779dcebb463c68c9292488a2d26933b6c4e5e
-    - true
-    - true
-    - true
-    - '2011-12-21 22:58:49.886706+00'
-    - '2011-12-13 01:12:06+00'
-  - - '3'
-    - wladek
-    - Wladek
-    - Minor
-    - wladek@iwonka.med.virginia.edu
-    - sha1$411c6$73b6188e4cd75b53c46b4948b73f146ee623ddeb
-    - true
-    - true
-    - true
-    - '2012-01-20 19:43:07.23413+00'
-    - '2011-12-13 01:14:50+00'
-  - - '4'
-    - user
-    - ''
-    - ''
-    - ''
-    - sha1$a133c$0b3088966bfa84fe63822920e11f524631f7fa59
-    - true
-    - true
-    - false
-    - '2012-02-17 21:47:12.630419+00'
-    - '2011-12-14 15:42:36+00'
-
----
-auth_user_user_permissions:
-  columns:
-  - id
-  - user_id
-  - permission_id
-  records: 
-  - - '1'
-    - '2'
-    - '1'
-  - - '2'
-    - '2'
-    - '2'
-  - - '3'
-    - '2'
-    - '3'
-  - - '4'
-    - '2'
-    - '4'
-  - - '5'
-    - '2'
-    - '5'
-  - - '6'
-    - '2'
-    - '6'
-  - - '7'
-    - '2'
-    - '7'
-  - - '8'
-    - '2'
-    - '8'
-  - - '9'
-    - '2'
-    - '9'
-  - - '10'
-    - '2'
-    - '10'
-  - - '11'
-    - '2'
-    - '11'
-  - - '12'
-    - '2'
-    - '12'
-  - - '13'
-    - '2'
-    - '13'
-  - - '14'
-    - '2'
-    - '14'
-  - - '15'
-    - '2'
-    - '15'
-  - - '16'
-    - '2'
-    - '16'
-  - - '17'
-    - '2'
-    - '17'
-  - - '18'
-    - '2'
-    - '18'
-  - - '19'
-    - '2'
-    - '19'
-  - - '20'
-    - '2'
-    - '20'
-  - - '21'
-    - '2'
-    - '21'
-  - - '22'
-    - '2'
-    - '22'
-  - - '23'
-    - '2'
-    - '23'
-  - - '24'
-    - '2'
-    - '24'
-  - - '25'
-    - '2'
-    - '25'
-  - - '26'
-    - '2'
-    - '26'
-  - - '27'
-    - '2'
-    - '27'
-  - - '28'
-    - '2'
-    - '28'
-  - - '29'
-    - '2'
-    - '29'
-  - - '30'
-    - '2'
-    - '30'
-  - - '31'
-    - '2'
-    - '31'
-  - - '32'
-    - '2'
-    - '32'
-  - - '33'
-    - '2'
-    - '33'
-  - - '34'
-    - '2'
-    - '34'
-  - - '35'
-    - '2'
-    - '35'
-  - - '36'
-    - '2'
-    - '36'
-  - - '37'
-    - '2'
-    - '37'
-  - - '38'
-    - '2'
-    - '38'
-  - - '39'
-    - '2'
-    - '39'
-  - - '40'
-    - '1'
-    - '1'
-  - - '41'
-    - '1'
-    - '2'
-  - - '42'
-    - '1'
-    - '3'
-  - - '43'
-    - '1'
-    - '4'
-  - - '44'
-    - '1'
-    - '5'
-  - - '45'
-    - '1'
-    - '6'
-  - - '46'
-    - '1'
-    - '7'
-  - - '47'
-    - '1'
-    - '8'
-  - - '48'
-    - '1'
-    - '9'
-  - - '49'
-    - '1'
-    - '10'
-  - - '50'
-    - '1'
-    - '11'
-  - - '51'
-    - '1'
-    - '12'
-  - - '52'
-    - '1'
-    - '13'
-  - - '53'
-    - '1'
-    - '14'
-  - - '54'
-    - '1'
-    - '15'
-  - - '55'
-    - '1'
-    - '16'
-  - - '56'
-    - '1'
-    - '17'
-  - - '57'
-    - '1'
-    - '18'
-  - - '58'
-    - '1'
-    - '19'
-  - - '59'
-    - '1'
-    - '20'
-  - - '60'
-    - '1'
-    - '21'
-  - - '61'
-    - '1'
-    - '22'
-  - - '62'
-    - '1'
-    - '23'
-  - - '63'
-    - '1'
-    - '24'
-  - - '64'
-    - '1'
-    - '25'
-  - - '65'
-    - '1'
-    - '26'
-  - - '66'
-    - '1'
-    - '27'
-  - - '67'
-    - '1'
-    - '28'
-  - - '68'
-    - '1'
-    - '29'
-  - - '69'
-    - '1'
-    - '30'
-  - - '70'
-    - '1'
-    - '31'
-  - - '71'
-    - '1'
-    - '32'
-  - - '72'
-    - '1'
-    - '33'
-  - - '73'
-    - '1'
-    - '34'
-  - - '74'
-    - '1'
-    - '35'
-  - - '75'
-    - '1'
-    - '36'
-  - - '76'
-    - '1'
-    - '37'
-  - - '77'
-    - '1'
-    - '38'
-  - - '78'
-    - '1'
-    - '39'
-  - - '79'
-    - '3'
-    - '1'
-  - - '80'
-    - '3'
-    - '2'
-  - - '81'
-    - '3'
-    - '3'
-  - - '82'
-    - '3'
-    - '4'
-  - - '83'
-    - '3'
-    - '5'
-  - - '84'
-    - '3'
-    - '6'
-  - - '85'
-    - '3'
-    - '7'
-  - - '86'
-    - '3'
-    - '8'
-  - - '87'
-    - '3'
-    - '9'
-  - - '88'
-    - '3'
-    - '10'
-  - - '89'
-    - '3'
-    - '11'
-  - - '90'
-    - '3'
-    - '12'
-  - - '91'
-    - '3'
-    - '13'
-  - - '92'
-    - '3'
-    - '14'
-  - - '93'
-    - '3'
-    - '15'
-  - - '94'
-    - '3'
-    - '16'
-  - - '95'
-    - '3'
-    - '17'
-  - - '96'
-    - '3'
-    - '18'
-  - - '97'
-    - '3'
-    - '19'
-  - - '98'
-    - '3'
-    - '20'
-  - - '99'
-    - '3'
-    - '21'
-  - - '100'
-    - '3'
-    - '22'
-  - - '101'
-    - '3'
-    - '23'
-  - - '102'
-    - '3'
-    - '24'
-  - - '103'
-    - '3'
-    - '25'
-  - - '104'
-    - '3'
-    - '26'
-  - - '105'
-    - '3'
-    - '27'
-  - - '106'
-    - '3'
-    - '28'
-  - - '107'
-    - '3'
-    - '29'
-  - - '108'
-    - '3'
-    - '30'
-  - - '109'
-    - '3'
-    - '31'
-  - - '110'
-    - '3'
-    - '32'
-  - - '111'
-    - '3'
-    - '33'
-  - - '112'
-    - '3'
-    - '34'
-  - - '113'
-    - '3'
-    - '35'
-  - - '114'
-    - '3'
-    - '36'
-  - - '115'
-    - '3'
-    - '37'
-  - - '116'
-    - '3'
-    - '38'
-  - - '117'
-    - '3'
-    - '39'
-  - - '162'
-    - '4'
-    - '32'
-  - - '163'
-    - '4'
-    - '34'
-  - - '164'
-    - '4'
-    - '35'
-  - - '165'
-    - '4'
-    - '36'
-  - - '166'
-    - '4'
-    - '40'
-  - - '167'
-    - '4'
-    - '41'
-  - - '168'
-    - '4'
-    - '42'
-  - - '169'
-    - '4'
-    - '26'
-  - - '170'
-    - '4'
-    - '49'
-  - - '171'
-    - '4'
-    - '50'
-  - - '172'
-    - '4'
-    - '22'
-  - - '173'
-    - '4'
-    - '23'
-  - - '174'
-    - '4'
-    - '25'
-  - - '175'
-    - '4'
-    - '58'
-  - - '176'
-    - '4'
-    - '59'
-  - - '177'
-    - '4'
-    - '28'
-  - - '178'
-    - '4'
-    - '29'
-  - - '179'
-    - '4'
-    - '31'
+    - minor
 
 ---
 papers_absence:
@@ -4218,811 +5679,93 @@ papers_absence:
     - '1'
 
 ---
-papers_attachment:
+manuscripts:
   columns:
   - id
   - publication_id
-  - file
-  - author_id
+  - title
   - version
-  - entry_date
+  - comment
+  - created_at
+  - updated_at
+  - manuscript
+  - document_type_id
   records: 
-  - - '2'
-    - '4'
-    - attachment/structure-note_Solberg-Demas_v6_mwd.doc
-    - '5'
-    - '6'
-    - '2012-02-02 19:38:37.894003+00'
-  - - '3'
-    - '14'
-    - attachment/CMM-version-54.doc
-    - '9'
+  - - '1'
+    - '52'
+    - Test Doc
+    - '1'
+    - Test Doc
+    - '2012-11-30 17:57:14.154476'
+    - '2012-11-30 17:57:14.154476'
+    - TM1030_IntJournalBiolMacromol_v13.doc
     - 
-    - '2012-02-17 21:48:03.090664+00'
+  - - '2'
+    - '52'
+    - Test Manuscript 2
+    - '2'
+    - Test
+    - '2012-11-30 18:23:14.397206'
+    - '2012-11-30 18:23:14.397206'
+    - journal.pone.0028766.pdf
+    - 
+  - - '3'
+    - '52'
+    - TEST 3
+    - '3'
+    - TEST 3
+    - '2012-11-30 18:54:59.140653'
+    - '2012-11-30 18:54:59.140653'
+    - TM1030_cover_letter_draft.docx
+    - 
+  - - '4'
+    - '52'
+    - TEST 4
+    - '4'
+    - TEST 4
+    - '2012-11-30 19:08:51.721599'
+    - '2012-11-30 19:08:51.721599'
+    - journal.pone.0028766.pdf
+    - 
+  - - '5'
+    - '52'
+    - TEST 5
+    - '5'
+    - TEST 5
+    - '2012-11-30 19:09:42.663047'
+    - '2012-11-30 19:09:42.663047'
+    - Dell_3130cn_User_Guide.pdf
+    - 
 
 ---
-papers_referee:
+admin_users:
   columns:
   - id
-  - firstname
-  - lastname
   - email
-  - department
-  - organization
+  - username
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
   records: 
   - - '1'
-    - Steve
-    - Almo
-    - almo@aecom.yu.edu
-    - Department of Biochemistry, Department of Physiology & Biophysics
-    - Albert Einstein College of Medicine
-  - - '2'
-    - Gaya
-    - Amarasinghe
-    - amarasin@iastate.edu
-    - Dept. of Biochemistry, Biophysics & Molecular Biology
-    - Iowa State University
-  - - '3'
-    - Wayne
-    - Anderson
-    - wf-anderson@northwestern.edu
-    - Dept of Molecular Pharmacology and Biological Chemistry
-    - Northwestern University
-  - - '4'
-    - Heimo
-    - Breiteneder
-    - Heimo.Breiteneder@meduniwien.ac.at
-    - Department of Pathophysiology and Allergy Research, Center for Pathophysiology,
-      Infectiology & Immun
-    - ! 'Medical University of Vienna '
-  - - '5'
-    - Tomasz
-    - Cierpicki
-    - tamaszc@med.umich.edu
-    - Department of Pathology
-    - University of Michigan Health Science System
-  - - '6'
-    - Mirek
-    - Cygler
-    - mirek@bri.nrc.ca
-    - ''
-    - National Research Council, Canada
-  - - '7'
-    - Jolanta
-    - Grembecka
-    - jolantag@umich.edu
-    - Department of Pathology
-    - University of Michigan Health Science System
-  - - '8'
-    - Pawel
-    - Grochulski
-    - Pawel.Grochulski@lightsource.ca
-    - College of Pharmacy and Nutrition
-    - Canadian Macromolecular Crystallography Facility and Canadian Light Source
-  - - '9'
-    - Jack
-    - Johnson
-    - jackj@scripps.edu
-    - Department of Molecular Biology
-    - Scripps Research Institute
-  - - '10'
-    - Adam
-    - Godzik
-    - adam@burnham.org
-    - Bioinformatics and System Biology
-    - Burncham Institute
-  - - '11'
-    - Lukasz
-    - Lebioda
-    - lebioda@psc.sc.edu
-    - Department of Chemistry and Biochemistry
-    - University of South Carolina
-  - - '12'
-    - Arun
-    - Malhotra
-    - malhotra@miami.edu
-    - Department of Biochemistry & Molecular Biology
-    - University of Miami School of Medicine
-  - - '13'
-    - Mischa
-    - Machius
-    - machius@med.unc.edu
-    - Center for Structural Biology
-    - University of North Carolina
-  - - '14'
-    - Jim
-    - Spencer
-    - Jim.Spencer@bristol.ac.uk
-    - School of Cellular & Molecular Medicine
-    - University of Bristol
-  - - '15'
-    - Thomas
-    - Terwilliger
-    - terwilliger@lanl.gov
-    - ''
-    - Los Alamos National Laboratory
-  - - '16'
-    - Diana
-    - Tomchick
-    - diana.tomchick@utsouthwestern.edu
-    - Department of Biochemistry
-    - Southwestern Medical Center in Dallas
-  - - '17'
-    - Brian
-    - Sutton
-    - brian.sutton@kcl.ac.uk
-    - Randall Division of Cell and Molecular Biophysics
-    - King's College London
-  - - '18'
-    - Wayne
-    - Thomas
-    - wayne@ichr.uwa.edu.au
-    - The Telethon Institute for Child Health Research
-    - University of Western Australia
-
----
-papers_publication_referee_jcn:
-  columns:
-  - id
-  - publication_id
-  - referee_id
-  - entry_date
-  - modify_date
-  records: 
-  - - '13'
-    - '5'
-    - '16'
-    - '2012-01-20 18:58:49.656378+00'
-    - '2012-01-20 18:58:49.656438+00'
-  - - '14'
-    - '5'
-    - '11'
-    - '2012-01-20 18:58:49.658892+00'
-    - '2012-01-20 18:58:49.658949+00'
-  - - '15'
-    - '5'
-    - '12'
-    - '2012-01-20 18:58:49.660531+00'
-    - '2012-01-20 18:58:49.660587+00'
-
----
-papers_status:
-  columns:
-  - id
-  - priority
-  - status
-  records: 
-  - - '1'
-    - '1'
-    - waiting_for_wladek
-  - - '2'
-    - '2'
-    - data_being_prepared_by
-  - - '3'
-    - '2'
-    - text_being_updated_by
-  - - '4'
-    - '2'
-    - text_being_proofread_by
-  - - '5'
-    - '3'
-    - see_description
-  - - '6'
-    - '4'
-    - major_revision
-  - - '7'
-    - '4'
-    - minor_revision
-  - - '8'
-    - '4'
-    - waiting_for_review
-  - - '9'
-    - '0'
-    - waiting_for_wladek_to_submit
-  - - '10'
-    - '4'
-    - re-submitted_after_revisions
-  - - '11'
-    - '5'
-    - accepted
-
----
-papers_publication_status_jcn:
-  columns:
-  - id
-  - publication_id
-  - status_id
-  - person_responsible_id
-  - description
-  - due_date
-  - entry_date
-  - modify_date
-  records: 
-  - - '2'
-    - '8'
-    - '2'
-    - '9'
-    - ''
-    - '2012-02-17'
-    - '2011-12-13 21:50:24.97492+00'
-    - '2012-02-15 20:31:56.196377+00'
-  - - '3'
-    - '9'
-    - '1'
-    - 
-    - ''
-    - 
-    - '2011-12-13 21:51:13.750436+00'
-    - '2011-12-13 21:51:13.750436+00'
-  - - '4'
-    - '10'
-    - '1'
-    - 
-    - ''
-    - 
-    - '2011-12-13 21:52:27.92754+00'
-    - '2011-12-13 21:52:27.92754+00'
-  - - '5'
-    - '11'
-    - '8'
-    - 
-    - ''
-    - 
-    - '2011-12-13 21:53:03.70984+00'
-    - '2012-01-20 18:52:33.290778+00'
-  - - '6'
-    - '12'
-    - '1'
-    - 
-    - ''
-    - 
-    - '2011-12-13 21:54:38.496231+00'
-    - '2011-12-13 21:54:38.496231+00'
-  - - '7'
-    - '15'
-    - '11'
-    - '25'
-    - ''
-    - 
-    - '2011-12-13 22:00:25.358007+00'
-    - '2012-02-02 20:21:28.119974+00'
-  - - '8'
-    - '20'
-    - '3'
-    - '12'
-    - ''
-    - '2012-01-10'
-    - '2011-12-13 22:06:50.466521+00'
-    - '2011-12-13 22:06:50.466521+00'
-  - - '9'
-    - '21'
-    - '10'
-    - '8'
-    - ''
-    - '2012-01-10'
-    - '2011-12-13 22:09:22.391297+00'
-    - '2012-02-15 17:20:00.278591+00'
-  - - '12'
-    - '22'
-    - '1'
-    - 
-    - ''
-    - '2012-01-20'
-    - '2011-12-13 22:10:53.447264+00'
-    - '2012-02-01 18:18:54.367654+00'
-  - - '13'
-    - '23'
-    - '5'
-    - 
-    - The status was given as RED, but no deadline was given
-    - 
-    - '2011-12-13 22:11:42.53879+00'
-    - '2011-12-13 22:11:42.53879+00'
-  - - '14'
-    - '25'
-    - '5'
-    - 
-    - needs more work
-    - 
-    - '2011-12-13 22:13:00.783802+00'
-    - '2011-12-13 22:13:00.783802+00'
-  - - '15'
-    - '28'
-    - '11'
-    - '8'
-    - ''
-    - 
-    - '2011-12-13 22:15:56.955852+00'
-    - '2012-01-11 22:05:28.870834+00'
-  - - '16'
-    - '16'
-    - '11'
-    - 
-    - ''
-    - 
-    - '2011-12-14 04:28:12.597874+00'
-    - '2012-01-20 18:50:57.361059+00'
-  - - '17'
-    - '29'
-    - '11'
-    - 
-    - ''
-    - 
-    - '2011-12-13 22:17:18.812891+00'
-    - '2012-02-15 17:23:21.735996+00'
-  - - '19'
-    - '6'
-    - '9'
-    - '16'
-    - latest version has been sent to Wladek on Jan 16, 2012
-    - 
-    - '2011-12-13 21:48:17.707167+00'
-    - '2012-02-07 21:09:19.91133+00'
-  - - '20'
-    - '14'
-    - '1'
-    - 
-    - Send Email about re-refinement to coteg@queensu.ca (3lkm) and xjulia@iqfr.csic.es
-      (3lrk)
-    - 
-    - '2011-12-13 21:57:54.00525+00'
-    - '2011-12-13 21:57:54.00525+00'
-  - - '21'
-    - '14'
-    - '9'
-    - 
-    - ''
-    - '2012-02-07'
-    - '2011-12-15 03:12:09.584711+00'
-    - '2012-02-07 22:46:32.732532+00'
-  - - '22'
-    - '27'
-    - '3'
-    - '17'
-    - ''
-    - '2012-01-10'
-    - '2011-12-14 21:57:19.135634+00'
-    - '2011-12-14 21:57:19.135634+00'
-  - - '23'
-    - '27'
-    - '2'
-    - '5'
-    - ''
-    - '2012-01-10'
-    - '2011-12-15 03:27:09.305275+00'
-    - '2011-12-15 03:27:09.305275+00'
-  - - '24'
-    - '27'
-    - '2'
-    - '41'
-    - ''
-    - '2012-01-10'
-    - '2011-12-15 03:27:09.307757+00'
-    - '2011-12-15 03:27:09.307757+00'
-  - - '25'
-    - '5'
-    - '8'
-    - 
-    - ''
-    - 
-    - '2011-12-13 21:47:58.369834+00'
-    - '2012-01-20 18:53:34.143202+00'
-  - - '26'
-    - '26'
-    - '9'
-    - 
-    - ''
-    - 
-    - '2011-12-14 21:48:48.25506+00'
-    - '2011-12-14 21:48:48.25506+00'
-  - - '27'
-    - '24'
-    - '2'
-    - '3'
-    - phylogenetic analysis
-    - '2012-02-25'
-    - '2011-12-13 22:12:21.557272+00'
-    - '2012-02-15 20:33:13.624111+00'
-  - - '28'
-    - '18'
-    - '2'
-    - '25'
-    - ITC
-    - '2012-01-10'
-    - '2011-12-13 22:04:47.540397+00'
-    - '2011-12-13 22:04:47.540397+00'
-  - - '29'
-    - '1'
-    - '10'
-    - 
-    - ''
-    - 
-    - '2011-12-14 04:27:41.123417+00'
-    - '2011-12-14 04:27:41.123417+00'
-  - - '30'
-    - '19'
-    - '9'
-    - '8'
-    - ''
-    - '2012-01-10'
-    - '2011-12-13 22:06:10.155413+00'
-    - '2011-12-29 17:04:39.028277+00'
-  - - '32'
-    - '35'
-    - '5'
-    - '3'
-    - expression systems data is being prepared
-    - '2012-02-22'
-    - '2011-12-20 19:42:47.508944+00'
-    - '2012-02-15 20:28:10.855458+00'
-  - - '33'
-    - '7'
-    - '9'
-    - '26'
-    - ''
-    - '2012-01-10'
-    - '2011-12-13 21:49:36.636473+00'
-    - '2012-02-13 17:14:07.183013+00'
-  - - '36'
-    - '36'
-    - '2'
-    - '3'
-    - ''
-    - '2012-01-31'
-    - '2011-12-20 21:01:38.610761+00'
-    - '2011-12-22 11:09:38.470656+00'
-  - - '37'
-    - '37'
-    - '2'
-    - '5'
-    - interactive p-value plots
-    - '2012-02-29'
-    - '2011-12-22 23:13:07.96775+00'
-    - '2012-01-28 23:32:42.117455+00'
-  - - '38'
-    - '39'
-    - '2'
-    - '43'
-    - SLLP1-SAS1B refolded complex
-    - '2012-01-27'
-    - '2011-12-22 23:54:35.539935+00'
-    - '2011-12-22 23:54:35.539984+00'
-  - - '40'
-    - '17'
-    - '9'
-    - 
-    - ''
-    - 
-    - '2012-01-03 20:41:27.612625+00'
-    - '2012-01-03 20:42:25.765259+00'
-  - - '46'
-    - '4'
-    - '1'
-    - 
-    - ''
-    - 
-    - '2012-02-02 19:38:37.690356+00'
-    - '2012-02-02 19:38:37.690441+00'
-  - - '47'
-    - '43'
-    - '3'
-    - '16'
-    - ''
-    - 
-    - '2012-02-07 21:12:25.359675+00'
-    - '2012-02-07 21:12:25.359739+00'
-
----
-papers_journal:
-  columns:
-  - id
-  - journal_name
-  - journal_abbr
-  - url
-  records: 
-  - - '1'
-    - Journal of Structural and Functional Genomics
-    - JSFG
-    - http://www.editorialmanager.com/jsfg/default.asp
-  - - '2'
-    - ! 'Acta Crystallographica Section F: Structural Biology and Crystallization
-      Communications'
-    - Acta Cryst. F
-    - http://journals.iucr.org/f/services/authorservices.html
-  - - '3'
-    - ! 'Proteins: Structure, Function, and Bioinformatics'
-    - Proteins
-    - http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0134/homepage/ForAuthors.html
-  - - '4'
-    - Journal of Structural Biology
-    - JSB
-    - http://www.elsevier.com/wps/find/journaldescription.cws_home/622900/authorinstructions
-  - - '5'
-    - Public Library of Science
-    - PLoS
-    - http://www.plos.org/publications/journals/
-  - - '6'
-    - Nature Methods
-    - Nat. Methods
-    - http://www.nature.com/nmeth/authors/index.html
-  - - '7'
-    - Federation of European Biochemical Societies Journal
-    - FEBS J
-    - http://onlinelibrary.wiley.com/journal/10.1111/%28ISSN%291742-4658/homepage/febs_author_guidelines.htm
-  - - '8'
-    - The Journal of Immunology
-    - J. Immunol.
-    - http://www.jimmunol.org/site/misc/authorinstructions.xhtml
-  - - '9'
-    - Molecular Immunology
-    - Mol. Immunol.
-    - http://www.elsevier.com/wps/find/journaldescription.cws_home/253/authorinstructions
-  - - '10'
-    - Protein Science
-    - Protein Sci.
-    - http://www.proteinscience.org/view/0/authorInformation.html
-  - - '11'
-    - Journal of Biological Chemistry
-    - JBC
-    - http://www.jbc.org/site/misc/itoa.xhtml
-  - - '12'
-    - Molecular Biology of the Cell
-    - Mol. Biol. Cell
-    - http://www.molbiolcell.org/site/misc/ifora.xhtml
-  - - '13'
-    - ! 'Acta Crystallographica Section D: Biological Crystallography'
-    - Acta Cryst. D
-    - http://submission.iucr.org/submit/d
-  - - '14'
-    - Journal of Molecular Biology
-    - JMB
-    - http://www.journals.elsevier.com/journal-of-molecular-biology/
-  - - '15'
-    - Biometals Journal
-    - Biomet
-    - http://www.springer.com/life+sciences/biochemistry+%26+biophysics/journal/10534
-
----
-papers_author:
-  columns:
-  - id
-  - firstname
-  - lastname
-  - email
-  - phone
-  - skype
-  records: 
-  - - '1'
-    - Heping
-    - Zheng
-    - dust@iwonka.med.virginia.edu
-    - 434-242-7850
-    - ''
-  - - '2'
-    - Ekaterina
-    - Filippova
-    - katya@structure.northwestern.edu
-    - 
-    - 
-  - - '3'
-    - Karolina
-    - Tkaczuk
-    - karolina@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '5'
-    - Matt
-    - Demas
     - matt_d@iwonka.med.virginia.edu
+    - admin
+    - $2a$10$4wkYE/jmKCEYOcTS2a9tIu/0ui7BpTpt4fjwZtGT4wyjjdutfNYW.
     - 
     - 
-  - - '6'
-    - Jacek
-    - Bajor
-    - jacek_b@iwonka.med.virginia.edu
     - 
-    - 
-  - - '7'
-    - Mahendra D.
-    - Chordia
-    - mahendra@iwonka.med.virginia.edu
-    - ''
-    - ''
-  - - '8'
-    - Maksymilian
-    - Chruszcz
-    - maks@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '9'
-    - David R.
-    - Cooper
-    - dcoop@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '10'
-    - Marcin
-    - Cymborowski
-    - marcel@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '12'
-    - Marcin
-    - Domagalski
-    - marcin_d@iwonka.med.virginia.edu
-    - 434-227-1144
-    - ''
-  - - '13'
-    - Jose
-    - Font
-    - font@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '14'
-    - Zbigniew
-    - Fratczak
-    - zbigniew_f@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '15'
-    - Marek
-    - Grabowski
-    - marek@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '16'
-    - Jing
-    - Hou
-    - houjing@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '17'
-    - Aleksandra A.
-    - Knapik
-    - aleksandra@iwonka.med.virginia.edu
-    - ''
-    - ''
-  - - '18'
-    - Elizabeth
-    - MacLean
-    - beth_m@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '19'
-    - Karolina
-    - Majorek
-    - karolina_m@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '20'
-    - Katarzyna
-    - Mikolajczak
-    - kasia_m@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '21'
-    - Ania
-    - Milaczewska
-    - ania_m@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '22'
-    - Ewa
-    - Niedzialkowska
-    - ewa_n@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '23'
-    - Tomasz
-    - Osinski
-    - tomek_o@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '24'
-    - Janusz
-    - Petkowski
-    - janusz@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '25'
-    - Przemek
-    - Porebski
-    - przemek@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '26'
-    - Ivan G.
-    - Shabalin
-    - ivan_s@iwonka.med.virginia.edu
-    - ''
-    - ''
-  - - '27'
-    - Igor A.
-    - Shumilin
-    - igor@iwonka.med.virginia.edu
-    - ''
-    - ''
-  - - '28'
-    - Rob
-    - Solberg
-    - rob_s@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '30'
-    - Rachel
-    - Vigour
-    - rachel_v@iwonka.med.virginia.edu
-    - 
-    - 
-  - - '32'
-    - Matthew D.
-    - Zimmerman
-    - matt@iwonka.med.virginia.edu
-    - 434-243-0033
-    - ''
-  - - '33'
-    - Alexander
-    - Rashin
-    - ! ' '
-    - 
-    - 
-  - - '34'
-    - Olga
-    - Kirillova
-    - ! ' '
-    - 
-    - 
-  - - '35'
-    - Dominik
-    - Gront
-    - ! ' '
-    - 
-    - 
-  - - '36'
-    - Pawel
-    - Sledz
-    - ! ' '
-    - 
-    - 
-  - - '37'
-    - Anna
-    - Goral
-    - ! ' '
-    - 
-    - 
-  - - '38'
-    - Majka
-    - ! ' '
-    - ! ' '
-    - 
-    - 
-  - - '39'
-    - Martin
-    - Chapman
-    - ! ' '
-    - 
-    - 
-  - - '40'
-    - Anna G.
-    - Chruszcz
-    - anna@hkl-xray.com
-    - 434-979-6382
-    - ''
-  - - '41'
-    - Haibin
-    - Luo
-    - hbluo2005@yahoo.com.cn
-    - 
-    - 
-  - - '42'
-    - Wladek
-    - Minor
-    - wladek@iwonka.med.virginia.edu
-    - 434-825-1813
-    - ''
-  - - '43'
-    - Arabinda
-    - Mandal
-    - am7v@virginia.edu
-    - ''
-    - ''
+    - '5'
+    - '2012-12-05 00:44:05.483343'
+    - '2012-12-04 18:00:01.785117'
+    - 10.8.1.50
+    - 127.0.0.1
+    - '2012-12-03 20:19:31.985878'
+    - '2012-12-05 00:44:05.48383'

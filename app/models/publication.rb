@@ -2,7 +2,8 @@ class Publication < ActiveRecord::Base
 
   attr_accessible :topic, :first_author_id, :second_author_id, :third_author_id,
                   :target_journal_id, :deadline, :pub_statuses_attributes,
-                  :attachments_attributes, :responsible_person_id, :proofreader_id
+                  :attachments_attributes, :responsible_person_id, :proofreader_id,
+                  :manuscripts_attributes
 
   set_primary_key "id"
   set_table_name "papers_publication"
@@ -35,6 +36,11 @@ class Publication < ActiveRecord::Base
              :class_name => "PublicationAttachment"
   accepts_nested_attributes_for :attachments,
                                 :allow_destroy => true
+  has_many   :manuscripts,
+             :class_name => "Manuscript"
+  accepts_nested_attributes_for :manuscripts,
+                                :allow_destroy => true
+
 
 
 
@@ -51,7 +57,8 @@ class Publication < ActiveRecord::Base
   scope :waiting_for_wladek, where("id IN (SELECT publication_id FROM papers_publication_status_jcn
                       WHERE status_id IN (1,9))")
 
-  validates :topic, :presence => true
+  #validates :topic, :presence => true
+  validates_presence_of :topic
   validates :first_author, :presence => true
 
   def author_list

@@ -1,5 +1,8 @@
 source 'http://rubygems.org'
 
+gem 'simple_form'
+gem 'best_in_place'
+gem 'activeadmin'
 gem 'whenever', :require => false
 gem 'mail'
 gem 'carrierwave'
@@ -26,6 +29,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+  gem 'less-rails'
 end
 
 #gem 'jquery-rails'

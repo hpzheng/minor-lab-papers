@@ -1,0 +1,41 @@
+<%= simple_form_for @publication  do |f| %>
+  <fieldset>
+    <legend>Publication Info</legend>
+    <div class='controls controls-row'>
+        <%= f.input :topic, :wrapper_html => {:class => 'span3'}  %>
+        <%= f.association :target_journal, :collection => Journal.all, :label_method => :journal_abbr, :include_blank => '--', :wrapper_html => {:class => 'span3'}   %>
+        <%= f.input :deadline, :as => :string, :wrapper_html => {:class => 'span3'}   %>
+    </div>
+    <div class='controls controls-row'>
+        <%= f.association :first_author, :collection => Author.all, :label_method => :auth_name, :wrapper_html => {:class => 'span3'}   %>
+        <%= f.association :second_author, :collection => Author.all, :label_method => :auth_name, :include_blank => '--', :wrapper_html => {:class => 'span3'}   %>
+        <%= f.association :third_author, :collection => Author.all, :label_method => :auth_name, :include_blank => '--', :wrapper_html => {:class => 'span3'}   %>
+    </div>
+    <div class='controls controls-row'>
+        <%= f.association :responsible_person, :collection => Author.all, :label_method => :auth_name, :wrapper_html => {:class => 'span3'}   %>
+        <%= f.association :proofreader, :collection => Author.all, :label_method => :auth_name, :include_blank => '--', :wrapper_html => {:class => 'span3'}   %>
+    </div>
+    <legend>Status</legend>
+      <% if @publication.pub_statuses.empty? %>
+        <p class='muted'>No statuses added at this time.  Add one by clicking 'Add New >> Status'</p>
+      <% else %>
+      <%= f.simple_fields_for :pub_statuses, :html => {:class => 'form-inline' } do |s| %>
+      <div class='controls controls-row'>
+        <%= s.association :status, :collection => Status.all, :label_method => :status_str, :include_blank => '--', :wrapper_html => {:class => 'span3'}  %>
+        <%= s.association :person_responsible, :collection => Author.all, :label_method => :auth_name, :wrapper_html => {:class => 'span3'} %>
+        <%= s.input :_destroy, :label => "Delete this Status?", :as => :boolean, :wrapper_html => {:class => 'span2'}, :label_html => {:class => 'text-warning'}    %>
+      </div>
+      <div class='controls controls-row'>
+        <%= s.input :description, :wrapper_html => {:class => 'span3'}   %>
+        <%= s.input :due_date, :as => :string, :wrapper_html => {:class => 'span3'} %>
+      </div>
+      <hr class="bs-docs-separator">
+      <% end %>
+      <% end %>
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', publications_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>
+
