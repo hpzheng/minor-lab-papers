@@ -1,5 +1,5 @@
 
-<table id="paper_table"  class="table  table-condensed table-bordered table-hover">
+<table id="paper_table"  class="table table-bordered table-condensed  table-hover">
 <thead>
   <tr class="subheadingone" style="cursor:default;">
     <th>&nbsp;</th>
@@ -7,7 +7,6 @@
     <th>Authors</th>
     <th>Journal</th>
     <th>Status(es)</th>
-    <th>Referee(s)</th>
     <th>Deadline</th>
     <th>Last Updated...</th>
   </tr>
@@ -20,54 +19,42 @@
       <tr onclick="location.href='<%= publication_path(paper) %>'" style="cursor:pointer;">
     <% end %>
       <td style="cursor:default;">
-        <% unless paper.attachments.empty? %>
-        <%= link_to '<i class="btn btn-large icon-file"> </i>'.html_safe, "#{paper.attachments.last.attachment}" %>
+        <% unless paper.manuscripts.empty? %>
+        <%= link_to '<i class="btn btn-large icon-file"> </i>'.html_safe, "#{paper.manuscripts.first.manuscript}" %>
         <% end %>
       </td>
       <td>
-        <%= paper.topic %>
+        <em><%= paper.topic %></em>
       </td>
       <td>
-        <%= paper.author_list %>
+        <small><%= paper.author_list %></small>
       </td>
       <td>
         <% if paper.target_journal.nil? %>
           &nbsp;--
         <% else %>
-          <%= paper.target_journal.journal_abbr %>
+          <small><abbr title="<%= paper.target_journal.journal_name %>"><%= paper.target_journal.journal_abbr %></abbr></small>
         <% end %>
       </td>
       <td>
         <%= link_to '<i class="btn btn-mini icon-plus pull-right"> </i>'.html_safe, new_publication_pub_status_jcn_url(paper) %>
-        <ul>
           <% paper.pub_statuses.each do |pub_status| %>
-            <li> <span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}" %></span></li>
-          <% end %>
-        </ul>
-      </td>
-      <td>
-        <%= link_to '<i class="btn btn-mini icon-plus pull-right"> </i>'.html_safe, new_publication_pub_ref_jcn_url(paper) %>
-        <ul>
-          <% if paper.referees.empty? %>
-          <% else %>
-            <% paper.referees.each do |ref| %>
-              <li>
-                <%= ref.name unless ref.nil?%>
-              </li>
+            <% if pub_status.description.empty? %>
+              <small><span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}" %></span></small>
+            <% else %>
+              <small><abbr title="<%= pub_status.description %>"><span style="color:<%= pub_status.status_color %>"><%= "#{pub_status.status_string}" %></span></abbr></small>
             <% end %>
           <% end %>
-        </ul>
       </td>
-
       <td>
          <% if paper.deadline.nil? %>
           &nbsp;--
         <% else %>
-          <%= paper.deadline %>
+          <small><%= paper.deadline %></small>
         <% end %>
       </td>
-      <td>
-        <%= time_ago_in_words(paper.updated_at) %>
+      <td class='muted'>
+        <small><%= "#{time_ago_in_words(paper.updated_at)} ago." %></small>
       </td>
     </tr>
   <% end %>
