@@ -1,19 +1,24 @@
 <h2> Snapshot for <em><%= @publication.topic %></em> </h2>
 <%= render 'publication_controls' %>
+<legend>Publication Info</legend>
 <dl class='dl-horizontal'>
   <dt>Topic</dt>
     <dd>
       <%= @publication.topic %>
     </dd>
   <dt>Target Journal</dt>
-    <dd>
-      <%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
-    </dd>
+      <% if @publication.target_journal.nil? %>
+        <dd class='muted'>No journal has been selected.</dd>
+      <% else %>
+        <dd><%= @publication.target_journal.journal_name unless @publication.target_journal.nil? %>
+        </dd>
+      <% end %>
   <dt>Deadline?</dt>
-    <dd>
     <% if @publication.deadline.nil? %>
+    <dd class='muted'>
       No Deadline at this time 
     <% else %>
+    <dd>
       <%= "#{@publication.deadline}" %>
     <% end %>
     </dd>
@@ -76,10 +81,10 @@
       <% else %>
         <ol>
           <% @publication.attachments.each_with_index do |s, i| %>
-            <li> <strong>version</strong>:<%= s.version %><br />
-                 <strong>comments</strong>:<%= s.comment %><br />
-                 <%= link_to "Download", "#{s.attachment}"%></li>
-                 <%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
+            <li> <strong>version</strong>: <%= s.version %><br />
+                 <strong>comments</strong>: <%= s.comment %><br />
+                 <b class='icon-download-alt'></b><%= link_to "Download", "#{s.attachment}" unless !(user_signed_in?)%></li>
+                 <b class='icon-plus'></b><span href="#new_version" class='muted'>Add New Version</span><% link_to "Add New Version", new_publication_publication_attachment_path(@publication, :publication_attachment_id => s.id) %></li>
             </li>
           <% end %>
         </ol>
@@ -95,11 +100,12 @@
       <% else %>
         <ol>
           <% @publication.manuscripts.each_with_index do |s, i| %>
-            <li> <strong>version</strong>:<%= s.version %><br />
-              <strong>comments</strong>:<%= s.comment %><br />
-              <%= link_to "Download", "#{s.manuscript}"%></li>
-              <%= link_to "Download", "#{s.manuscript}" unless !(user_signed_in?)%></li>
-              <%= link_to "Add New Version", new_publication_manuscript_path(@publication, :manuscript_id => s.id) %>
+            <li> 
+              <strong>title</strong>: <%= s.title %><br />
+              <strong>version</strong>: <%= s.version %><br />
+              <strong>comments</strong>: <%= s.comment %><br />
+              <b class='icon-download-alt'></b><%= link_to "Download", "#{s.manuscript}" unless !(user_signed_in?)%><br />
+              <b class='icon-plus'></b><%= link_to "Add New Version", new_publication_manuscript_path(@publication, :manuscript_id => s.id) %></li>
           <% end %>
         </ol>
       <% end %>

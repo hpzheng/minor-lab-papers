@@ -13,4 +13,7 @@ jQuery ->
     $(this).before($(this).data('fields').replace(regexp, time))
     event.preventDefault()
 
+  $("input[name$='_destroy]']").bind 'click', (event) ->
+    alert 'Remember to submit the form to delete this status' 
+  
   $('.best_in_place').best_in_place()

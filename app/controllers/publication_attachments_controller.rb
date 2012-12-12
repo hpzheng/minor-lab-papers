@@ -27,6 +27,12 @@ class PublicationAttachmentsController < ApplicationController
   def new
     @publication = Publication.find(params[:publication_id])
     @publication_attachment = @publication.attachments.build
+    if params[:publication_attachment_id]
+      @previous_attachment = PublicationAttachment.find(params[:publication_attachment_id])
+      @publication_attachment.version = @previous_attachment.version.to_i + 1
+      @publication_attachment.comment = @previous_attachment.comment
+    end
+
     #@publication_attachment = PublicationAttachment.new
 
     respond_to do |format|
