@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'best_in_place'
 gem 'activeadmin'
@@ -29,8 +31,6 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-  gem 'twitter-bootstrap-rails'
-  gem 'less-rails'
 end
 
 #gem 'jquery-rails'
