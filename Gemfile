@@ -1,21 +1,27 @@
 source 'http://rubygems.org'
 
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
-gem 'simple_form'
-gem 'best_in_place'
-gem 'activeadmin'
-gem 'whenever', :require => false
-gem 'mail'
-gem 'carrierwave'
-gem 'jquery-rails', '>= 1.0.12'
-gem 'yaml_db'
-gem 'devise', '2.0'
-gem 'rails', '3.1.7'
+# styling related gems
+gem 'less-rails' # extension of CSS, required for bootstrap to run
+gem 'twitter-bootstrap-rails' # predefined styling, allows use of Bootstrap styling
+gem 'simple_form' # another way to define form fields
 
+# gems that are in use by specific files
+gem 'mail' # allows for the sending of mail ActionMailer
+gem 'devise', '2.0' # handles user login
+gem 'carrierwave' # handles uploading of attachments
+
+# 'standard' gems
+gem 'jquery-rails', '>= 1.0.12' # another way of defining javascript
 gem 'jquery-tablesorter'
-
 gem 'jquery-ui-rails'
+
+# not currently in use
+gem 'activeadmin' # production bug
+gem 'yaml_db' # not actively used, but creates backup of database
+gem 'whenever', :require => false # another way of modifying/defining cron jobs
+gem 'best_in_place' # not in use
+
+gem 'rails', '3.1.7'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
