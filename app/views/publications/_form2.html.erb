@@ -32,10 +32,42 @@
       <hr class="bs-docs-separator">
       <% end %>
       <% end %>
+
+
+    <legend>Attachments</legend>
+      <% if @publication.attachments.empty? %>
+        <p class='muted'>No attachments added at this time.  Add one by clicking 'Add New >> Attachment'</p>
+      <% else %>
+      <%= f.simple_fields_for :attachments, :html => {:class => 'form-inline' } do |s| %>
+      <div class='controls controls-row'>
+        <%= s.association :attachment, :file  %>
+        <%= s.association :title, :wrapper_html => {:class => 'span3'} %>
+        <%= s.input :_destroy, :label => "Delete this Attachment?", :as => :boolean, :wrapper_html => {:class => 'span2'}, :label_html => {:class => 'text-warning'}    %>
+      </div>
+      <hr class="bs-docs-separator">
+      <% end %>
+      <% end %>
+    <legend>Referees</legend>
+      <% if @publication.attachments.empty? %>
+        <p class='muted'>No attachments added at this time.  Add one by clicking 'Add New >> Attachment'</p>
+      <% else %>
+      <%= f.simple_fields_for :attachments, :html => {:class => 'form-inline' } do |s| %>
+      <div class='controls controls-row'>
+        <%= s.association :attachment, :file %>
+        <%= s.association :title, :wrapper_html => {:class => 'span3'} %>
+        <%= s.input :_destroy, :label => "Delete this Attachment?", :as => :boolean, :wrapper_html => {:class => 'span2'}, :label_html => {:class => 'text-warning'}    %>
+      </div>
+      <hr class="bs-docs-separator">
+      <% end %>
+      <% end %>
+
+################################################################
+
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to 'Cancel', publications_path, :class => 'btn' %>
     </div>
   </fieldset>
 <% end %>
+
 
