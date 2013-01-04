@@ -74,7 +74,7 @@
     <p>
 <%= form_for(@publication) do |f| %>
 <%= f.fields_for :pub_statuses do |builder| %>
-  <%= render 'pub_status_fields', f: builder %>
+  <%= render 'pub_status_fields', :f => builder %>
 <% end %>
 <%= link_to_add_fields "Add Status", f, :pub_statuses %>
   <div class="actions">
@@ -84,6 +84,7 @@
 </p>
     </div>
     <div id="tabs-2">
+ADD ATTACHMENT BY CLICKING "ADD NEW">>"ATTACHMENT"
 <%= form_for(@publication) do |f| %>
     <% @publication.attachments.each_with_index do |s, key| %>
     <div class="formsection">
@@ -130,7 +131,7 @@
 
     </div>
     <div id="tabs-3">
-
+ADD REFEREE BY CLICKING "ADD NEW">>"REFEREE"
 <%= form_for(@publication) do |f| %>
     <% @publication.pub_refs.each_with_index do |s, key| %>
     <div class="formsection">
